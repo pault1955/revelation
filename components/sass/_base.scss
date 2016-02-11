@@ -1,0 +1,221 @@
+// ======================================
+//  site wide
+// ======================================
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+
+body {
+  color: $default_font-color;
+  font-family: $default_font-family;
+  font-size: $default_font-size;
+  line-height: $default_line-height;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+ @include container();
+ @include show-grid(12);
+}
+
+img {
+  width: 100%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans Bold', sans-serif;
+  margin: 0.1em 0;
+}
+
+
+h1 {
+  font-size: 48px;
+  line-height: 50px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 46px;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+p {
+
+}
+
+blockquote {
+  font-size: 14px;
+}
+
+a {
+  color: $affinity_link-color;
+
+  &:hover {
+    color: $affinity_link-color--hover;
+    text-decoration: none;
+  }
+}
+
+/* remove ios shadow */
+
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+.sitebutton {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 9px 15px;
+  border-radius: 2px;
+  -webkit-transition: background-color 500ms ease;
+  transition: background-color 500ms ease;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #cdd0df;
+  background-color: transparent;
+  color: #4d4d4d;
+}
+.sitebutton:hover {
+  color: #fff;
+  border: 1px solid #5ac5c5;
+  background-color: #5ac5c5;
+}
+
+.preview_overlay_content img {
+  width: 20px;
+}
+img.preview_show {
+  width: 20px;
+}
+
+/* popup windows */
+
+.popupwindow_title {
+  color: $system_calendar_popup_window-color;
+}
+
+/* view all forums  icon */
+.forums_boxout_contents a img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+/* directory search icon */
+tr.gridheader a img {
+  width: 25px;
+}
+
+/* media list icons */
+
+.media_box_cell img {
+  width: 18px;
+}
+.MediaListRSS img {
+  width: 40px;
+}
+/* signup sheet */
+table.signup tr td, td.signup0 {
+
+  line-height: 0px;
+  font-size: 0px;
+  border-collapse: separate;
+}
+
+table.signup tr td img {
+  height: 8px !important;
+}
+/* form styling */
+input {
+  -webkit-appearance: none;
+}
+input[type="checkbox"] + label, input[type="radio"] +  label {
+  margin-left:10px;
+}
+
+
+// hide author info on articles
+.content_page_main .ArticleBody .author {
+  display: none;
+}
+
+
+@media (min-width: $breakpoint-sm) {
+
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+
+  h1 {
+    font-size: 48px;
+    line-height: 50px;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  h4 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h5 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  h6 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+
+  p {
+    margin-bottom: 24px;
+  }
+
+  blockquote {
+    font-size: 16px;
+  }
+
+}

@@ -1,0 +1,8 @@
+.DS_Store
+.sass-cache
+.tmp
+.idea
+node_modules
+components/sass/images
+builds/development/images
+builds/production
