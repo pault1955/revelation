@@ -1,7 +1,12 @@
 // ======================================
 //  site wide
 // ======================================
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+html {
+  font-size: 0.625em;
+}
+
 
 body {
   color: $default_font-color;
@@ -19,12 +24,12 @@ body {
 }
 
 img {
-  width: 100%;
+ // width: 100%;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans Bold', sans-serif;
+  font-family: $default_font-family;
   margin: 0.1em 0;
 }
 
@@ -71,10 +76,15 @@ blockquote {
 }
 
 a {
-  color: $affinity_link-color;
+  color: $default_link-color;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  text-decoration: none;
 
   &:hover {
-    color: $affinity_link-color--hover;
+    color: $default_link-color--hover;
     text-decoration: none;
   }
 }
@@ -87,6 +97,13 @@ input, textarea {
   appearance: none;
 }
 
+input[type=button] {
+  -webkit-transform: all 500ms ease;
+  -moz-transform: all 500ms ease;
+  -ms-transform: all 500ms ease;
+  -o-transform: all 500ms ease;
+  transform: all 500ms ease;
+}
 
 .sitebutton {
   display: inline-block;
@@ -94,16 +111,14 @@ input, textarea {
   margin-right: 5px;
   padding: 9px 15px;
   border-radius: 2px;
-  -webkit-transition: background-color 500ms ease;
-  transition: background-color 500ms ease;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-align: center;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid #cdd0df;
+  border: 1px solid $system_sitebutton_border-color;
   background-color: transparent;
-  color: #4d4d4d;
+  color: $system_sitebutton_color;
 }
 .sitebutton:hover {
   color: #fff;
@@ -146,8 +161,8 @@ tr.gridheader a img {
 /* signup sheet */
 table.signup tr td, td.signup0 {
 
-  line-height: 0px;
-  font-size: 0px;
+  line-height: 0;
+  font-size: 0;
   border-collapse: separate;
 }
 

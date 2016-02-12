@@ -1,27 +1,23 @@
 // ======================================
-// slice affinity footerbar
+// slice footerbar
 // ======================================
 
-.slice_affinity_footerbar {
+.slice_footerbar {
 
   background-color: $footerbar-background-color;
 
   .footerbar {
-    font-size: 13px;
-    font-family: Lato, sans-serif;
+    font-size: $footerbar_font-size;
     text-align: center;
     padding: 20px 0 20px;
     line-height: 30px;
 
     a {
       display: inline-block;
-      -webkit-transition: all 500ms ease;
-      -o-transition: all 500ms ease;
-      transition: all 500ms ease;
       text-decoration: none;
-      color: $footerbar-color;
+      color: $footerbar_font-color;
       &:hover {
-        color: #FFF
+        color: $white;
       }
 
       &#footer_mobile, &#footer_copyright, &#footer_tc, &#footer_privacy, #footer_help {
@@ -39,7 +35,7 @@
         width: 100%;
         border: none;
         text-indent: -9999px;
-        background-image: url('../images/affinity-churchinsight-logo.png');
+        background-image: url('../images/churchinsight-logo.png');
         background-size: 158px 28px;
         background-repeat: no-repeat;
         background-position: center center;
@@ -48,17 +44,17 @@
         margin-bottom: 10px;
 
         &.footer:hover {
-          background-image: url('../images/affinity-churchinsight-logo-hover.png');
+          background-image: url('../images/churchinsight-logo-hover.png');
         }
       }
     }
     span#footer_charity {
       float: right;
       width: 100%;
-      color: $footerbar-color;
+      color: $footerbar_font-color;
     }
 
-    @media only screen and (min-width: $breakpoint-md) {
+    @include susy-breakpoint($breakpoint-md) {
 
       padding: 25px 0 0;
 
@@ -73,7 +69,7 @@
           content: "|";
           padding-left: 10px;
           margin-right: 10px;
-          color: $footerbar-color;
+          color: $footerbar_font-color;
         }
 
       }

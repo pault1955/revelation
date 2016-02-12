@@ -16,76 +16,92 @@ $susy: (
 
 
 
-$breakpoint_ti: 467px;
+$breakpoint_mo: 467px;
 $breakpoint-sm: 768px;
 $breakpoint-md: 992px;
 $breakpoint-lg: 1200px;
 
 
-$default_font-family : 'Open Sans', Arial, sans-serif;
-$default_font-color  : #4d4d4d;
-$default_font-size   : 14px;
-$default_line-height : 18px;
-
 //Add Color Palette
 $blue       : #063642;
-$green      : #45B29D;
-$yellow     : #EFC94C;
-$orange     : #E27A3F;
-$red        : #DF4848;
-$pink       : #CD0069;
-$purple     : #6C71C4;
-$dark       : #000000;
-$light      : #FFFFFF;
-
-$backgroundColor    : $light;
-$typeDefault        : $dark;
-$navBackground      : $blue;
-$navForeground      : $light;
-$navHover           : $yellow;
-$navBrandBg         : $red;
-$headersubbg        : $dark;
+$blue-light : #5c9cc9;
+$blue-link  : #0db0d9;
+$border-grey : #555555;
+$dark-grey  : #4D4D4D;
+$darker-grey  : #3a3a3a;
+$light-grey: #c6c6c6;
+$white      : #FFFFFF;
 
 //Font variables
-$fontfamily       : 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
 $thin     : 200;
 $normal   : 400;
 $bold     : 600;
 $heavy    : 800;
 
-$headFont   : $thin 1.5em/1.5em $fontfamily;
-$mainFont   : $thin 1em/1.5em $fontfamily;
-$headColor  : lighten($blue, 20);
+// site defaults
+$default_font-family : Lato, Arial, sans-serif;
+$default_font-color  : $dark-grey;
+$default_font-size   : 1.6rem;
+$default_line-height : $default_font-size + 0.4rem;
+
+$default_link_color: $blue-link;
+$default_link-color--hover : lighten($blue, 30);
+
 
 // ======================================
 //  affinity footerbar
 // ======================================
 
-$footerbar-background-color: #4d4d4d;
-$footerbar-color: #b1b1b1;
+$footerbar_background-color: $darker-grey;
+$footerbar_font-color: #b1b1b1;
+$footerbar_font-size: 1.3rem;
+
+
+// ======================================
+//  affinity footertop-1
+// ======================================
+
+$footertop1_background-color: $blue-light;
+
+
+// ======================================
+//  affinity footertop-2
+// ======================================
+
+$footertop2_background-color: $darker-grey;
+$footertop2_font-color: $light-grey;
+$footertop2_font-color-link: $light-grey;
+
+$footertop2_search_button-background-color: $blue-light;
+$footertop2_search_button-background-color--hover: lighten($blue-light, 20%);
+$footertop2_search_button-color: $white;
+
 
 // ======================================
 //  affinity system
 // ======================================
 
-$system_calendar_day_header-color: #4d4d4d;
+
+$system_sitebutton_border-color: $blue-light;
+$system_sitebutton_color: $blue-light;
+
+$system_calendar_day_header-color: $dark-grey;
 $system_calendar_day_header-border-color: #43525a;
 $system_calendar_day_header-background-color: #f6f6f6;
-$system_calendar_day_wrapper_today-background-color: #fff;
-$system_calendar_calendar_day_today-background-color: #fff;
-$system_calendar_event_all_day-background-color: #fff;
-$system_calendar_other_month-background-color: #fff;
+$system_calendar_day_wrapper_today-background-color: $white;
+$system_calendar_calendar_day_today-background-color: $white;
+$system_calendar_event_all_day-background-color: $white;
+$system_calendar_other_month-background-color: $white;
 
 
 $system_profile-background-color: #eef7fb;
 
 $system_tabSelected-background-color: #eef7fb;
 $system_tabSelected-border-color: #eef7fb;
-$system_tabLeft-color: #fff;
-$system_tabLeft-border-color: #fff;
-$system_tabRight-color: #fff;
-$system_tabRight-border-color: #fff;
+$system_tabLeft-color: $white;
+$system_tabLeft-border-color: $white;
+$system_tabRight-color: $white;
+$system_tabRight-border-color: $white;
 $system_tabLink-color: #0cc;
 $system_tabLink-background-color: #f7fbfd;
 $system_tabLink-color--hover: #0CC;
@@ -101,37 +117,37 @@ $system_my_area_navigation-background-color: #999;
 $system_griditem-background-color: #eef7fb;
 $system_comment_form_button-background-color: transparent;
 $system_comment_form_button-border-color: #d1d2d4;
-$system_comment_form_button-color: #4d4d4d;
+$system_comment_form_button-color: $dark-grey;
 $system_comment_form_button-background-color--hover: #5ac5c5;
 $system_comment_form_button-border-color--hover: #5ac5c5;
-$system_comment_form_button-color--hover: #fff;
+$system_comment_form_button-color--hover: $white;
 
 //  affinity system - media
 // ======================================
 
-$system_media_recording_title-color: #4d4d4d;
+$system_media_recording_title-color: $dark-grey;
 
 //  affinity system - rotas
 // ======================================
 
-$system_subMenu-color: #fff;
+$system_subMenu-color: $white;
 $system_subMenu-border-color: #0cc;
 $system_subMenu-background-color: #0cc;
 
 //  affinity system - address
 // ======================================
-$system_address_column-border-color: #fff;
-$system_address_user_details_cell-border-color: #fff;
+$system_address_column-border-color: $white;
+$system_address_user_details_cell-border-color: $white;
 $system_address_address_user_first_name-background-color: #f6f6f6;
 $system_address_address_family_title-background-color: #f6f6f6;
 
 
 //  affinity system - popup windows
 // ======================================
-$system_calendar_popup_window-color: #4d4d4d;
-$system_calendar_popup_window-background-color: #fff;
-$system_calendar_popup_window-title-background-color: #fff;
-$system_calendar_popup_window-table-background-color: #fff;
+$system_calendar_popup_window-color: $dark-grey;
+$system_calendar_popup_window-background-color: $white;
+$system_calendar_popup_window-title-background-color: $white;
+$system_calendar_popup_window-table-background-color: $white;
 $system_calendar_day_header-border-color: #43525a;
 
 
