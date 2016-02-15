@@ -2,14 +2,7 @@ $(document).ready(function () {
 
   'use strict';
 
-  //add classes
-
-  $('ul.root_menu > li:first-child').addClass('first first_item');
-  $('ul.root_menu > li:last-child').addClass('last last_item');
-
-
-
-  /* remove sub menus from Home   */
+   /* remove sub menus from Home   */
 
   $('ul.root_menu > li.has_sub_menu:first-child > ul.sub_menu').remove();
 

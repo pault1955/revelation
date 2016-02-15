@@ -2,7 +2,7 @@
 // slice footertop
 // ======================================
 
-// ======================================
+
 // slice footertop layout
 // ======================================
 
@@ -14,18 +14,19 @@
   @include span(12);
 }
 
+
 @include susy-breakpoint($breakpoint-sm) {
 
   .contact-column {
-    @include span(8);
+    @include span(12);
   }
 
   .login-column {
-    @include span(4);
+    @include span(6);
   }
 
   .search-column {
-    @include span(12);
+    @include span(6);
   }
 
 }
@@ -38,6 +39,7 @@
 
   .login-column {
     @include span(4);
+    @include prefix(1);
   }
 
   .search-column {
@@ -46,7 +48,7 @@
 
 }
 
-// ======================================
+
 // slice footertop-1 styles
 // ======================================
 
@@ -70,10 +72,10 @@
     line-height: 65px;
     display: inline-block;
 
-      img {
-        vertical-align: middle;
-        display: inline-block;
-      }
+    img {
+      vertical-align: middle;
+      display: inline-block;
+    }
 
     &:nth-child(2) {
       margin: 0 10%;
@@ -82,11 +84,11 @@
     &:hover {
       opacity: 0.7;
     }
-}
+  }
 
 }
 
-// ======================================
+
 // slice footertop-2 styles
 // ======================================
 
@@ -99,27 +101,38 @@
   }
 
   .container {
-    padding-top: 52px;
+    padding-top: 32px;
     padding-bottom: 37px;
     border-bottom: 1px solid $border-grey;
 
-    .contact-column {
-      line-height: 25px;
-    }
+    .footer-column {
+      padding-top: 20px;
 
+      &.contact-column {
+        line-height: 25px;
+        text-align: center;
 
-    .search-column {
-        // width: 232px;
-        // margin: 0 auto;
+        @include susy-breakpoint($breakpoint-md){
 
-        @media (min-width: $breakpoint-sm) {
-
-          width: 300px;
+          text-align: left;
 
         }
+      }
 
-        @media (min-width: $breakpoint-md) {
+      &.search-column {
+        text-align: center;
 
+        > div {
+          margin:0 auto;
+          width: 242px;
+
+          @include susy-breakpoint($breakpoint-sm){
+            width: 270px;
+          }
+
+          @include susy-breakpoint($breakpoint-md) {
+            float: right;
+          }
         }
 
         .search_title {
@@ -128,12 +141,12 @@
 
         .search_div {
 
-          @media (min-width: $breakpoint-sm) {
+          @include susy-breakpoint($breakpoint-sm) {
 
             margin-left: 30px;
           }
 
-          @media (min-width: $breakpoint-md) {
+          @include susy-breakpoint($breakpoint-md) {
 
             margin-left: 35px;
           }
@@ -186,9 +199,9 @@
           outline: none
         }
 
+      }
 
     }
 
   }
-
 }

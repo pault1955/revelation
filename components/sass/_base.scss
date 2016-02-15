@@ -98,11 +98,11 @@ input, textarea {
 }
 
 input[type=button] {
-  -webkit-transform: all 500ms ease;
-  -moz-transform: all 500ms ease;
-  -ms-transform: all 500ms ease;
-  -o-transform: all 500ms ease;
-  transform: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
 .sitebutton {

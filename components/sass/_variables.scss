@@ -11,12 +11,15 @@ $susy: (
                 image: show-columns,
                 toggle: top right,
                 output: background
+        ),
+        use-custom: (
+          clearfix: false
         )
 );
 
 
 
-$breakpoint_mo: 467px;
+$breakpoint_ti: 467px;
 $breakpoint-sm: 768px;
 $breakpoint-md: 992px;
 $breakpoint-lg: 1200px;
@@ -29,7 +32,7 @@ $blue-link  : #0db0d9;
 $border-grey : #555555;
 $dark-grey  : #4D4D4D;
 $darker-grey  : #3a3a3a;
-$light-grey: #c6c6c6;
+$grey-light: #c6c6c6;
 $white      : #FFFFFF;
 
 //Font variables
@@ -46,6 +49,72 @@ $default_line-height : $default_font-size + 0.4rem;
 
 $default_link_color: $blue-link;
 $default_link-color--hover : lighten($blue, 30);
+
+
+// ======================================
+//  site logo & site name
+// ======================================
+
+$site_logo_name-height: auto;
+$site_logo-margin-top: 15px;
+$site_logo-font-size: 2.6rem;
+$site_logo-max-width: 80%;
+$site_logo-color: $blue;
+$site_name-margin-bottom: 75px;
+
+
+// ======================================
+//  nav - dropdown menu
+// ======================================
+
+// $nav_container-max-width: 960px;
+// $nav_container-width: 820px;
+$nav_background-color: $white;
+$nav_link-color: $default_link_color;
+$nav_link-color--hover: $default_link_color--hover;
+$nav_link-font-size: 1.8rem;
+$nav_link-font-weight: $normal;
+$nav_link-background-color: $grey-light;
+$nav_link-background-color--hover: transparent;
+$nav_link_top-margin-top: 4px;
+$nav_link_home-margin-top: 0;
+
+$nav_dropdown_link-font-size: 1.4rem;
+$nav_dropdown_link-background-color: $grey-light;
+$nav_dropdown_link-color: $default_font-color;
+$nav_dropdown_link-color--hover: $default_link-color--hover;
+$nav_dropdown_link-background-color--hover: $grey-light;
+$nav_dropdown-background-color: $grey-light;
+$nav_dropdown-color: $default_link_color;
+$nav_dropdown-background-color--hover: $grey-light;
+$nav_dropdown-color--hover: $default_link_color--hover;
+
+// ======================================
+//  affinity slicknav mobile menu
+// ======================================
+
+$slicknav_button-menu-color: $white;
+$slicknav_button-text-shadow: rgba(255, 255, 255, 0.75);
+$slicknav_button-background-color: transparent ;
+$slicknav_button-background-color--open: transparent;
+$slicknav-color: $white;
+$slicknav-text-shadow: $white;
+$slicknav-header-background-color: $blue;
+$slicknav-top-level-background-color: $blue;
+$slicknav-background-color: $blue-light;
+$slicknav-background-color--hover: transparent;
+$slicknav-color--hover: darken($blue-light,15);
+$slicknav-color--open: $slicknav-color;
+$slicknav-background--open: transparent;
+$slicknav-background--open--hover: $blue-light;
+$slicknav-toplink-background-color--open: lighten($blue-light,10);
+$slicknav-toplink-color--open: $slicknav-color;
+$slicknav-font-size: $default_font-size;
+$slicknav-submenu-font-size: $default_font-size -3px;
+$slicknav_sub_menu-background-color: lighten($blue-light,20);
+$slicknav-link-border-color: $blue;
+$slicknav-background-parent--collapsed: lighten($blue-light,20);
+$slicknav-background-parent--open: $blue-light;
 
 
 // ======================================
@@ -69,8 +138,8 @@ $footertop1_background-color: $blue-light;
 // ======================================
 
 $footertop2_background-color: $darker-grey;
-$footertop2_font-color: $light-grey;
-$footertop2_font-color-link: $light-grey;
+$footertop2_font-color: $grey-light;
+$footertop2_font-color-link: $grey-light;
 
 $footertop2_search_button-background-color: $blue-light;
 $footertop2_search_button-background-color--hover: lighten($blue-light, 20%);
@@ -84,6 +153,18 @@ $footertop2_search_button-color: $white;
 
 $system_sitebutton_border-color: $blue-light;
 $system_sitebutton_color: $blue-light;
+
+//  affinity system - statusbar
+// ======================================
+
+$system_statusbar_link_border-color: $border-grey;
+$system_statusbar_link_color: $grey-light;
+
+$system_statusbar_loginbox_border-color: $blue-light;
+
+
+//  affinity system - calendar
+// ======================================
 
 $system_calendar_day_header-color: $dark-grey;
 $system_calendar_day_header-border-color: #43525a;
