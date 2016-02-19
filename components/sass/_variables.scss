@@ -29,10 +29,13 @@ $breakpoint-lg: 1200px;
 $blue       : #063642;
 $blue-light : #5c9cc9;
 $blue-link  : #0db0d9;
-$border-grey : #555555;
-$dark-grey  : #4D4D4D;
-$darker-grey  : #3a3a3a;
+$grey-border : #555555;
+$grey-line : #f2f2f5;
+$grey-mid: #424242;
+$grey-dark  : #4D4D4D;
+$grey-darker  : #3a3a3a;
 $grey-light: #c6c6c6;
+$purple-dark  : #0067b0;
 $white      : #FFFFFF;
 
 //Font variables
@@ -43,9 +46,9 @@ $heavy    : 800;
 
 // site defaults
 $default_font-family : Lato, Arial, sans-serif;
-$default_font-color  : $dark-grey;
-$default_font-size   : 1.6rem;
-$default_line-height : $default_font-size + 0.4rem;
+$default_font-color  : $grey-dark;
+$default_font-size   : 0.625rem;
+$default_line-height : $default_font-size + 0.2rem;
 
 $default_link_color: $blue-link;
 $default_link-color--hover : lighten($blue, 30);
@@ -57,6 +60,7 @@ $default_link-color--hover : lighten($blue, 30);
 
 $site_logo_name-height: auto;
 $site_logo-margin-top: 15px;
+$site_logo-margin-bottom: 10px;
 $site_logo-font-size: 2.6rem;
 $site_logo-max-width: 80%;
 $site_logo-color: $blue;
@@ -67,30 +71,28 @@ $site_name-margin-bottom: 75px;
 //  nav - dropdown menu
 // ======================================
 
-// $nav_container-max-width: 960px;
-// $nav_container-width: 820px;
-$nav_background-color: $white;
-$nav_link-color: $default_link_color;
-$nav_link-color--hover: $default_link_color--hover;
-$nav_link-font-size: 1.8rem;
+$nav_background-color: transparent;
+$nav_link-color: $grey-mid;
+$nav_link-color--hover: lighten($blue-light,40);
+$nav_link-font-size: 1.6rem;
 $nav_link-font-weight: $normal;
-$nav_link-background-color: $grey-light;
-$nav_link-background-color--hover: transparent;
+$nav_link-background-color: $blue-light;
+$nav_link-background-color--hover: darken($blue-light, 10);
 $nav_link_top-margin-top: 4px;
 $nav_link_home-margin-top: 0;
 
 $nav_dropdown_link-font-size: 1.4rem;
-$nav_dropdown_link-background-color: $grey-light;
-$nav_dropdown_link-color: $default_font-color;
-$nav_dropdown_link-color--hover: $default_link-color--hover;
-$nav_dropdown_link-background-color--hover: $grey-light;
-$nav_dropdown-background-color: $grey-light;
+$nav_dropdown_link-background-color: $blue-light;
+$nav_dropdown_link-color: $white;
+$nav_dropdown_link-color--hover: darken($blue-light,40);
+$nav_dropdown_link-background-color--hover: darken($blue-light,50);
+$nav_dropdown-background-color: $blue-light;
 $nav_dropdown-color: $default_link_color;
 $nav_dropdown-background-color--hover: $grey-light;
 $nav_dropdown-color--hover: $default_link_color--hover;
 
 // ======================================
-//  affinity slicknav mobile menu
+//  slicknav mobile menu
 // ======================================
 
 $slicknav_button-menu-color: $white;
@@ -116,28 +118,45 @@ $slicknav-link-border-color: $blue;
 $slicknav-background-parent--collapsed: lighten($blue-light,20);
 $slicknav-background-parent--open: $blue-light;
 
+// ======================================
+//  slice banner slideshow
+// ======================================
+$banner_slideshow-background-color: $white;
+$banner_slideshow_pager-background-color: $grey-light;
+$banner_slideshow_pager-background-color--active: $purple-dark;
+$banner_slideshow_pager-width-height: 14px;
+$banner_slideshow_control-background-color: $white;
+$banner_slideshow_slidetitle-font-family: $default_font-family;
 
 // ======================================
-//  affinity footerbar
+//  slice blocks 2
 // ======================================
 
-$footerbar_background-color: $darker-grey;
+$block2-color: $grey-mid;
+$block2-title-color: $purple-dark;
+
+
+// ======================================
+//  slice footerbar
+// ======================================
+
+$footerbar_background-color: $grey-darker;
 $footerbar_font-color: #b1b1b1;
 $footerbar_font-size: 1.3rem;
 
 
 // ======================================
-//  affinity footertop-1
+//  slice footertop-1
 // ======================================
 
 $footertop1_background-color: $blue-light;
 
 
 // ======================================
-//  affinity footertop-2
+//  slice footertop-2
 // ======================================
 
-$footertop2_background-color: $darker-grey;
+$footertop2_background-color: $grey-darker;
 $footertop2_font-color: $grey-light;
 $footertop2_font-color-link: $grey-light;
 
@@ -147,26 +166,26 @@ $footertop2_search_button-color: $white;
 
 
 // ======================================
-//  affinity system
+//  system
 // ======================================
 
 
 $system_sitebutton_border-color: $blue-light;
 $system_sitebutton_color: $blue-light;
 
-//  affinity system - statusbar
+//  system - statusbar
 // ======================================
 
-$system_statusbar_link_border-color: $border-grey;
+$system_statusbar_link_border-color: $grey-border;
 $system_statusbar_link_color: $grey-light;
 
 $system_statusbar_loginbox_border-color: $blue-light;
 
 
-//  affinity system - calendar
+//  system - calendar
 // ======================================
 
-$system_calendar_day_header-color: $dark-grey;
+$system_calendar_day_header-color: $grey-dark;
 $system_calendar_day_header-border-color: #43525a;
 $system_calendar_day_header-background-color: #f6f6f6;
 $system_calendar_day_wrapper_today-background-color: $white;
@@ -192,30 +211,30 @@ $system_shadedBox-background-color: #eef7fb;
 
 $system_my_area_navigation-background-color: #999;
 
-//  affinity system - forums
+//  system - forums
 // ======================================
 
 $system_griditem-background-color: #eef7fb;
 $system_comment_form_button-background-color: transparent;
 $system_comment_form_button-border-color: #d1d2d4;
-$system_comment_form_button-color: $dark-grey;
+$system_comment_form_button-color: $grey-dark;
 $system_comment_form_button-background-color--hover: #5ac5c5;
 $system_comment_form_button-border-color--hover: #5ac5c5;
 $system_comment_form_button-color--hover: $white;
 
-//  affinity system - media
+//  system - media
 // ======================================
 
-$system_media_recording_title-color: $dark-grey;
+$system_media_recording_title-color: $grey-dark;
 
-//  affinity system - rotas
+//  system - rotas
 // ======================================
 
 $system_subMenu-color: $white;
 $system_subMenu-border-color: #0cc;
 $system_subMenu-background-color: #0cc;
 
-//  affinity system - address
+//  system - address
 // ======================================
 $system_address_column-border-color: $white;
 $system_address_user_details_cell-border-color: $white;
@@ -223,9 +242,9 @@ $system_address_address_user_first_name-background-color: #f6f6f6;
 $system_address_address_family_title-background-color: #f6f6f6;
 
 
-//  affinity system - popup windows
+//  system - popup windows
 // ======================================
-$system_calendar_popup_window-color: $dark-grey;
+$system_calendar_popup_window-color: $grey-dark;
 $system_calendar_popup_window-background-color: $white;
 $system_calendar_popup_window-title-background-color: $white;
 $system_calendar_popup_window-table-background-color: $white;

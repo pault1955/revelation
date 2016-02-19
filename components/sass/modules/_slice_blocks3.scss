@@ -1,0 +1,71 @@
+// ======================================
+// slice  3 blocks
+// ======================================
+
+// slice  3 blocks layout
+// ======================================
+.slice_blocks3 {
+
+  .blocks3 {
+
+    > div {
+      @include span(12);
+
+      @include susy-breakpoint($breakpoint-ti) {
+        @include span(6);
+
+        &:last-of-type {
+          margin-left: span(3 wide of 12);
+        }
+      }
+
+      @include susy-breakpoint($breakpoint-sm) {
+        @include span(4);
+
+        &:last-of-type {
+          margin-left:gutter(12);
+        }
+      }
+    }
+  }
+
+}
+
+// slice  3 blocks style
+// ======================================
+
+.slice_blocks3 {
+  .blocks3 {
+    > div {
+
+      .articleListImage {
+        img {
+          width:100%;
+        }
+
+      }
+
+      .articleListSummary {
+        font-size: 1.8rem;
+        line-height: 1.8rem + 0.5rem;
+        color: $grey-mid;
+        padding:15px 30px 25px !important;
+        border-bottom: 2px solid $grey-line;
+      }
+
+      .articleListTitle {
+
+        a {
+            font-size: 1.8rem;
+            color: #0067b0;
+          &:hover {
+            opacity:0.7;
+          }
+        }
+
+      }
+    }
+
+
+  }
+}

@@ -36,6 +36,7 @@
     text-align: center;
     height: $site_logo_name-height;
     margin-top: $site_logo-margin-top;
+    margin-bottom: $site_logo-margin-bottom;
   }
 
   .siteLogoName a {
@@ -80,76 +81,85 @@
     list-style-type: none;
   }
 
-  .root_menu > li {
-    float: left;
-    position: relative;
-    margin-top: $nav_link_top-margin-top;
-  }
+  .root_menu {
 
-  .root_menu > li > a {
-    padding: 9px 20px;
-  }
+    ul {
+      display: none;
+    }
 
-  .root_menu > li:first-child {
-    margin-top: $nav_link_home-margin-top;
-    margin-right: 15px;
-  }
+    li {
+      position: relative;
 
-   .root_menu > li:hover > a {
-    background-color: $nav_link-background-color--hover;
-    color: $nav_link-color--hover;
-  }
+      &:hover > ul {
+        display: block;
+      }
+    }
 
-   .root_menu > li ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: $nav_dropdown-background-color;
-    min-width: 210px;
-    padding: 7px 0;
-    z-index: 999;
-  }
+    > li {
+      float: left;
+      position: relative;
+      margin-top: $nav_link_top-margin-top;
 
-  .root_menu > li ul a {
-    color: $nav_dropdown_link-color;
-    font-size: $nav_dropdown_link-font-size;
-    font-weight: $nav_link-font-weight;
-    padding: 3px 23px;
-  }
+      > a {
+        padding: 9px 20px;
+      }
 
-  .root_menu > li li:hover > a {
-    color: $nav_dropdown_link-color--hover;
-  }
 
-  .root_menu > li ul ul {
-    top: -7px;
-    left: 100%;
-  }
+      ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: $nav_dropdown-background-color;
+        min-width: 210px;
+        padding: 7px 0;
+        z-index: 999;
 
-  .root_menu ul {
-    display: none;
-  }
+        a {
+          color: $nav_dropdown_link-color;
+          font-size: $nav_dropdown_link-font-size;
+          font-weight: $nav_link-font-weight;
+          padding: 3px 23px;
+        }
 
-  .root_menu ul li {
-    position: relative;
-  }
+        ul {
+          top: -7px;
+          left: 100%;
+        }
 
-  .root_menu li:hover > ul {
-    display: block;
+        li.has_sub_menu:before {
+          content: ">";
+          position: absolute;
+          right: 8px;
+          top: 0;
+          line-height: 30px;
+          height: 30px;
+        }
+
+
+
+      }
+
+
+      &:hover > a {
+        background-color: $nav_link-background-color--hover;
+        color: $nav_link-color--hover;
+      }
+
+      li:hover > a {
+        color: $nav_dropdown_link-color--hover;
+      }
+
+
+
+
+    }
+
   }
 
   #mobile_menu {
     display: none
   }
 
-  .root_menu li li.has_sub_menu:before {
-    content: ">";
-    position: absolute;
-    right: 8px;
-    top: 0;
-    line-height: 30px;
-    height: 30px;
-  }
 
   /* ==========================================================================
      Slicknav
@@ -173,7 +183,7 @@
     *zoom: 1;
     .slicknav_menutxt {
       display: block;
-      line-height: $default_font-size;
+      line-height: $default_font-size + 0.5rem;
       float: left;
     }
     .slicknav_icon {
@@ -379,7 +389,8 @@
   @media only screen and (min-width: $breakpoint-sm) {
     .navbar {
       display: block;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
+      margin-top: 0;
     }
     .siteLogo img {
       max-width: $site_logo-max-width * 1.2;
@@ -398,7 +409,7 @@
   @media only screen and (min-width: $breakpoint-sm) {
 
     .siteLogoName {
-      margin-top: $site_logo-margin-top + 20px;
+      margin-top: $site_logo-margin-top + 15px;
     }
 
     nav a {
@@ -408,7 +419,6 @@
     .root_menu {
       padding-left: 0;
       margin: 0 auto;
-     // width: $nav_container-width;
 
       & > li > a {
         padding: 9px 10px;
@@ -416,14 +426,19 @@
     }
   }
 
-  @media only screen and (min-width: $breakpoint-lg) {
+  @media only screen and (min-width: $breakpoint-md) {
 
-    nav a {
-      font-size: $nav_link-font-size * 1.2;
+
+    .navbar {
+      margin-top: 32px;
+
+      a {
+        font-size: $nav_link-font-size + 0.2rem;
+      }
     }
 
     .root_menu > li ul a {
-      font-size: $nav_dropdown_link-font-size * 1;
+      font-size: $nav_dropdown_link-font-size;
     }
 
   }
