@@ -35,8 +35,31 @@
 // ======================================
 
 .slice_blocks3 {
+  @include clearfix;
+  padding: 56px 0 60px;
+
+
+  .blockTitle {
+    font-size: 3.6rem;
+    line-height: 3.6rem + 0.5rem;
+    color: $purple-dark;
+    text-align: center;
+    padding: 0 0 40px;
+  }
+
+  background-color: $grey-line;
   .blocks3 {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
     > div {
+
+      display: flex;
+      flex-direction: column;
+      background-color: $white;
 
       .articleListImage {
         img {
@@ -51,16 +74,31 @@
         color: $grey-mid;
         padding:15px 30px 25px !important;
         border-bottom: 2px solid $grey-line;
+        flex: 1 0 auto;
       }
 
       .articleListTitle {
 
         a {
-            font-size: 1.8rem;
-            color: #0067b0;
+          font-size: 1.8rem;
+          color: $purple-dark;
+          padding: 18px 30px;
+          display: inline-block;
           &:hover {
-            opacity:0.7;
+            opacity: 0.7;
           }
+
+        }
+        &:after {
+          content:".";
+          display: inline-block;
+          background: url(../images/moreArrow.png) no-repeat 0 3px;
+          width: 10px;
+          height: auto;
+          color: $grey-line;
+          margin-right: 30px;
+          margin-left: 80px;
+          text-indent: -9999px;
         }
 
       }

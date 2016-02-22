@@ -8,9 +8,9 @@ $susy: (
         output: overlay,
         global-box-sizing: border-box,
         debug: (
-                image: show-columns,
-                toggle: top right,
-                output: background
+               // image: show-columns,
+             //   toggle: top right,
+             //   output: background
         ),
         use-custom: (
           clearfix: false
@@ -53,6 +53,7 @@ $default_line-height : $default_font-size + 0.2rem;
 $default_link_color: $blue-link;
 $default_link-color--hover : lighten($blue, 30);
 
+$default_background-color: $white;
 
 // ======================================
 //  site logo & site name
