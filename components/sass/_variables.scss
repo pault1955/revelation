@@ -55,6 +55,9 @@ $default_link-color--hover : lighten($blue, 30);
 
 $default_background-color: $white;
 
+$default_button-background-color: $blue-light;
+$default_button-color: $white;
+
 // ======================================
 //  site logo & site name
 // ======================================
@@ -82,7 +85,7 @@ $nav_link-background-color--hover: darken($blue-light, 10);
 $nav_link_top-margin-top: 4px;
 $nav_link_home-margin-top: 0;
 
-$nav_dropdown_link-font-size: 1.4rem;
+$nav_dropdown_link-font-size: 1.6rem;
 $nav_dropdown_link-background-color: $blue-light;
 $nav_dropdown_link-color: $white;
 $nav_dropdown_link-color--hover: darken($blue-light,40);
@@ -114,7 +117,7 @@ $slicknav-toplink-background-color--open: lighten($blue-light,10);
 $slicknav-toplink-color--open: $slicknav-color;
 $slicknav-font-size: $default_font-size;
 $slicknav-submenu-font-size: $default_font-size -3px;
-$slicknav_sub_menu-background-color: lighten($blue-light,20);
+$slicknav_sub_menu-background-color: lighten($blue-light,5);
 $slicknav-link-border-color: $blue;
 $slicknav-background-parent--collapsed: lighten($blue-light,20);
 $slicknav-background-parent--open: $blue-light;

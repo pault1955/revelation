@@ -10,12 +10,19 @@
 
     > div {
       @include span(12);
+      margin-bottom: 40px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
 
       @include susy-breakpoint($breakpoint-ti) {
         @include span(6);
 
         &:last-of-type {
           margin-left: span(3 wide of 12);
+          margin-top: 40px;
+          margin-bottom: 40px;
         }
       }
 
@@ -24,6 +31,8 @@
 
         &:last-of-type {
           margin-left:gutter(12);
+          margin-top: 0;
+
         }
       }
     }
@@ -82,7 +91,7 @@
         a {
           font-size: 1.8rem;
           color: $purple-dark;
-          padding: 18px 30px;
+          padding: 18px 10px 18px 30px;
           display: inline-block;
           &:hover {
             opacity: 0.7;
@@ -91,14 +100,21 @@
         }
         &:after {
           content:".";
-          display: inline-block;
-          background: url(../images/moreArrow.png) no-repeat 0 3px;
-          width: 10px;
-          height: auto;
+          display: block;
+          float: right;
+          background: url(../images/moreArrow.png) no-repeat 0 13px;
+          width: 30px;
+          height: 40px;
           color: $grey-line;
-          margin-right: 30px;
-          margin-left: 80px;
+          // margin-right: 30px;
+          // margin-left: 80px;
           text-indent: -9999px;
+
+          @include susy-breakpoint($breakpoint-sm) {
+            & {
+              background-position: 0px 22px;
+            }
+          }
         }
 
       }

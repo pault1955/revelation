@@ -9,6 +9,7 @@
   "author": "Paul Tostevin",
   "devDependencies": {
     "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-browserify": "^0.5.0",
     "gulp-compass": "^1.2.0",
     "gulp-concat": "^2.3.4",

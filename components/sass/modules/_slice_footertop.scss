@@ -111,6 +111,7 @@
       &.contact-column {
         line-height: 25px;
         text-align: center;
+        font-size: 1.6rem;
 
         @include susy-breakpoint($breakpoint-md){
 

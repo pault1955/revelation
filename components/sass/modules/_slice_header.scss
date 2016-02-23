@@ -74,7 +74,7 @@
     -o-transition: background-color 400ms ease;
     transition: background-color 400ms ease;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 
   nav ul {
@@ -128,6 +128,7 @@
 
         li.has_sub_menu:before {
           content: ">";
+          color: #fff;
           position: absolute;
           right: 8px;
           top: 0;
@@ -296,9 +297,9 @@
       margin: 0;
     }
     .slicknav_row {
-      padding: 8px 10px;
+      padding: 10px;
       margin: 0;
-      background: $slicknav-background-color;
+      // background: $slicknav-background-color;
       &:hover {
         background: $slicknav-background-color;
         color: $slicknav-color;
@@ -309,9 +310,10 @@
     }
 
     a {
-      padding: 5px 10px;
+      padding: 10px;
       margin: 2px 0px;
       text-decoration: none;
+      font-size: 1.6rem;
       color: $slicknav-color;
       &:hover {
         background: $slicknav-background-color--hover;
@@ -352,7 +354,7 @@
 
   .slicknav_open > ul {
     background: $slicknav_sub_menu-background-color;
-    // padding-left: 12px;
+    padding-left: 12px;
 
     li a {
       padding-left: 12px;
@@ -380,7 +382,7 @@
 
 
   .slicknav_nav  ul .slicknav_parent.slicknav_collapsed > .slicknav_row {
-    background-color: $slicknav-background-parent--collapsed;
+    // background-color: $slicknav-background-parent--collapsed;
   }
   .slicknav_nav  ul .slicknav_parent.slicknav_open > .slciknav_row {
     background-color: $slicknav-background-parent--open;

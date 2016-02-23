@@ -24,56 +24,60 @@
   padding: 0 0 60px;
   background-color: $white;
 
+  .container {
 
-  .blocks4 {
-
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    .iconBlock {
-
+    .blocks4 {
+      text-align: center;
       display: flex;
-      flex-direction: column;
-      background-color: $white;
-      margin-top: 50px;
+      justify-content: space-between;
+      flex-wrap: wrap;
 
-      .iconBlockImage {
+      .iconBlock {
+
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        margin-top: 50px;
         flex: 1 0 auto;
-        img {
-          width: initial;
+
+        .iconBlockImage {
+          flex: 1 0 auto;
+          min-height: 65px;
+          img {
+            width: initial;
+          }
+
+        }
+        .iconBlockTitle {
+          flex: 1 0 auto;
+          font-size: 2rem;
+          line-height: 2rem + 0.4rem;
+          color: #0067b0;
+          padding: 10px 15px;
+
         }
 
-      }
-      .iconBlockTitle {
-        flex: 1 0 auto;
-        font-size: 2rem;
-        line-height: 2rem + 0.4rem;
-        color: #0067b0;
-        padding: 18px 15px;
-
-      }
-
-      .iconBlockSummary {
-        font-size: 1.6rem;
-        line-height: 1.6rem + 0.4rem;
-        color: $grey-mid;
-        padding: 15px 30px 25px !important;
-        flex: 1 0 auto;
-      }
-
-      .iconBlockLink a {
-        font-size: 1.5rem;
-        color: $purple-dark;
-        padding: 14px 30px 18px;
-        &:hover {
-          opacity: 0.7;
+        .iconBlockSummary {
+          font-size: 1.6rem;
+          line-height: 1.6rem + 0.4rem;
+          color: $grey-mid;
+          padding: 10px 30px 20px !important;
+          flex: 1 0 auto;
         }
 
+        .iconBlockLink a {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+          color: $purple-dark;
+          padding: 14px 0 18px;
+          flex: 1 0 auto;
+          &:hover {
+            opacity: 0.7;
+          }
+
+        }
       }
+
     }
-
   }
 }
-
