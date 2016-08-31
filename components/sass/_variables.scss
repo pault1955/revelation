@@ -3,14 +3,14 @@
 $susy: (
         columns: 12,
         container: 1170px,
-        gutters: 40px/98px,
+        gutters: 30px/67px, // 67px columns, 30px gutters
         gutter-position: split,
         output: overlay,
         global-box-sizing: border-box,
         debug: (
-               // image: show-columns,
-             //   toggle: top right,
-             //   output: background
+                image: show-columns,
+                toggle: top right,
+                output: background
         ),
         use-custom: (
           clearfix: false
@@ -26,37 +26,44 @@ $breakpoint-lg: 1200px;
 
 
 //Add Color Palette
-$blue       : #063642;
+$blue       : #129dc0;
 $blue-light : #5c9cc9;
-$blue-link  : #0db0d9;
+$link       : #129dc0;
+$link-hover : #4acfc7;
+$grey-dark  : #2b4049;
+$grey-light : #f5f5f5;
+$white      : #FFFFFF;
+
 $grey-border : #555555;
 $grey-line : #f2f2f5;
 $grey-mid: #424242;
-$grey-dark  : #4D4D4D;
+
 $grey-darker  : #3a3a3a;
-$grey-light: #c6c6c6;
+
 $purple-dark  : #0067b0;
-$white      : #FFFFFF;
+
 
 //Font variables
 $thin     : 200;
 $normal   : 400;
-$bold     : 600;
+$bold     : 700;
 $heavy    : 800;
 
 // site defaults
 $default_font-family : Lato, Arial, sans-serif;
+$default_font-family-2 : Montserrat, Arial, sans-serif;
 $default_font-color  : $grey-dark;
 $default_font-size   : 0.625rem;
 $default_line-height : $default_font-size + 0.2rem;
 
-$default_link_color: $blue-link;
-$default_link-color--hover : lighten($blue, 30);
+$default_link_color: $link;
+$default_link-color--hover : $link-hover;
 
 $default_background-color: $white;
 
-$default_button-background-color: $blue-light;
+$default_button-background-color: #129dc0;
 $default_button-color: $white;
+
 
 // ======================================
 //  site logo & site name
@@ -65,9 +72,9 @@ $default_button-color: $white;
 $site_logo_name-height: auto;
 $site_logo-margin-top: 15px;
 $site_logo-margin-bottom: 10px;
-$site_logo-font-size: 2.6rem;
+$site_logo-font-size: 2.2rem;
 $site_logo-max-width: 80%;
-$site_logo-color: $blue;
+$site_logo-color: #2c4048;
 $site_name-margin-bottom: 75px;
 
 
@@ -99,19 +106,19 @@ $nav_dropdown-color--hover: $default_link_color--hover;
 //  slicknav mobile menu
 // ======================================
 
-$slicknav_button-menu-color: $white;
+$slicknav_button-menu-color: #5acfc6;
 $slicknav_button-text-shadow: rgba(255, 255, 255, 0.75);
 $slicknav_button-background-color: transparent ;
 $slicknav_button-background-color--open: transparent;
-$slicknav-color: $white;
-$slicknav-text-shadow: $white;
-$slicknav-header-background-color: $blue;
-$slicknav-top-level-background-color: $blue;
-$slicknav-background-color: $blue-light;
-$slicknav-background-color--hover: transparent;
-$slicknav-color--hover: darken($blue-light,15);
+$slicknav-color: $grey-dark;
+$slicknav-text-shadow: $grey-dark;
+$slicknav-header-background-color: transparent;
+$slicknav-top-level-background-color: transparent;
+$slicknav-background-color: transparent;
+$slicknav-background-color--hover: $white;
+$slicknav-color--hover: #129dc0;
 $slicknav-color--open: $slicknav-color;
-$slicknav-background--open: transparent;
+$slicknav-background--open: $grey-light;
 $slicknav-background--open--hover: $blue-light;
 $slicknav-toplink-background-color--open: lighten($blue-light,10);
 $slicknav-toplink-color--open: $slicknav-color;

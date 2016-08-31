@@ -7,6 +7,11 @@ html {
   font-size: 0.625em;
 }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;;
+}
 
 body {
   color: $default_font-color;
@@ -24,10 +29,6 @@ body {
  @include show-grid(12);
 }
 
-img {
- // width: 100%;
-}
-
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $default_font-family;
@@ -36,44 +37,50 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1 {
-  font-size: 48px;
-  line-height: 50px;
-  margin-top: 0;
+  font-size: 4.4rem;
+  line-height: 5rem;
+  font-weight: $bold;
 }
 
 h2 {
-  font-size: 42px;
-  line-height: 46px;
+  font-size: 4.2rem;
+  line-height: 4.8rem;
+  font-weight: $bold;
 }
 
 h3 {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: $blue;
 }
 
 h4 {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  font-weight: $bold;
 }
 
 h5 {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+
 }
 
 h6 {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 
 p {
 
+  font-size: 1.7em;
+  line-height: 2.4rem;
+
 }
 
 blockquote {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 a {
@@ -188,50 +195,53 @@ input[type="checkbox"] + label, input[type="radio"] +  label {
 @media (min-width: $breakpoint-sm) {
 
   body {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 
 
   h1 {
-    font-size: 48px;
-    line-height: 50px;
-    margin-top: 0;
+    font-size: 4.4rem;
+    line-height: 5rem;
+    font-weight: $bold;
   }
 
   h2 {
-    font-size: 42px;
-    line-height: 46px;
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    font-weight: $bold;
   }
 
   h3 {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: $blue;
   }
 
   h4 {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    font-weight: $bold;
   }
 
   h5 {
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.8rem;
+
   }
 
   h6 {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 
 
   p {
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
   }
 
   blockquote {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
 }
