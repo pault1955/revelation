@@ -61,7 +61,7 @@
 
   .bx-wrapper .bx-pager.bx-default-pager a:hover,
   .bx-wrapper .bx-pager.bx-default-pager a.active {
-    background: $purple-dark;
+    background: $banner_slideshow_pager-background-color;
   }
   .caption {
     position: absolute;
@@ -98,15 +98,15 @@
     margin-bottom: 20px;
     font-family: $banner_slideshow_slidetitle-font-family;
     font-size: 2rem;
-    color: $white;
+    color: #fff;
     line-height: 2rem + 0.5rem;
     font-weight: $bold;
     text-align: center;
     display: none;
   }
   .caption .slideButton {
-    color: $white;
-    border: 2px solid $white;
+    color: #fff;
+    border: 2px solid #fff;
     background-color: transparent;
     display: none;
     font-family: $banner_slideshow_slidetitle-font-family;
@@ -122,8 +122,8 @@
     text-decoration: none;
   }
   .caption .slideButton:hover {
-    background-color: $white;
-    color: $blue-light;
+    background-color: #fff;
+    opacity: 0.8;
   }
 
   @media (min-width: 480px) {

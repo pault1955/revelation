@@ -6,7 +6,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/jquery.bxslider.min.css">
-    <link rel="stylesheet" href="css/slicknav.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,7 +13,13 @@
 
 <header>
     <section class="slice_header">
-        <div id="mobile_nav"></div>
+        <div id="mobile_nav">
+            <div class="mobile-search" style="display: block;">
+                <a class=" header-link-block    " href="#search-window" >
+                    <img class="header-icon header-icon-search" src="/images/icon-search-mobile.png" alt="icon-search.png">
+                </a>
+            </div>
+        </div>
         <div class="header-wrapper">
             <div class="container">
                 <div class="nav navbar">
@@ -32,10 +37,7 @@
                             <div class="header-link">Search</div>
                         </a>
                     </div>
-                    <div class="logo-container logo-desktop">
-                        <span class="logo-icon"><a id="_ctl0__ctl0_cphBody__ctl5_hlSiteLogo" href="/"><img alt="" src="images/logo.png"/></a></span>
-		                <span class="logo-name"><a id="_ctl0__ctl0_cphBody__ctl6_hlName" href="/">Journey</a></span>
-                    </div>
+
 
                     <div class="search-block search-overlay" id="search-window">
                         <div class="container">
@@ -186,14 +188,11 @@
                 </div>
             </div>
         </div>
-        <div class="w-nav-brand logo-container logo-mobile">
-            <span class="logo-icon logo-icon-color">
-                <a href="/">
-                <img alt="" src="images/logo-large.png"/>
-                </a>
-            </span>
-
-        </div>
+        <div class="container">
+            <div class="logo-container">
+                <span class="logo-icon"><a id="_ctl0__ctl0_cphBody__ctl5_hlSiteLogo" href="/"><img alt="" src="images/logo.png"/></a></span>
+                <span class="logo-name"><a id="_ctl0__ctl0_cphBody__ctl6_hlName" href="/">Journey</a></span>
+            </div>
         </div>
     </section>
 </header>
@@ -216,11 +215,16 @@
 
         </ul>
     </div>
+    <div class="bx-wrapper-custom">
+        <span id="bx-prev-custom"><a class="bx-prev" href="">Prev</a></span>
+        <span id="bx-next-custom"><a class="bx-next" href="">Next</a></span>
+    </div>
 </section>
 
 
 </body>
 </html>
 <script src="js/jquery.min.js"></script>
-<script src="js/plugins.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
 <script src="js/script.js"></script>

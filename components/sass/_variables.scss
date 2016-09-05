@@ -17,30 +17,10 @@ $susy: (
         )
 );
 
-
-
 $breakpoint_ti: 467px;
 $breakpoint-sm: 768px;
 $breakpoint-md: 992px;
 $breakpoint-lg: 1200px;
-
-
-//Add Color Palette
-$blue       : #129dc0;
-$blue-light : #5c9cc9;
-$link       : #129dc0;
-$link-hover : #4acfc7;
-$grey-dark  : #2b4049;
-$grey-light : #f5f5f5;
-$white      : #FFFFFF;
-
-$grey-border : #555555;
-$grey-line : #f2f2f5;
-$grey-mid: #424242;
-
-$grey-darker  : #3a3a3a;
-
-$purple-dark  : #0067b0;
 
 
 //Font variables
@@ -52,92 +32,92 @@ $heavy    : 800;
 // site defaults
 $default_font-family : Lato, Arial, sans-serif;
 $default_font-family-2 : Montserrat, Arial, sans-serif;
-$default_font-color  : $grey-dark;
+$default_font-color  : #2b4049;
 $default_font-size   : 0.625rem;
 $default_line-height : $default_font-size + 0.2rem;
-
-$default_link_color: $link;
-$default_link-color--hover : $link-hover;
-
-$default_background-color: $white;
-
+$default_link_color: #129dc0;
+$default_link-color--hover : #4acfc7;
+$default_background-color: #fff;
 $default_button-background-color: #129dc0;
-$default_button-color: $white;
+$default_button-color: #fff;
 
 
 // ======================================
 //  site logo & site name
 // ======================================
 
-$site_logo_name-height: auto;
 $site_logo-margin-top: 15px;
 $site_logo-margin-bottom: 10px;
-$site_logo-font-size: 2.2rem;
-$site_logo-max-width: 80%;
-$site_logo-color: #2c4048;
-$site_name-margin-bottom: 75px;
+$site_name-font-size: 2.2rem;
+$site_name-color: #2b4049;
+
+// ======================================
+//  slicknav mobile menu
+// ======================================
+
+$slicknav_button-menu-color: #2c4048;
+$slicknav_button-text-shadow: none;
+$slicknav_button-background-color: transparent ;
+$slicknav_button-background-color--open: transparent;
+$slicknav_icon-menu-color: #2c4048;
+$slicknav_icon-menu-background-color: #5acfc6;
+
+$slicknav-color: #2b4049;
+$slicknav-text-shadow: none;
+$slicknav-header-background-color: transparent;
+$slicknav-top-level-background-color: #f5f5f5;
+$slicknav-background-color: #f5f5f5;
+$slicknav-background-color--hover: #fff;
+$slicknav-color--hover: #129dc0;
+$slicknav-color--open: $slicknav-color;
+$slicknav-background--open: #f5f5f5;
+$slicknav-background--open--hover: #fff;
+$slicknav-toplink-color--open: $slicknav-color;
+$slicknav-font-size: 1.5rem;
+$slicknav-submenu-font-size: $default_font-size -0.2rem;
+$slicknav_sub_menu-background-color: #f5f5f5;
+$slicknav-link-border-color: transparent;
+$slicknav-background-parent--collapsed: #f5f5f5;
+$slicknav-background-parent--open: #f5f5f5;
+
+// ======================================
+//  slice banner slideshow
+// ======================================
+$banner_slideshow-background-color: #fff;
+$banner_slideshow_pager-background-color: #f5f5f5;
+$banner_slideshow_pager-background-color--active: #4acfc7;
+$banner_slideshow_pager-width-height: 14px;
+$banner_slideshow_control-background-color: transparent;
+$banner_slideshow_slidetitle-font-family: $default_font-family-2;
+$banner_slideshow_slidetitle-font-size: 2.5rem;
+$banner_slideshow_slidetitle-color: #fff;
 
 
+/*
 // ======================================
 //  nav - dropdown menu
 // ======================================
 
 $nav_background-color: transparent;
 $nav_link-color: $grey-mid;
-$nav_link-color--hover: lighten($blue-light,40);
+$nav_link-color--hover: lighten(#129dc0,40);
 $nav_link-font-size: 1.6rem;
 $nav_link-font-weight: $normal;
-$nav_link-background-color: $blue-light;
-$nav_link-background-color--hover: darken($blue-light, 10);
+$nav_link-background-color: #129dc0;
+$nav_link-background-color--hover: darken(#129dc0, 10);
 $nav_link_top-margin-top: 4px;
 $nav_link_home-margin-top: 0;
 
 $nav_dropdown_link-font-size: 1.6rem;
-$nav_dropdown_link-background-color: $blue-light;
-$nav_dropdown_link-color: $white;
-$nav_dropdown_link-color--hover: darken($blue-light,40);
-$nav_dropdown_link-background-color--hover: darken($blue-light,50);
-$nav_dropdown-background-color: $blue-light;
+$nav_dropdown_link-background-color: #129dc0;
+$nav_dropdown_link-color: #fff;
+$nav_dropdown_link-color--hover: darken(#129dc0,40);
+$nav_dropdown_link-background-color--hover: darken(#129dc0,50);
+$nav_dropdown-background-color: #129dc0;
 $nav_dropdown-color: $default_link_color;
 $nav_dropdown-background-color--hover: $grey-light;
 $nav_dropdown-color--hover: $default_link_color--hover;
 
-// ======================================
-//  slicknav mobile menu
-// ======================================
-
-$slicknav_button-menu-color: #5acfc6;
-$slicknav_button-text-shadow: rgba(255, 255, 255, 0.75);
-$slicknav_button-background-color: transparent ;
-$slicknav_button-background-color--open: transparent;
-$slicknav-color: $grey-dark;
-$slicknav-text-shadow: $grey-dark;
-$slicknav-header-background-color: transparent;
-$slicknav-top-level-background-color: transparent;
-$slicknav-background-color: transparent;
-$slicknav-background-color--hover: $white;
-$slicknav-color--hover: #129dc0;
-$slicknav-color--open: $slicknav-color;
-$slicknav-background--open: $grey-light;
-$slicknav-background--open--hover: $blue-light;
-$slicknav-toplink-background-color--open: lighten($blue-light,10);
-$slicknav-toplink-color--open: $slicknav-color;
-$slicknav-font-size: $default_font-size;
-$slicknav-submenu-font-size: $default_font-size -3px;
-$slicknav_sub_menu-background-color: lighten($blue-light,5);
-$slicknav-link-border-color: $blue;
-$slicknav-background-parent--collapsed: lighten($blue-light,20);
-$slicknav-background-parent--open: $blue-light;
-
-// ======================================
-//  slice banner slideshow
-// ======================================
-$banner_slideshow-background-color: $white;
-$banner_slideshow_pager-background-color: $grey-light;
-$banner_slideshow_pager-background-color--active: $purple-dark;
-$banner_slideshow_pager-width-height: 14px;
-$banner_slideshow_control-background-color: $white;
-$banner_slideshow_slidetitle-font-family: $default_font-family;
 
 // ======================================
 //  slice blocks 2
@@ -151,7 +131,7 @@ $block2-title-color: $purple-dark;
 //  slice footerbar
 // ======================================
 
-$footerbar_background-color: $grey-darker;
+$footerbar_background-color: #129dc0er;
 $footerbar_font-color: #b1b1b1;
 $footerbar_font-size: 1.3rem;
 
@@ -160,59 +140,59 @@ $footerbar_font-size: 1.3rem;
 //  slice footertop-1
 // ======================================
 
-$footertop1_background-color: $blue-light;
+$footertop1_background-color: #129dc0;
 
 
 // ======================================
 //  slice footertop-2
 // ======================================
 
-$footertop2_background-color: $grey-darker;
+$footertop2_background-color: #129dc0er;
 $footertop2_font-color: $grey-light;
 $footertop2_font-color-link: $grey-light;
 
-$footertop2_search_button-background-color: $blue-light;
-$footertop2_search_button-background-color--hover: lighten($blue-light, 20%);
-$footertop2_search_button-color: $white;
-
+$footertop2_search_button-background-color: #129dc0;
+$footertop2_search_button-background-color--hover: lighten(#129dc0, 20%);
+$footertop2_search_button-color: #fff;
+*/
 
 // ======================================
 //  system
 // ======================================
 
 
-$system_sitebutton_border-color: $blue-light;
-$system_sitebutton_color: $blue-light;
+$system_sitebutton_border-color: #129dc0;
+$system_sitebutton_color: #129dc0;
 
 //  system - statusbar
 // ======================================
 
-$system_statusbar_link_border-color: $grey-border;
-$system_statusbar_link_color: $grey-light;
+$system_statusbar_link_border-color: #f5f5f5;
+$system_statusbar_link_color: #f5f5f5;
 
-$system_statusbar_loginbox_border-color: $blue-light;
+$system_statusbar_loginbox_border-color: #129dc0;
 
 
 //  system - calendar
 // ======================================
 
-$system_calendar_day_header-color: $grey-dark;
+$system_calendar_day_header-color: #129dc0;
 $system_calendar_day_header-border-color: #43525a;
 $system_calendar_day_header-background-color: #f6f6f6;
-$system_calendar_day_wrapper_today-background-color: $white;
-$system_calendar_calendar_day_today-background-color: $white;
-$system_calendar_event_all_day-background-color: $white;
-$system_calendar_other_month-background-color: $white;
+$system_calendar_day_wrapper_today-background-color: #fff;
+$system_calendar_calendar_day_today-background-color: #fff;
+$system_calendar_event_all_day-background-color: #fff;
+$system_calendar_other_month-background-color: #fff;
 
 
 $system_profile-background-color: #eef7fb;
 
 $system_tabSelected-background-color: #eef7fb;
 $system_tabSelected-border-color: #eef7fb;
-$system_tabLeft-color: $white;
-$system_tabLeft-border-color: $white;
-$system_tabRight-color: $white;
-$system_tabRight-border-color: $white;
+$system_tabLeft-color: #fff;
+$system_tabLeft-border-color: #fff;
+$system_tabRight-color: #fff;
+$system_tabRight-border-color: #fff;
 $system_tabLink-color: #0cc;
 $system_tabLink-background-color: #f7fbfd;
 $system_tabLink-color--hover: #0CC;
@@ -228,37 +208,37 @@ $system_my_area_navigation-background-color: #999;
 $system_griditem-background-color: #eef7fb;
 $system_comment_form_button-background-color: transparent;
 $system_comment_form_button-border-color: #d1d2d4;
-$system_comment_form_button-color: $grey-dark;
+$system_comment_form_button-color: #129dc0;
 $system_comment_form_button-background-color--hover: #5ac5c5;
 $system_comment_form_button-border-color--hover: #5ac5c5;
-$system_comment_form_button-color--hover: $white;
+$system_comment_form_button-color--hover: #fff;
 
 //  system - media
 // ======================================
 
-$system_media_recording_title-color: $grey-dark;
+$system_media_recording_title-color: #129dc0;
 
 //  system - rotas
 // ======================================
 
-$system_subMenu-color: $white;
+$system_subMenu-color: #fff;
 $system_subMenu-border-color: #0cc;
 $system_subMenu-background-color: #0cc;
 
 //  system - address
 // ======================================
-$system_address_column-border-color: $white;
-$system_address_user_details_cell-border-color: $white;
+$system_address_column-border-color: #fff;
+$system_address_user_details_cell-border-color: #fff;
 $system_address_address_user_first_name-background-color: #f6f6f6;
 $system_address_address_family_title-background-color: #f6f6f6;
 
 
 //  system - popup windows
 // ======================================
-$system_calendar_popup_window-color: $grey-dark;
-$system_calendar_popup_window-background-color: $white;
-$system_calendar_popup_window-title-background-color: $white;
-$system_calendar_popup_window-table-background-color: $white;
+$system_calendar_popup_window-color: #129dc0;
+$system_calendar_popup_window-background-color: #fff;
+$system_calendar_popup_window-title-background-color: #fff;
+$system_calendar_popup_window-table-background-color: #fff;
 $system_calendar_day_header-border-color: #43525a;
 
 

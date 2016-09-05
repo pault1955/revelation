@@ -8,13 +8,11 @@
 
 
 .siteLogoName {
-  @include span(12);
+  @include span(4);
 
   @include susy-breakpoint($breakpoint-md) {
     @include span(3);
   }
-
-
 }
 
 .navbar {
@@ -25,423 +23,564 @@
   }
 }
 
-
 // slice  header styles
 // ======================================
 
-
 .slice_header {
 
-  .siteLogoName {
-    text-align: center;
-    height: $site_logo_name-height;
-    margin-top: $site_logo-margin-top;
-    margin-bottom: $site_logo-margin-bottom;
-  }
+  #mobile_nav {
 
-  .siteLogoName a {
-    text-decoration: none;
-  }
-
-  .siteLogo img {
-    max-width: $site_logo-max-width;
-  }
-
-  .siteLogoName .siteName a {
-    font-size: $site_logo-font-size;
-    color: $site_logo-color;
-    margin-bottom: $site_name-margin-bottom;
-    vertical-align: middle;
-  }
-
-  .navbar {
-    display: none;
-  }
-
-  nav {
-    background-color: $nav_background-color;
-    height: 44px;
-  }
-
-  nav a {
-    color: $nav_link-color;
-    font-size: $nav_link-font-size;
-    font-weight: $nav_link-font-weight;
-    display: block;
-    -webkit-transition: background-color 400ms ease;
-    -moz-transition: background-color 400ms ease;
-    -ms-transition: background-color 400ms ease;
-    -o-transition: background-color 400ms ease;
-    transition: background-color 400ms ease;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-
-  nav ul {
-    list-style-type: none;
-  }
-
-  .root_menu {
-
-    ul {
-      display: none;
-    }
-
-    li {
-      position: relative;
-
-      &:hover > ul {
-        display: block;
-      }
-    }
-
-    > li {
-      float: left;
-      position: relative;
-      margin-top: $nav_link_top-margin-top;
-
-      > a {
-        padding: 9px 20px;
-      }
-
-
-      ul {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: $nav_dropdown-background-color;
-        min-width: 210px;
-        padding: 7px 0;
-        z-index: 999;
-
-        a {
-          color: $nav_dropdown_link-color;
-          font-size: $nav_dropdown_link-font-size;
-          font-weight: $nav_link-font-weight;
-          padding: 3px 23px;
-        }
-
-        ul {
-          top: -7px;
-          left: 100%;
-        }
-
-        li.has_sub_menu:before {
-          content: ">";
-          color: #fff;
-          position: absolute;
-          right: 8px;
-          top: 0;
-          line-height: 30px;
-          height: 30px;
-        }
-
-
-
-      }
-
-
-      &:hover > a {
-        background-color: $nav_link-background-color--hover;
-        color: $nav_link-color--hover;
-      }
-
-      li:hover > a {
-        color: $nav_dropdown_link-color--hover;
-      }
-
-
-
-
-    }
+    z-index: 200;
 
   }
 
-  #mobile_menu {
-    display: none
-  }
+  // slicknav styles
+  // ======================================
 
-
-  /* ==========================================================================
-     Slicknav
-     ========================================================================== */
-
-  // core
-
-  .slicknav_btn {
-    position: relative;
-    display: block;
-    vertical-align: middle;
-    float: right;
-    padding: 0.438em 0.625em 0.438em 0.625em;
-    line-height: 1.125em;
-    cursor: pointer;
-    .slicknav_icon-bar + .slicknav_icon-bar {
-      margin-top: 0.188em;
-    }
-  }
   .slicknav_menu {
-    *zoom: 1;
-    .slicknav_menutxt {
-      display: block;
-      line-height: $default_font-size + 0.5rem;
-      float: left;
-    }
-    .slicknav_icon {
-      float: left;
-      margin: 0.188em 0 0 0.438em;
-    }
-    .slicknav_no-text {
-      margin: 0;
-    }
-    .slicknav_icon-bar {
-      display: block;
-      width: 1.125em;
-      height: 0.125em;
-      -webkit-border-radius: 1px;
-      -moz-border-radius: 1px;
-      border-radius: 1px;
-      -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-    }
-    &:before {
+    font-size: 1.6rem;
+
+    &:before, &:after {
       content: " ";
       display: table;
     }
+
     &:after {
-      content: " ";
-      display: table;
-      clear: both;
+      clear: both
     }
-  }
-  .slicknav_nav {
-    clear: both;
-    ul {
+
+    /* IE6/7 support */
+    *zoom: 1;
+
+    .slicknav_btn {
+      text-decoration: none;
+      background-color: transparent;
+      width: 100%;
+      position: relative;
       display: block;
-    }
-    li {
-      display: block;
-    }
-    .slicknav_arrow {
-      font-size: 0.8em;
-      margin: 0 0 0 0.4em;
+      vertical-align: middle;
       float: right;
-      font-family: arial;
-    }
-    .slicknav_item {
+      padding: 1.1em 0.625em 0.638em 0.825em;
+      line-height: 1.125em;
       cursor: pointer;
-      a {
-        display: inline;
+
+      .slicknav_menutxt {
+        display: block;
+        line-height: 1.188em;
+        float: right;
+        color: $slicknav_button-menu-color;
+      }
+
+      .slicknav_icon {
+        float: right;
+        margin: 0.33em 0.438em 0 0.438em;
+        color: $slicknav_icon-menu-color;
+
+        .slicknav_icon-bar {
+          display: block;
+          width: 1.125em;
+          height: 0.125em;
+          background-color: $slicknav_icon-menu-background-color;
+
+          + .slicknav_icon-bar {
+            margin-top: 0.188em
+          }
+        }
+
+        .slicknav_no-text {
+          margin: 0
+        }
       }
     }
-    .slicknav_row {
-      display: block;
-    }
-    a {
-      display: block;
-    }
-    .slicknav_parent-link a {
-      display: inline;
-    }
-  }
-  .slicknav_brand {
-    float: left;
-  }
 
-  // theme
-
-  .slicknav_menu {
-    font-size: 16px;
-    box-sizing: border-box;
-    background: $slicknav-background-color;
-    padding: 5px 0;
-    * {
-      box-sizing: border-box;
-    }
-    .slicknav_menutxt {
-      color: $slicknav-color;
-      font-weight: normal;
-      text-shadow: none;
-      background: $slicknav-background-color;
-    }
-    .slicknav_icon-bar {
-      background-color: $slicknav-color;
-    }
-  }
-  .slicknav_btn {
-    margin: 0;
-    text-decoration: none;
-    text-shadow: none;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    background-color: $slicknav_button-background-color;
-  }
-  .slicknav_btn.slicknav_open {
-    background-color: $slicknav_button-background-color--open;
-  }
-
-  .slicknav_nav {
-    color: $slicknav-color;
-    margin: 0;
-    padding: 8px 12px;
-    font-size: $slicknav-font-size;
-    list-style: none;
-    overflow: hidden;
-    background-color: $slicknav-background--open;
-    ul {
+    .slicknav_nav {
+      clear: both;
       list-style: none;
       overflow: hidden;
-      padding: 0;
       margin: 0;
-    }
-    .slicknav_row {
-      padding: 10px;
-      margin: 0;
-      // background: $slicknav-background-color;
-      &:hover {
-        background: $slicknav-background-color;
+      padding: 15px 0 0;
+      background-color: $slicknav-background-color;
+      
+      a {
         color: $slicknav-color;
-        -webkit-border-radius:0;
-        -moz-border-radius:0;
-        border-radius:0;
+        display: block;
+        padding: 12px 20px;
+
+        &:hover {
+          background: $slicknav-background-color--hover;
+          color: $slicknav-color--hover;
+        }
+
+      }
+
+      ul, li {
+        display: block;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+        list-style: none;
+        overflow: hidden;
+        margin-top: 0;
+        li {
+          border-top: none;
+          border-bottom: none;
+        }
+
+        ul li a {
+          padding-left: 25px;
+        }
+      }
+      .slicknav_arrow {
+        float: right;
+        width: 11px;
+        height: 7px;
+        padding-top: 17px;
+        display: none;
+
+        .close {
+          width: 11px;
+          height: 7px;
+          background: url(../images/dd_down.png) center no-repeat;
+          margin-top: 6px;
+          display: none;
+        }
+        .open {
+          width: 11px;
+          height: 7px;
+          background: url(../images/dd_up.png) center no-repeat;
+          margin-top: 6px;
+          display: none;
+        }
+        a {
+          display: block;
+          padding: 12px 20px;
+          margin-left: 0;
+        }
+
+      }
+
+      .slicknav_item {
+        display: block;
+        cursor: pointer;
+        padding: 12px 20px;
+
+        &:hover {
+
+        }
+
+        a {
+          display: inline;
+          padding: 0;
+          margin: 0;
+          color: #000;
+
+
+        }
+      }
+
+      ul {
+        li {
+
+          &:hover {
+            > a {
+
+            }
+          }
+
+          a {
+            padding: 12px 20px;
+          }
+        }
+      }
+
+      .login_item {
+        & :hover {
+          background-color: #0068a6;
+          color: #ffffff;
+        }
+      }
+
+    }
+
+    .slicknav_open {
+      > a {
+        background: $slicknav-background--open;
+      }
+
+      > ul {
+        background: $slicknav-background--open;
+      }
+
+      &.menu_item_level_1 {
+        > a {
+          margin-left: 0;
+        }
+        > ul {
+          > li {
+            > a {
+              padding-left: 30px !important;
+            }
+          }
+        }
+      }
+
+      &.menu_item_level_2 {
+        > ul {
+          > li {
+            > a {
+              padding-left: 40px !important;
+            }
+          }
+        }
+      }
+
+      .slicknav_item {
+        background: transparent url(../images/dd-down.png) 93% center no-repeat;
+
+        &:hover {
+          background: $slicknav-background-color--hover url(../images/dd-down.png) 93% center no-repeat;
+          color: $slicknav-color--hover;
+        }
+      }
+
+    }
+
+    .slicknav_collapsed {
+      .slicknav_item {
+        background: transparent url(../images/dd-up.png) 93% center no-repeat;
+
+        &:hover {
+          background: $slicknav-background-color--hover url(../images/dd-up.png) 93% center no-repeat;
+          color: $slicknav-color--hover;
+        }
       }
     }
 
-    a {
-      padding: 10px;
-      margin: 2px 0px;
-      text-decoration: none;
-      font-size: 1.6rem;
-      color: $slicknav-color;
-      &:hover {
-        background: $slicknav-background-color--hover;
-        color: $slicknav-color--hover;
-        -webkit-border-radius:0;
-        -moz-border-radius:0;
-        border-radius:0;
-      }
-    }
-    .slicknav_txtnode {
-      margin-left: 15px;
-    }
-    .slicknav_item a {
-      padding: 0;
-      margin: 0;
-    }
-    .slicknav_parent-link a {
-      padding: 0;
-      margin: 0;
-    }
-  }
-  .slicknav_brand {
-    color: $slicknav-color;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 7px 12px;
-    height: 44px;
   }
 
-  .slicknav_open > a {
-    background: $slicknav-background--open;
-    color: $slicknav-color--open;
+  .slicknav_nav .slicknav_txtnode {
+    margin-left: 15px;
   }
 
-  .slicknav_open > a a, .slicknav_open > a > a {
-    color: $slicknav-color--open !important;
+  .slicknav_nav .slicknav_collapsed .slicknav_item:hover a,
+  .slicknav_nav .slicknav_open .slicknav_item:hover a,
+  .slicknav_nav .slicknav_open .slicknav_collapsed .slicknav_item:hover a {
+    color: $slicknav-color--hover !important;
   }
 
-  .slicknav_open > ul {
-    background: $slicknav_sub_menu-background-color;
-    padding-left: 12px;
-
-    li a {
-      padding-left: 12px;
-    }
-  }
-
-  .slicknav_btn.slicknav_open .slicknav_icon:before {
-    content: 'X';
-    color: $slicknav-color;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 12px;
-    text-align: center;
-    text-indent: 0px;
-    width: 12px;
-    height: 12px;
-    display: block;
-    margin: 0 3px;
-
-  }
-
-  .slicknav_btn.slicknav_open .slicknav_icon .slicknav_icon-bar {
+  .nav-menu {
     display: none;
   }
-
-
-  .slicknav_nav  ul .slicknav_parent.slicknav_collapsed > .slicknav_row {
-    // background-color: $slicknav-background-parent--collapsed;
-  }
-  .slicknav_nav  ul .slicknav_parent.slicknav_open > .slicknav_row {
-    background-color: $slicknav-background-parent--open;
-  }
-
-  @media only screen and (min-width: $breakpoint-sm) {
-    .navbar {
-      display: block;
-      margin-bottom: 20px;
-      margin-top: 0;
-    }
-    .siteLogo img {
-      max-width: $site_logo-max-width * 1.2;
-    }
-    .siteLogoName .siteName a {
-      font-size: $site_logo-font-size * 1.4;
-    }
-    .siteLogoName {
-      text-align: center;
-    }
-    #mobile_nav {
-      display: none;
-    }
-  }
-
-  @media only screen and (min-width: $breakpoint-sm) {
-
-    .siteLogoName {
-      margin-top: $site_logo-margin-top + 15px;
+  /*
+    nav {
+      background-color: $nav_background-color;
+      height: 44px;
     }
 
     nav a {
+      color: $nav_link-color;
       font-size: $nav_link-font-size;
+      font-weight: $nav_link-font-weight;
+      display: block;
+      -webkit-transition: background-color 400ms ease;
+      -moz-transition: background-color 400ms ease;
+      -ms-transition: background-color 400ms ease;
+      -o-transition: background-color 400ms ease;
+      transition: background-color 400ms ease;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    nav ul {
+      list-style-type: none;
     }
 
     .root_menu {
-      padding-left: 0;
-      margin: 0 auto;
 
-      & > li > a {
-        padding: 9px 10px;
+      ul {
+        display: none;
+      }
+
+      li {
+        position: relative;
+
+        &:hover > ul {
+          display: block;
+        }
+      }
+
+      > li {
+        float: left;
+        position: relative;
+        margin-top: $nav_link_top-margin-top;
+
+        > a {
+          padding: 9px 20px;
+        }
+
+
+        ul {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: $nav_dropdown-background-color;
+          min-width: 210px;
+          padding: 7px 0;
+          z-index: 999;
+
+          a {
+            color: $nav_dropdown_link-color;
+            font-size: $nav_dropdown_link-font-size;
+            font-weight: $nav_link-font-weight;
+            padding: 3px 23px;
+          }
+
+          ul {
+            top: -7px;
+            left: 100%;
+          }
+
+          li.has_sub_menu:before {
+            content: ">";
+            color: #fff;
+            position: absolute;
+            right: 8px;
+            top: 0;
+            line-height: 30px;
+            height: 30px;
+          }
+
+
+
+        }
+
+
+        &:hover > a {
+          background-color: $nav_link-background-color--hover;
+          color: $nav_link-color--hover;
+        }
+
+        li:hover > a {
+          color: $nav_dropdown_link-color--hover;
+        }
+
+
+
+
+      }
+
+    }
+
+    #mobile_menu {
+      display: none
+    }
+
+
+
+    @media only screen and (min-width: $breakpoint-sm) {
+      .navbar {
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+      .siteLogo img {
+        max-width: $site_logo-max-width * 1.2;
+      }
+      .siteLogoName .siteName a {
+        font-size: $site_logo-font-size * 1.4;
+      }
+      .siteLogoName {
+        text-align: center;
+      }
+      #mobile_nav {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: $breakpoint-sm) {
+
+      .siteLogoName {
+        margin-top: $site_logo-margin-top + 15px;
+      }
+
+      nav a {
+        font-size: $nav_link-font-size;
+      }
+
+      .root_menu {
+        padding-left: 0;
+        margin: 0 auto;
+
+        & > li > a {
+          padding: 9px 10px;
+        }
+      }
+    }
+
+    @media only screen and (min-width: $breakpoint-md) {
+
+
+      .navbar {
+        margin-top: 32px;
+
+        a {
+          font-size: $nav_link-font-size + 0.2rem;
+        }
+      }
+
+      .root_menu > li ul a {
+        font-size: $nav_dropdown_link-font-size;
+      }
+
+    }
+
+
+  */
+
+  .mobile-search {
+    position: absolute;
+    top: -3px;
+    right: 100px;
+    display: block;
+    z-index: 999;
+
+    a {
+      display: block;
+      height: 40px;
+      padding-top: 25px;
+      padding-right: 10px;
+      padding-left: 10px;
+      background-color: transparent;
+      opacity: 1;
+
+      :hover {
+        opacity: 0.7;
       }
     }
   }
 
-  @media only screen and (min-width: $breakpoint-md) {
+  .search-overlay {
+    transition: opacity 500ms;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 185px;
+    right: 0;
+    z-index: 999;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #1a4567;
 
+    &:target {
+      visibility: visible;
+      opacity: 1;
+    }
 
-    .navbar {
-      margin-top: 32px;
+    .search-form {
+      margin: 0 50px 0 0;
+
+      input.button {
+        display: none;
+      }
+
+      .search-close {
+        position: absolute;
+        top: 6px;
+        right: 10px;
+        transition: all 200ms;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+          color: #0068a6;
+        }
+      }
+
+      .search_div {
+
+        input.text {
+          height: 50px;
+          margin-bottom: 0px;
+          padding-left: 20px;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #0068a6;
+          border-radius: 4px;
+          background-color: transparent;
+          background-image: url('images/searchbox-icon.png');
+          background-position: 22px 50%;
+          background-size: auto 20px;
+          background-repeat: no-repeat;
+          -webkit-transition: background-color 500ms ease, border 500ms ease;
+          -o-transition: background-color 500ms ease, border 500ms ease;
+          transition: background-color 500ms ease, border 500ms ease;
+          font-family: Asap, sans-serif;
+          font-size: 15px;
+          text-align: center;
+          width: 100%;
+          color: #fff;
+          outline: none;
+          margin-left: 10px;
+
+          &:hover {
+            border-color: white;
+            background-color: white;
+            background-image: url('images/searchbox-icon.png');
+            color: #000;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .top-link-wrapper {
+    display: none;
+
+  }
+
+  .logo-container {
+    position: absolute;
+    left: 27px;
+    top: 0;
+    bottom: 0px;
+    margin-top: 5px;
+    z-index: 300;
+    height: 50px;
+
+    .logo-icon {
+      float: left;;
 
       a {
-        font-size: $nav_link-font-size + 0.2rem;
+        display: block;
+
+        img {
+          width: 40px;
+        }
       }
     }
 
-    .root_menu > li ul a {
-      font-size: $nav_dropdown_link-font-size;
-    }
+    .logo-name {
+      float: left;
+      margin-top: 22px;
+      margin-left: 3px;
 
+      a {
+        display: block;
+        font-size: $site_name-font-size;
+        color: $site_name-color;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
   }
 }
+
