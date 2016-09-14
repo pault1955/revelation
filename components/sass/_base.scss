@@ -2,7 +2,14 @@
 //  site wide
 // ======================================
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
-
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
 html {
   font-size: 0.625em;
 }
