@@ -8,9 +8,9 @@ $susy: (
         output: overlay,
         global-box-sizing: border-box,
         debug: (
-                image: show-columns,
-                toggle: top right,
-                output: background
+                // image: show-columns,
+                // toggle: top right,
+                // output: background
         ),
         use-custom: (
           clearfix: false
@@ -50,6 +50,16 @@ $site_logo-margin-top: 15px;
 $site_logo-margin-bottom: 10px;
 $site_name-font-size: 2.2rem;
 $site_name-color: #2b4049;
+
+
+// ======================================
+//  search overlay
+// ======================================
+
+$search_box-background-color: #4acfc7;
+$search_box_input-border-color: #fff;
+$search_box_input-background-color: #f5f5f5;
+$search_box_input-color: #2c4048;
 
 // ======================================
 //  slicknav mobile menu
@@ -91,33 +101,39 @@ $banner_slideshow_control-background-color: transparent;
 $banner_slideshow_slidetitle-font-family: $default_font-family-2;
 $banner_slideshow_slidetitle-font-size: 2.5rem;
 $banner_slideshow_slidetitle-color: #fff;
+$banner_slideshow_slidetext-font-family: $default_font-family-2;
+$banner_slideshow_slidetext-font-size: 1.1rem;
+$banner_slideshow_slidetext-color: #fff;
+$banner_slideshow-button-color: #fff;
+$banner_slideshow-button-background-color: #2d9ebd;
+$banner_slideshow-button-background-color--hover: #2d9ebd;
+$banner_slideshow-button-font-size: 0.7rem;
 
 
-/*
+
+
 // ======================================
 //  nav - dropdown menu
 // ======================================
 
 $nav_background-color: transparent;
-$nav_link-color: $grey-mid;
-$nav_link-color--hover: lighten(#129dc0,40);
+$nav_link-color: #2c4048;
+$nav_link-color--hover: #129dc0;
 $nav_link-font-size: 1.6rem;
 $nav_link-font-weight: $normal;
-$nav_link-background-color: #129dc0;
-$nav_link-background-color--hover: darken(#129dc0, 10);
+$nav_link-background-color: #ffffff;
+$nav_link-background-color--hover: #f5f5f5;
 $nav_link_top-margin-top: 4px;
 $nav_link_home-margin-top: 0;
 
 $nav_dropdown_link-font-size: 1.6rem;
-$nav_dropdown_link-background-color: #129dc0;
-$nav_dropdown_link-color: #fff;
-$nav_dropdown_link-color--hover: darken(#129dc0,40);
-$nav_dropdown_link-background-color--hover: darken(#129dc0,50);
-$nav_dropdown-background-color: #129dc0;
-$nav_dropdown-color: $default_link_color;
-$nav_dropdown-background-color--hover: $grey-light;
-$nav_dropdown-color--hover: $default_link_color--hover;
+$nav_dropdown_link-background-color: #f5f5f5;
+$nav_dropdown_link-color: #2c4048;
+$nav_dropdown_link-color--hover: #129dc0;
+$nav_dropdown-background-color: #f5f5f5;
+$nav_dropdown-background-color--hover: #ffffff;
 
+/*
 
 // ======================================
 //  slice blocks 2

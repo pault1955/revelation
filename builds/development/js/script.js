@@ -12,7 +12,7 @@ $(document).ready(function () {
   $('ul.root_menu > li.has_sub_menu:first-child > ul.sub_menu').remove();
 
   /* remove 1st item in dropdown menu re-instate my area>my details.
-   set background color on ul where no groups below top-level item */
+   set background color on ul where no groups below top-level item   */
 
 
   $('.menu_item_level_2.first').each(function() {
@@ -24,8 +24,6 @@ $(document).ready(function () {
       }
     }
   });
-
-   
 
   /* mobile menu */
 
