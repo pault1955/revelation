@@ -33,7 +33,7 @@ $heavy    : 800;
 $default_font-family : Lato, Arial, sans-serif;
 $default_font-family-2 : Montserrat, Arial, sans-serif;
 $default_font-color  : #2b4049;
-$default_font-size   : 0.625rem;
+$default_font-size   : 1.8rem;
 $default_line-height : $default_font-size + 0.2rem;
 $default_link_color: #129dc0;
 $default_link-color--hover : #4acfc7;
@@ -133,16 +133,34 @@ $nav_dropdown_link-color--hover: #129dc0;
 $nav_dropdown-background-color: #f5f5f5;
 $nav_dropdown-background-color--hover: #ffffff;
 
-/*
+
 
 // ======================================
 //  slice blocks 2
 // ======================================
 
-$block2-color: $grey-mid;
-$block2-title-color: $purple-dark;
+$block2-color: #2d4048;
+$block2_title-color: #2d4048;
+$block2_background-color: #f5f5f5;
+$block2_border-color: #e1e1e1;
 
+// ======================================
+//  slice blocks 1
+// ======================================
 
+$block1-color: #2b4049;
+$block1_title-color: #2c4048;
+$block1_title_font-size: 2rem;
+$block1_title_margin-bottom: 1rem;
+$block1_background-color: #fff;
+$block1_button-font-size: 1.3rem;
+$block1_button-color: #129dc0;
+$block1_button-color--hover: #fff;
+$block1_button-border-color: #129dc0;
+$block1_button_background-color--hover: #129dc0;
+$block1_font-size: 1.5rem;
+$block_line-height: $block1_font-size + 0.5rem;
+/*
 // ======================================
 //  slice footerbar
 // ======================================

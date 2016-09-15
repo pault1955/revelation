@@ -1,0 +1,76 @@
+// ======================================
+// slice  1 block
+// ======================================
+
+// slice  1 block layout
+// ======================================
+.slice_block1 {
+  @include span(12);
+
+  .ArticleBody {
+    @include susy-breakpoint($breakpoint-md) {
+      @include span(6);
+      @include push(3);
+    }
+  }
+}
+
+// slice  1 block style
+// ======================================
+
+.slice_block1 {
+
+  background-color: $block1-background-color;
+  color: $block1-color;
+  font-size: $block1_font-size;
+  line-height:$block_line-height;
+  text-align: center;
+  padding: 15px;
+
+  h1 {
+    color: $block1_title-color;
+    font-size: $block1_title_font-size;
+    margin-bottom: $block1_title_margin-bottom;
+
+    @include susy-breakpoint($breakpoint-sm) {
+      font-size: $block1_title_font-size * 1.5;
+      margin-bottom: $block1_title_margin-bottom * 1.5;
+    }
+
+    @include susy-breakpoint($breakpoint-md) {
+      font-size: $block1_title_font-size * 2;
+      margin-bottom: $block1_title_margin-bottom * 1.7;
+    }
+  }
+
+  a {
+    display: block;
+    border: 2px solid $block1_button-border-color;
+    color: $block1_button-color;
+    padding: 10px 15px;
+    font-size: $block1_button_font-size;
+    max-width: 125px;
+    margin: 15px auto 0;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $block1_button_background-color--hover;
+      color: $block1_button-color--hover;
+    }
+
+    @include susy-breakpoint($breakpoint-sm) {
+      font-size: $block1_button_font-size * 1.2;
+      max-width: 160px;
+      margin-top: 40px;
+    }
+  }
+
+  @include susy-breakpoint ($breakpoint-sm) {
+    font-size: $block1_font-size * 1.4;
+    line-height:$block_line-height * 1.5;
+    padding-top: 30px;
+  }
+  @include susy-breakpoint ($breakpoint-md) {
+    padding-top: 40px;
+  }
+}

@@ -11,22 +11,16 @@
   }
 
   .block2-1 {
-    @include susy-breakpoint($breakpoint-ti) {
+    @include susy-breakpoint($breakpoint-sm) {
       @include span(6);
     }
   }
   .block2-2 {
-    @include susy-breakpoint($breakpoint-ti) {
-      @include span(4);
+    @include susy-breakpoint($breakpoint-sm) {
+      @include span(6);
     }
   }
 
-  .mapButton {
-    margin-left: span(5 wide of 12);
-    @include susy-breakpoint($breakpoint-ti) {
-      @include span(2);
-    }
-  }
 }
 
 // slice  2 blocks style
@@ -34,62 +28,55 @@
 
 .slice_blocks2 {
 
+  background-color: $block2-background-color;
+
   .block2-1, .block2-2 {
-    padding: 30px 30px 30px 60px;
-    color: $block2-color;
-    font-size: 1.6rem;
+    padding: 15px;
+    color: $block2_color;
+    font-size: 1.4rem;
     line-height: 1.8rem;
-    background-position: 25px 27px;
-    background-repeat: no-repeat;
+    text-align: center;
+
 
     span {
-      color: $block2-title-color;
+      color: $block2_title-color;
       font-weight: 700;
+      display: block;
+    }
+
+    @include susy-breakpoint ($breakpoint-sm) {
+      text-align: left;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      padding-left: 85px;
+    }
+    @include susy-breakpoint ($breakpoint-md) {
+      text-align: left;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-top: 25px;
+      padding-bottom: 25px;
     }
   }
 
   .block2-1 {
-    background-image: url(../images/icon-clock.png);
-    padding-bottom: 0;
-
-    @include susy-breakpoint($breakpoint_ti) {
-      padding-bottom: 30px;
+    border-bottom: 1px solid $block2_border-color;
+    
+    @include susy-breakpoint( $breakpoint-sm) {
+      background-image: url(../images/icon-clock.png), url(../images/border-line.png);
+      background-position: 20px 27px, right;
+      background-repeat: no-repeat, no-repeat;
+      border-bottom: none;
     }
   }
 
   .block2-2 {
-    background-image: url(../images/icon-marker.png);
-  }
 
-  .mapButton {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding: 12px 15px;
-    border-radius: 2px;
-    font-size: 1.4rem;
-    text-align: center;
-    letter-spacing: 2px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 1px solid $default_button-background-color;
-    background-color: $default_button-background-color;
-    color: $default_button-color;
-    width: 65px;
-
-    @include susy-breakpoint($breakpoint-ti) {
-      & {
-        margin-right: 5px;
-        margin-top: 27px;
-      }
-    }
-
-    @include susy-breakpoint($breakpoint-sm) {
-      & {
-        margin-right: 5px;
-        margin-top: 27px;
-        padding: 5px 15px;
-      }
+    @include susy-breakpoint( $breakpoint-sm) {
+      background-image: url(../images/icon-marker.png);
+      background-position: 20px 27px;
+      background-repeat: no-repeat;
     }
   }
+
 }
