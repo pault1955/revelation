@@ -4,74 +4,114 @@
 
 // slice  1 block image
 // ======================================
-.slice_block1 {
+.slice_block1_image{
   @include span(12);
 
-  .ArticleBody {
-    @include susy-breakpoint($breakpoint-md) {
-      @include span(6);
-    }
-  }
+
 }
 
-// slice  1 block style
+// slice  1 block image style
 // ======================================
 
-.slice_block1 {
+.slice_block1_image {
 
-  background-color: $block1-background-color;
-  color: $block1-color;
-  font-size: $block1_font-size;
-  line-height:$block1_line-height;
+  background-image: $block1_image_slice_background-image;
+  -webkit-background-size:cover;
+  background-size:cover;
+  color: $block1_image-color;
   text-align: center;
-  padding: 15px 15px 30px;
+  padding: 20px 15px 30px;
 
-  h1 {
-    color: $block1_title-color;
-    font-size: $block1_title_font-size;
-    margin-bottom: $block1_title_margin-bottom;
+
+  .title1 {
+    color: $block1_image_title1-color;
+    font-size: $block1_image_title1_font-size;
+    margin-bottom: $block1_image_title1_margin-bottom;
+
+    @include susy-breakpoint($breakpoint-ti) {
+      font-size: $block1_image_title1_font-size * 1.2;
+      margin-bottom: $block1_image_title1_margin-bottom * 1.5;
+    }
 
     @include susy-breakpoint($breakpoint-sm) {
-      font-size: $block1_title_font-size * 1.5;
-      margin-bottom: $block1_title_margin-bottom * 1.5;
+      font-size: $block1_image_title1_font-size * 2;
+      margin-bottom: $block1_image_title1_margin-bottom * 4;
     }
 
     @include susy-breakpoint($breakpoint-md) {
-      font-size: $block1_title_font-size * 2;
-      margin-bottom: $block1_title_margin-bottom * 1.7;
+      font-size: $block1_image_title1_font-size * 2.5;
+      margin-bottom: $block1_image_title1_margin-bottom * 6 ;
     }
   }
 
+  .title2 {
+    color: $block1_image_title2-color;
+    font-size: $block1_image_title2_font-size;
+    margin-bottom: $block1_image_title2_margin-bottom;
+
+    @include susy-breakpoint($breakpoint-ti) {
+      font-size: $block1_image_title2_font-size * 1.1;
+      margin-bottom: $block1_image_title2_margin-bottom * 3;
+    }
+
+    @include susy-breakpoint($breakpoint-sm) {
+      font-size: $block1_image_title2_font-size * 2;
+      margin-bottom: $block1_image_title2_margin-bottom * 4;
+    }
+  }
+
+  .title3 {
+    color: $block1_image_title3-color;
+    font-size: $block1_image_title3_font-size;
+    margin-bottom: $block1_image_title3_margin-bottom;
+
+    @include susy-breakpoint($breakpoint-ti) {
+      font-size: $block1_image_title3_font-size * 1.15;
+      margin-bottom: $block1_image_title3_margin-bottom * 1.5;
+    }
+
+    @include susy-breakpoint($breakpoint-md) {
+      font-size: $block1_image_title3_font-size * 1.6;
+      line-height: $block1_image_title3_line-height;
+      margin-bottom: $block1_image_title3_margin-bottom * 2;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   a {
     display: block;
-    border: 2px solid $block1_button-border-color;
-    color: $block1_button-color;
+    border: 2px solid $block1_image_button-border-color;
+    color: $block1_image_button-color;
     padding: 10px 15px;
-    font-size: $block1_button_font-size;
+    font-size: $block1_image_button_font-size;
     max-width: 125px;
     margin: 15px auto 0;
     border-radius: 5px;
 
     &:hover {
-      background-color: $block1_button_background-color--hover;
-      color: $block1_button-color--hover;
+      background-color: $block1_image_button_background-color--hover;
+      color: $block1_image_button-color--hover;
     }
 
     @include susy-breakpoint($breakpoint-sm) {
-      font-size: $block1_button_font-size * 1.2;
+      font-size: $block1_image_button_font-size * 1.2;
       max-width: 160px;
       margin-top: 40px;
     }
   }
 
-  @include susy-breakpoint ($breakpoint-sm) {
-    font-size: $block1_font-size * 1.4;
-    line-height:$block1_line-height * 1.5;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  @include susy-breakpoint ($breakpoint-md) {
+  @include susy-breakpoint ($breakpoint-ti) {
     padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @include susy-breakpoint ($breakpoint-sm) {
+    padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  @include susy-breakpoint ($breakpoint-md) {
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
