@@ -503,7 +503,7 @@
 
       & {
         margin-top: 15px;
-        margin-left: 0;
+        margin-left: 15px;
       }
       .logo-icon {
         a {
@@ -514,6 +514,10 @@
       .logo-name {
         a {
           margin-top: 33px;
+
+          img {
+            width: 70px;
+          }
         }
       }
     }

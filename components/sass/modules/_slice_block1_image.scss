@@ -2,7 +2,7 @@
 // slice  1 block
 // ======================================
 
-// slice  1 block layout
+// slice  1 block image
 // ======================================
 .slice_block1 {
   @include span(12);
@@ -10,7 +10,6 @@
   .ArticleBody {
     @include susy-breakpoint($breakpoint-md) {
       @include span(6);
-      @include push(3);
     }
   }
 }

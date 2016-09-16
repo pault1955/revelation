@@ -145,7 +145,7 @@ $block2_background-color: #f5f5f5;
 $block2_border-color: #e1e1e1;
 
 // ======================================
-//  slice blocks 1
+//  slice block 1
 // ======================================
 
 $block1-color: #2b4049;
@@ -159,7 +159,35 @@ $block1_button-color--hover: #fff;
 $block1_button-border-color: #129dc0;
 $block1_button_background-color--hover: #129dc0;
 $block1_font-size: 1.5rem;
-$block_line-height: $block1_font-size + 0.5rem;
+$block1_line-height: $block1_font-size + 0.5rem;
+
+// ======================================
+//  slice block 1 form
+// ======================================
+
+$block1_form-color: #fff;
+$block1_form_title-color: #2d4048;
+$block1_form_title_font-size: 2rem;
+$block1_form_title_margin-bottom: 1rem;
+$block1_form_slice_background-image: #fff url(../images/stripes.png);
+$block1_form_background-color: #5acfc6;
+$block1_form_button-font-size: 1.3rem;
+$block1_form_button-color: #fff;
+$block1_form_button-color--hover: #fff;
+$block1_form_button-border-color: #2b91ad;
+$block1_form_button-border-color--hover: #2d9ebd;
+$block1_form_button_background-color: #2b91ad;
+$block1_form_button_background-color--hover: #2d9ebd;
+$block1_form_font-size: 1.5rem;
+$block1_form_line-height: $block1_font-size + 0.5rem;
+$block1_form_label-font-size: 1.5rem;
+$block1_form_label-color: #fff;
+$block1_form_text_title-color: #fff;
+$block1_form_text_title_font-size: 1.8rem;
+$block1_form_text_title_margin-bottom: 1.8rem;
+$block1_form_input_background-color: #fff;
+$block1_form_input_color: #7f7e7e;
+$block1_form_input_font-size: 1.5rem;
 /*
 // ======================================
 //  slice footerbar

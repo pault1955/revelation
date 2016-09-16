@@ -1,0 +1,178 @@
+// ======================================
+// slice  1 block form
+// ======================================
+
+// slice  1 block form layout
+// ======================================
+.slice_block1_form {
+  clear: both;
+
+  .slice_block1_form_wrapper {
+
+    @include susy-breakpoint($breakpoint-md) {
+      @include span(10);
+      @include push(1);
+    }
+  }
+
+}
+
+// slice  1 block form style
+// ======================================
+
+.slice_block1_form {
+
+  padding: 30px 15px;
+
+  h1 {
+    color: $block1_form_title-color;
+    font-size: $block1_form_title_font-size;
+    margin-bottom: $block1_form_title_margin-bottom;
+    text-align: center;
+
+    @include susy-breakpoint($breakpoint-sm) {
+      font-size: $block1_form_title_font-size * 1.5;
+      margin-bottom: $block1_form_title_margin-bottom * 1.5;
+    }
+
+    @include susy-breakpoint($breakpoint-md) {
+      font-size: $block1_form_title_font-size * 2.2;
+      margin-bottom: $block1_form_title_margin-bottom * 1.7;
+    }
+  }
+
+  .slice_block1_form_wrapper {
+
+    background-color: $block1_form-background-color;
+    border-radius: 5px;
+    padding: 10px 15px;
+
+    .form_text {
+
+      color: $block1_form-color;
+      font-size: $block1_form_font-size;
+      line-height: $block1_form_line-height;
+      text-align: center;
+
+      h1 {
+        color: $block1_form_text_title-color;
+        font-size: $block1_form_text_title_font-size;
+        margin-bottom: $block1_form_text_title_margin-bottom;
+        text-align: center;
+
+        @include susy-breakpoint($breakpoint-sm) {
+          font-size: $block1_form_text_title_font-size * 1.2;
+          text-align: left;
+        }
+
+        @include susy-breakpoint($breakpoint-md) {
+          font-size: $block1_form_text_title_font-size * 1.3;
+          margin-bottom: $block1_form_text_title_margin-bottom * 0.8;
+
+        }
+
+      }
+
+      @include susy-breakpoint($breakpoint-sm) {
+        @include span(6);
+        text-align: left;
+        padding-right: 30px;
+      }
+
+      @include susy-breakpoint($breakpoint-md) {
+        padding-top: 5px;
+      }
+    }
+
+    .form_fields {
+      margin-top: 20px;
+
+      label {
+        display: none;
+        
+        @include susy-breakpoint($breakpoint-sm) {
+          display: inline-block;
+          font-size: $block1_form_label-font-size;
+          color: $block1_form_label-color;
+        }
+      }
+
+
+      input.form-control,  textarea.form-control {
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        background-color: $block1_form_input_background-color;
+        border: 1px solid $block1_form_input_background-color;
+        border-radius: 0;
+        margin-bottom: 15px;
+        font-size:$block1_form_input_font-size;
+        color: $block1_form_input_color;
+      }
+
+      textarea.form-control {
+        height: auto;
+        border: none;
+      }
+
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $block1_form_input_color;
+        font-size:$block1_form_input_font-size;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: $block1_form_input_color;
+        font-size:$block1_form_input_font-size;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: $block1_form_input_color;
+        font-size:$block1_form_input_font-size;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: $block1_form_input_color;
+        font-size:$block1_form_input_font-size;
+      }
+
+      input.sitebutton {
+        display: block;
+        margin: 0 auto 10px;
+        padding: 9px 15px;
+        border-radius: 2px;
+        -webkit-transition: background-color 500ms ease;
+        transition: background-color 500ms ease;
+        font-size: $block1_form_button-font-size;
+        text-align: center;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid $block1_form_button-border-color;
+        background-color: $block1_form_button_background-color;
+        color: $block1_form_button-color;
+
+        &:hover {
+          border: 2px solid $block1_form_button-border-color--hover;
+          background-color: $block1_form_button_background-color--hover;
+        }
+      }
+
+      @include susy-breakpoint($breakpoint-sm) {
+        @include span(6);
+      }
+
+    }
+
+    @include susy-breakpoint ($breakpoint-sm) {
+      font-size: $block1_form_font-size * 1.4;
+      line-height: $block1_line-height * 1.5;
+      padding-top: 15px;
+    }
+    @include susy-breakpoint ($breakpoint-md) {
+      padding-top: 20px;
+    }
+  }
+
+  @include susy-breakpoint ($breakpoint-sm) {
+    background: $block1_form_slice-background-image;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
