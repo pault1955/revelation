@@ -5,11 +5,12 @@
 .slice_footerbar {
 
   background-color: $footerbar-background-color;
+  border-top: 1px solid $footerbar_border-color;
 
   .footerbar {
     font-size: $footerbar_font-size;
     text-align: center;
-    padding: 20px 0 20px;
+    padding: 25px 0 40px;
     line-height: 30px;
 
     a {
@@ -25,9 +26,10 @@
       }
 
       &#footer_mobile::after, &#footer_copyright::after, &#footer_tc::after, &#footer_privacy::after {
-        content: "";
+        content: "|";
         padding-left: 4px;
-        margin-right: 4px
+        margin-right: 4px;
+        color: $footerbar_font-color;
       }
 
       &.footer {
@@ -35,16 +37,16 @@
         width: 100%;
         border: none;
         text-indent: -9999px;
-        background-image: url('../images/site-by-churchinsight.png');
-        background-size: 158px 28px;
+        background-image: $footerbar_background-image;
         background-repeat: no-repeat;
         background-position: center center;
         background-color: transparent;
         height: 30px;
         margin-bottom: 10px;
+        margin-top: -6px;
 
         &.footer:hover {
-          background-image: url('../images/site-by-churchinsight-hover.png');
+          background-image: $footerbar_background-image--hover;
         }
       }
     }
@@ -54,12 +56,11 @@
       color: $footerbar_font-color;
     }
 
-    @include susy-breakpoint($breakpoint-md) {
+    @include susy-breakpoint($breakpoint-sm) {
 
-      padding: 25px 0 0;
+      padding: 25px 0;
 
       a {
-
         &.footer {
           width: 25%;
           margin-bottom: 25px;
@@ -69,9 +70,7 @@
           content: "|";
           padding-left: 10px;
           margin-right: 10px;
-          color: $footerbar_font-color;
         }
-
       }
 
       span#footer_charity {

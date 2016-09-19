@@ -273,35 +273,29 @@ $block1_image2_button_background-color--hover: #129dc0;
 //  slice footerbar
 // ======================================
 
-$footerbar_background-color: #129dc0;
-$footerbar_font-color: #b1b1b1;
+$footerbar_background-color: #f5f5f5;
+$footerbar_font-color: #2d4048;
 $footerbar_font-size: 1.3rem;
-
-/*
-// ======================================
-//  slice footertop-1
-// ======================================
-
-$footertop1_background-color: #129dc0;
+$footerbar_background-image: url(../images/site-by-churchinsight.png);
+$footerbar_background-image--hover: url(../images/site-by-churchinsight-hover.png);
+$footerbar_border-color: #e1e1e1;
 
 
 // ======================================
-//  slice footertop-2
+//  slice footertop1
 // ======================================
 
-$footertop2_background-color: #129dc0er;
-$footertop2_font-color: $grey-light;
-$footertop2_font-color-link: $grey-light;
-
-$footertop2_search_button-background-color: #129dc0;
-$footertop2_search_button-background-color--hover: lighten(#129dc0, 20%);
-$footertop2_search_button-color: #fff;
-*/
+$footertop1_background-color: #f5f5f5;
+$footertop1_font-color: #2b4049;
+$footertop1_font-color-link: #129dc0;
+$footertop1_font-size: 1.4rem;
+$footertop1_line-height: $footertop1_font-size * 1.5;
+$footertop1_icon_background-color: #5acfc6;
+$footertop1_icon_background-color--hover: #2d9ebd;
 
 // ======================================
 //  system
 // ======================================
-
 
 $system_sitebutton_border-color: #129dc0;
 $system_sitebutton_color: #129dc0;
