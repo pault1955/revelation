@@ -213,16 +213,71 @@ $block1_image_button-border-color: #9fb9c4;
 $block1_image_button-border-color--hover: #2d9ebd;
 $block1_image_button_background-color: transparent;
 $block1_image_button_background-color--hover: #2d9ebd;
-/*
+
+// ======================================
+//  slice slideshow mini
+// ======================================
+$slideshow_mini-color: #fff;
+$slideshow_mini_title-color: #2d4048;
+$slideshow_mini_title_font-size: 2rem;
+$slideshow_mini_title_margin-bottom: 1rem;
+$slideshow_mini_slice-background-image:  #fff url(../images/stripes.png);
+$slideshow_mini-background-color: #fff;
+$slideshow_mini_pager-background-color: #c9dfdd;
+$slideshow_mini_pager-background-color--active: #4acfc7;
+$slideshow_mini_pager-width-height: 14px;
+$slideshow_mini_control-background-color: transparent;
+
+// ======================================
+//  slice buttons 3
+// ======================================
+$buttons_3_slice-background-image:  #fff url(../images/stripes.png);
+$buttons_3_font-size: 1.5rem;
+$buttons_3_color: #fff;
+$buttons_3_button1_background-color: #4acfc7;
+$buttons_3_button1_background-color--hover: #24bfb6;
+$buttons_3_button1_background-image: url(../images/icon-news.png);
+$buttons_3_button2_background-color: #e84c3d;
+$buttons_3_button2_background-color--hover: #d84638;
+$buttons_3_button2_background-image: url(../images/icon-events.png);
+$buttons_3_button3_background-color: #129dc0;
+$buttons_3_button3_background-color--hover: #1590af;
+$buttons_3_button3_background-image: url(../images/icon-headphones.png);
+// ======================================
+//  slice block 1 image2
+// ======================================
+
+// ======================================
+//  slice block 1 background image2
+// ======================================
+
+$block1_image2-color: #fff;
+$block1_image2_slice_background-image: url(../images/piano.jpg);
+$block1_image2_title1-color: #fff;
+$block1_image2_title1_font-size: 2.5rem;
+$block1_image2_title1_margin-bottom: 1rem;
+$block1_image2_title3-color: #fff;
+$block1_image2_title3_font-size: 1.4rem;
+$block1_image2_title3_line-height: 2rem;
+$block1_image2_title3_margin-bottom: 0.5rem;
+$block1_image2_background-color: #fff;
+$block1_image2_button-font-size: 1.3rem;
+$block1_image2_button-color: #fff;
+$block1_image2_button-color--hover: #fff;
+$block1_image2_button-border-color: #9db9c5;
+$block1_image2_button-border-color--hover: #129dc0;
+$block1_image2_button_background-color: transparent;
+$block1_image2_button_background-color--hover: #129dc0;
+
 // ======================================
 //  slice footerbar
 // ======================================
 
-$footerbar_background-color: #129dc0er;
+$footerbar_background-color: #129dc0;
 $footerbar_font-color: #b1b1b1;
 $footerbar_font-size: 1.3rem;
 
-
+/*
 // ======================================
 //  slice footertop-1
 // ======================================

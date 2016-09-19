@@ -1,0 +1,106 @@
+// ======================================
+// slice  buttons 3
+// ======================================
+
+// slice  buttons 3 layout
+// ======================================
+.slice_buttons_3 {
+
+  a {
+    @include span(12);
+
+    @include susy-breakpoint($breakpoint-sm) {
+      @include span(4);
+    }
+  }
+}
+
+// slice  buttons 3 style
+// ======================================
+
+.slice_buttons_3 {
+  padding-top: 5px;
+  padding-bottom: 0;
+  margin-top: 25px;
+  margin-bottom: 0;
+
+  a {
+    font-size: $buttons_3_font-size;
+    color: $buttons_3_color;
+    padding: 17px 20px 15px 75px;
+    display: block;
+    border: none;
+    margin-top: 4px;
+    
+
+    &.button1 {
+      background: $buttons_3_button1_background-color $buttons_3_button1_background-image 35px 15px no-repeat;
+      &:hover {
+        background-color: $buttons_3_button1_background-color--hover;
+      }
+    }
+    &.button2 {
+      background: $buttons_3_button2_background-color $buttons_3_button2_background-image 35px 12px no-repeat;
+      &:hover {
+        background-color: $buttons_3_button2_background-color--hover;
+      }
+    }
+    &.button3 {
+      background: $buttons_3_button3_background-color $buttons_3_button3_background-image 35px 12px no-repeat;
+      &:hover {
+        background-color: $buttons_3_button3_background-color--hover;
+      }
+    }
+
+    @include susy-breakpoint($breakpoint-sm) {
+      & {
+        font-size: $buttons_3_font-size * 1.2;
+        padding: 22px 20px 20px 75px;
+      }
+
+      &.button1 {
+        background-position: 35px 20px;
+      }
+      &.button2 {
+        background-position: 35px 16px;
+      }
+      &.button3 {
+        background-position: 35px 16px;
+      }
+    }
+    @include susy-breakpoint($breakpoint-md) {
+      & {
+        font-size: $buttons_3_font-size * 1.8;
+        padding: 28px 20px 30px 90px;
+      }
+
+      &.button1 {
+        background-position: 35px 26px;
+      }
+      &.button2 {
+        background-position: 35px 23px;
+      }
+      &.button3 {
+        background-position: 35px 23px;
+      }
+    }
+  }
+
+  @include susy-breakpoint ($breakpoint-sm) {
+    /* required when not nested in another section
+    background: $buttons_3_slice-background-image;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    */
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+  }
+
+  @include susy-breakpoint ($breakpoint-sm) {
+    margin-top: 55px;
+    margin-bottom: 40px;
+
+  }
+}
+

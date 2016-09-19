@@ -17,7 +17,7 @@
       text-decoration: none;
       color: $footerbar_font-color;
       &:hover {
-        color: $white;
+        opacity: 0.8;
       }
 
       &#footer_mobile, &#footer_copyright, &#footer_tc, &#footer_privacy, #footer_help {
@@ -35,7 +35,7 @@
         width: 100%;
         border: none;
         text-indent: -9999px;
-        background-image: url('../images/churchinsight-logo.png');
+        background-image: url('../images/site-by-churchinsight.png');
         background-size: 158px 28px;
         background-repeat: no-repeat;
         background-position: center center;
@@ -44,7 +44,7 @@
         margin-bottom: 10px;
 
         &.footer:hover {
-          background-image: url('../images/churchinsight-logo-hover.png');
+          background-image: url('../images/site-by-churchinsight-hover.png');
         }
       }
     }

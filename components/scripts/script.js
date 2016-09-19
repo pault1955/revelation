@@ -71,5 +71,15 @@ $(document).ready(function () {
     $(caption).insertAfter( this );
   });
 
+  $('.slice_slideshow_mini  .bannerSlides .gallery_ul').show().bxSlider({
+    mode: 'horizontal',
+    auto: true,
+    pause: 6000,
+    speed: 500,
+    pager: true,
+    controls: true,
+    preloadImages: 'all'
+  });
+
 
 });

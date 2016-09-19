@@ -1,0 +1,280 @@
+// ======================================
+// slice slideshow mini
+// ======================================
+
+.slice_slideshow_mini {
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  h1 {
+    color: $slideshow_mini_title-color;
+    font-size: $slideshow_mini_title_font-size;
+    margin-bottom: $slideshow_mini_title_margin-bottom;
+    text-align: center;
+
+    @include susy-breakpoint($breakpoint-sm) {
+      font-size: $slideshow_mini_title_font-size * 1.5;
+      margin-bottom: $slideshow_mini_title_margin-bottom * 1.5;
+    }
+
+    @include susy-breakpoint($breakpoint-md) {
+      font-size: $slideshow_mini_title_font-size * 2.2;
+      margin-bottom: $slideshow_mini_title_margin-bottom * 1.7;
+    }
+  }
+
+
+  .bannerSlides {
+    margin: 0 15px;
+
+    .bx-wrapper {
+      margin-bottom: 0;
+      border: none !important;
+      box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      left: 0 !important;
+      -webkit-transform: translatez(0);
+      -moz-transform: translatez(0);
+      -ms-transform: translatez(0);
+      -o-transform: translatez(0);
+      transform: translatez(0);
+
+      .gallery_ul {
+        padding: 0;
+        margin-top: 0 !important;
+
+        .gallery_li {
+
+          img {
+            height: 100%;
+            width: 100%
+          }
+
+          .caption {
+            position: absolute;
+            top: 12%;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+
+            .slideTitle {
+              margin-top: 0px;
+              margin-bottom: 0px;
+              font-family: $banner_slideshow_slidetitle-font-family;
+              color: $banner_slideshow_slidetitle-color;
+              font-size: $banner_slideshow_slidetitle-font-size;
+              line-height: $banner_slideshow_slidetitle-font-size + 0.5rem;
+              font-weight: $bold;
+              text-align: center;
+            }
+
+            .slideText {
+              margin-top: 0;
+              margin-bottom: 0;
+              font-family: $banner_slideshow_slidetitle-font-family;
+              font-size: $banner_slideshow_slidetext-font-size;
+              color: $banner_slideshow_slidetext-color;
+              line-height: $banner_slideshow_slidetext-font-size + 0.5rem;
+              font-weight: $bold;
+              text-align: center;
+            }
+
+            .slideButton {
+              color: $banner_slideshow-button-color;
+              border: 2px solid $banner_slideshow-button-background-color;
+              background-color: $banner_slideshow-button-background-color;
+              font-size: $banner_slideshow-button-font-size;
+              padding: 5px;
+              border-radius: 3px;
+              text-align: center;
+              margin: 10px auto 0;
+              display: block;
+              width: 85px;
+              -webkit-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
+              -o-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
+              transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
+              text-decoration: none;
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+
+            @media (min-width: $breakpoint-ti) {
+              & {
+                top: 15%;
+
+                .slideTitle {
+                  margin-top: 1rem;
+                  margin-bottom: 1rem;
+                  font-size: $banner_slideshow_slidetitle-font-size * 1.5;
+                  line-height: $banner_slideshow_slidetitle-font-size + 0.5rem;
+                }
+
+                .slideText {
+                  margin-bottom: 2rem;
+                  font-size: $banner_slideshow_slidetext-font-size * 1.5;
+                  line-height: $banner_slideshow_slidetext-font-size + 0.5rem;
+                }
+
+                .slideButton {
+                  font-size: $banner_slideshow-button-font-size * 2;
+                  padding: 10px;
+                  width: 135px;
+
+                }
+              }
+            }
+
+            @media (min-width: $breakpoint-sm) {
+              & {
+                top: 20%;
+
+                .slideTitle {
+                  margin-top: 1rem;
+                  margin-bottom: 4rem;
+                  font-size: $banner_slideshow_slidetitle-font-size * 2.8;
+                  line-height: $banner_slideshow_slidetitle-font-size + 0.5rem;
+                }
+
+                .slideText {
+                  margin-bottom: 4rem;
+                  font-size: $banner_slideshow_slidetext-font-size * 2.5  ;
+                  line-height: $banner_slideshow_slidetext-font-size + 0.5rem;
+                }
+              }
+            }
+
+            @media (min-width: $breakpoint-md) {
+              & {
+
+                .slideTitle {
+                  font-size: $banner_slideshow_slidetitle-font-size * 4;
+                  line-height: $banner_slideshow_slidetitle-font-size + 0.5rem;
+                }
+
+                .slideText {
+                  margin-bottom: 4rem;
+                  font-size: $banner_slideshow_slidetext-font-size * 2.5  ;
+                  line-height: $banner_slideshow_slidetext-font-size + 0.5rem;
+                  margin-top: 6rem;
+                }
+              }
+            }
+
+            @media (min-width: $breakpoint-lg) {
+
+              & {
+                top: 25%;
+              }
+            }
+          }
+        }
+      }
+
+      .bx-controls {
+        .bx-pager {
+          &.bx-default-pager {
+            bottom: -20px;
+
+            a {
+              background: #f5f5f5;
+              -webkit-transition: background-color 500ms ease;
+              -o-transition: background-color 500ms ease;
+              transition: background-color 500ms ease;
+
+              &:hover, &.active {
+                background: #4acfc7;
+              }
+            }
+          }
+        }
+      }
+
+      .bx-controls-direction a {
+        width: 24px;
+        height: 34px;
+      }
+
+
+      .bx-prev {
+        left: 0;
+        background: rgba(0, 0, 0, 0.53) url(../images/arrow-prev-small.png) no-repeat 7px center;
+
+        &:hover, &:focus {
+          background: rgba(0, 0, 0, 0.53) url(../images/arrow-prev-small.png) no-repeat 5px center;
+        }
+      }
+
+      .bx-next {
+        right: 0;
+        background: rgba(0, 0, 0, 0.53) url(../images/arrow-next-small.png) no-repeat 9px center;
+
+        &:hover, &:focus {
+          background: rgba(0, 0, 0, 0.53) url(../images/arrow-next-small.png) no-repeat 11px center;
+        }
+      }
+
+
+
+      @include susy-breakpoint($breakpoint-sm) {
+        .bx-controls {
+          .bx-pager {
+            &.bx-default-pager {
+              bottom: -30px;
+
+              a {
+                width: 14px;
+                height: 14px;
+                border-radius: 7px;
+              }
+            }
+          }
+        }
+
+        .bx-controls-direction a {
+          width: 55px;
+          height: 70px;
+        }
+
+        .bx-prev {
+          left: 0;
+          background: rgba(0, 0, 0, 0.53) url(../images/arrow-prev.png) no-repeat 20px center;
+
+          &:hover, &:focus {
+            background: rgba(0, 0, 0, 0.53) url(../images/arrow-prev.png) no-repeat 17px center;
+          }
+        }
+
+        .bx-next {
+          right: 0;
+          background: rgba(0, 0, 0, 0.53) url(../images/arrow-next.png) no-repeat 24px center;
+
+          &:hover, &:focus {
+            background: rgba(0, 0, 0, 0.53) url(../images/arrow-next.png) no-repeat 26px center;
+          }
+        }
+      }
+
+    }
+
+
+  }
+
+  @include susy-breakpoint ($breakpoint-sm) {
+    background: $slideshow_mini_slice-background-image;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+
+  @include susy-breakpoint ($breakpoint-md) {
+    background: $slideshow_mini_slice-background-image;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+}
+

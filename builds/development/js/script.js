@@ -71,5 +71,26 @@ $(document).ready(function () {
     $(caption).insertAfter( this );
   });
 
+  $('.slice_slideshow_mini  .bannerSlides .gallery_ul').show().bxSlider({
+    mode: 'fade',
+    auto: true,
+    pause: 8000,
+    speed: 500,
+    pager: true,
+    controls: true,
+    preloadImages: 'all'
+  });
+
+
+  $( '.slice_slideshow_mini  .bannerSlides ul li.gallery_li a img' ).each(function( ) {
+    var mslideLink = $(this).parent().attr('href');
+    var malt = $(this).attr('alt');
+    var mdata = $.parseHTML( malt );
+    var mtitle = '<div class="slideTitle">' + ($(mdata).text().split('*')[ 0 ] || '') + '</div>';
+    var msubtitle = '<div class="slideText">' + ($(mdata).text().split('*')[ 1 ] || '') + '</div>';
+    var mcaption = '<div class="caption">' + mtitle + '<div class="divider"></div>' + msubtitle + '<a href="' + mslideLink + '" class="slideButton">MORE DETAILS</a></div>';
+    $(mcaption).insertAfter( this );
+  });
+
 
 });
