@@ -67,7 +67,7 @@ $(document).ready(function () {
     var data = $.parseHTML( alt );
     var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
     var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
-    var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
+    var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">Read more</a></div>';
     $(caption).insertAfter( this );
   });
 
@@ -82,15 +82,6 @@ $(document).ready(function () {
   });
 
 
-  $( '.slice_slideshow_mini  .bannerSlides ul li.gallery_li a img' ).each(function( ) {
-    var mslideLink = $(this).parent().attr('href');
-    var malt = $(this).attr('alt');
-    var mdata = $.parseHTML( malt );
-    var mtitle = '<div class="slideTitle">' + ($(mdata).text().split('*')[ 0 ] || '') + '</div>';
-    var msubtitle = '<div class="slideText">' + ($(mdata).text().split('*')[ 1 ] || '') + '</div>';
-    var mcaption = '<div class="caption">' + mtitle + '<div class="divider"></div>' + msubtitle + '<a href="' + mslideLink + '" class="slideButton">MORE DETAILS</a></div>';
-    $(mcaption).insertAfter( this );
-  });
 
 
 });

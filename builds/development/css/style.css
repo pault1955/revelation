@@ -851,7 +851,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   visibility: hidden;
   position: fixed;
   left: 0;
-  top: 185px;
+  top: 60px;
   right: 0;
   z-index: 999;
   padding-top: 15px;
@@ -918,12 +918,24 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   background-image: url("../images/searchbox-icon.png");
   color: #000;
 }
-/* line 381, ../../../components/sass/modules/_slice_header.scss */
+@media (min-width: 467px) {
+  /* line 380, ../../../components/sass/modules/_slice_header.scss */
+  .slice_header .search-overlay {
+    top: 72px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 386, ../../../components/sass/modules/_slice_header.scss */
+  .slice_header .search-overlay {
+    top: 140px;
+  }
+}
+/* line 392, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .top-link-wrapper {
   display: none;
 }
 @media (min-width: 992px) {
-  /* line 386, ../../../components/sass/modules/_slice_header.scss */
+  /* line 397, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .top-link-wrapper {
     display: block;
     top: 0px;
@@ -937,7 +949,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     margin-left: 10px;
     float: right;
   }
-  /* line 399, ../../../components/sass/modules/_slice_header.scss */
+  /* line 410, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .top-link-wrapper .header-link-block {
     height: 50px;
     padding-top: 15px;
@@ -954,23 +966,23 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     text-decoration: none;
     float: left;
   }
-  /* line 415, ../../../components/sass/modules/_slice_header.scss */
+  /* line 426, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .top-link-wrapper .header-link-block:hover {
     background-color: #dceff4;
     color: black;
   }
-  /* line 421, ../../../components/sass/modules/_slice_header.scss */
+  /* line 432, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .top-link-wrapper .header-link-block .header-icon {
     width: 16px;
     margin-right: 5px;
     float: left;
     opacity: 0.2;
   }
-  /* line 428, ../../../components/sass/modules/_slice_header.scss */
+  /* line 439, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .top-link-wrapper .header-link-block .header-icon:hover {
     opacity: 1.0;
   }
-  /* line 431, ../../../components/sass/modules/_slice_header.scss */
+  /* line 442, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .top-link-wrapper .header-link-block .header-link {
     display: inline-block;
     float: left;
@@ -981,7 +993,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     text-transform: uppercase;
   }
 }
-/* line 449, ../../../components/sass/modules/_slice_header.scss */
+/* line 460, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .logo-container {
   position: absolute;
   top: 0;
@@ -990,75 +1002,75 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   z-index: 300;
   height: 50px;
 }
-/* line 457, ../../../components/sass/modules/_slice_header.scss */
+/* line 468, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .logo-container .logo-icon {
   float: left;
 }
-/* line 460, ../../../components/sass/modules/_slice_header.scss */
+/* line 471, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .logo-container .logo-icon a {
   display: block;
 }
-/* line 463, ../../../components/sass/modules/_slice_header.scss */
+/* line 474, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .logo-container .logo-icon a img {
   width: 40px;
 }
-/* line 469, ../../../components/sass/modules/_slice_header.scss */
+/* line 480, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .logo-container .logo-name {
   float: left;
   margin-top: 22px;
   margin-left: 3px;
 }
-/* line 474, ../../../components/sass/modules/_slice_header.scss */
+/* line 485, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .logo-container .logo-name a {
   display: block;
   font-size: 2.2rem;
   color: #2b4049;
   font-weight: 700;
 }
-/* line 480, ../../../components/sass/modules/_slice_header.scss */
+/* line 491, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .logo-container .logo-name a:hover {
   opacity: 0.7;
 }
 @media (min-width: 467px) {
-  /* line 488, ../../../components/sass/modules/_slice_header.scss */
+  /* line 499, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .logo-container .logo-name a {
     font-size: 2.86rem;
     margin-top: 6px;
   }
-  /* line 495, ../../../components/sass/modules/_slice_header.scss */
+  /* line 506, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .logo-container .logo-icon a img {
     width: 55px;
   }
 }
 @media (min-width: 992px) {
-  /* line 504, ../../../components/sass/modules/_slice_header.scss */
+  /* line 515, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .logo-container {
     margin-top: 15px;
     margin-left: 15px;
   }
-  /* line 509, ../../../components/sass/modules/_slice_header.scss */
+  /* line 520, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .logo-container .logo-icon a {
     margin-top: 25px;
   }
-  /* line 515, ../../../components/sass/modules/_slice_header.scss */
+  /* line 526, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .logo-container .logo-name a {
     margin-top: 33px;
   }
-  /* line 518, ../../../components/sass/modules/_slice_header.scss */
+  /* line 529, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .logo-container .logo-name a img {
     width: 70px;
   }
 }
-/* line 529, ../../../components/sass/modules/_slice_header.scss */
+/* line 540, ../../../components/sass/modules/_slice_header.scss */
 .slice_header .nav-menu {
   display: none;
 }
 @media (min-width: 992px) {
-  /* line 536, ../../../components/sass/modules/_slice_header.scss */
+  /* line 547, ../../../components/sass/modules/_slice_header.scss */
   .slice_header #mobile_nav {
     display: none;
   }
-  /* line 542, ../../../components/sass/modules/_slice_header.scss */
+  /* line 553, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar {
     background-color: transparent;
     z-index: 10;
@@ -1066,41 +1078,41 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     width: 100%;
     margin-top: 0;
   }
-  /* line 549, ../../../components/sass/modules/_slice_header.scss */
+  /* line 560, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu {
     display: block;
     float: right;
     margin-top: 15px;
   }
-  /* line 554, ../../../components/sass/modules/_slice_header.scss */
+  /* line 565, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu {
     padding-left: 0;
     margin: 0 auto;
   }
-  /* line 560, ../../../components/sass/modules/_slice_header.scss */
+  /* line 571, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu ul {
     display: none;
   }
-  /* line 564, ../../../components/sass/modules/_slice_header.scss */
+  /* line 575, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu li {
     position: relative;
     list-style-type: none;
   }
-  /* line 568, ../../../components/sass/modules/_slice_header.scss */
+  /* line 579, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu li:hover > ul {
     display: block;
   }
-  /* line 573, ../../../components/sass/modules/_slice_header.scss */
+  /* line 584, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu > li {
     float: left;
     position: relative;
     margin-top: 4px;
   }
-  /* line 578, ../../../components/sass/modules/_slice_header.scss */
+  /* line 589, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu > li > a {
     padding: 17px 20px;
   }
-  /* line 582, ../../../components/sass/modules/_slice_header.scss */
+  /* line 593, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu > li ul {
     position: absolute;
     top: 100%;
@@ -1110,19 +1122,19 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     padding: 0;
     z-index: 999;
   }
-  /* line 591, ../../../components/sass/modules/_slice_header.scss */
+  /* line 602, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu > li ul a {
     color: #2c4048;
     font-size: 1.6rem;
     font-weight: 400;
     padding: 15px 23px;
   }
-  /* line 598, ../../../components/sass/modules/_slice_header.scss */
+  /* line 609, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu > li ul ul {
     top: 0;
     left: 100%;
   }
-  /* line 603, ../../../components/sass/modules/_slice_header.scss */
+  /* line 614, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu > li ul li.has_sub_menu:after {
     content: ">";
     color: #2c4048;
@@ -1132,17 +1144,17 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     line-height: 30px;
     height: 30px;
   }
-  /* line 615, ../../../components/sass/modules/_slice_header.scss */
+  /* line 626, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu > li:hover > a {
     background-color: #f5f5f5;
     color: #129dc0;
   }
-  /* line 620, ../../../components/sass/modules/_slice_header.scss */
+  /* line 631, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar .nav-menu .root_menu > li li:hover > a {
     color: #129dc0;
     background-color: #ffffff;
   }
-  /* line 630, ../../../components/sass/modules/_slice_header.scss */
+  /* line 641, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar a {
     color: #2c4048;
     font-size: 1.6rem;
@@ -1156,7 +1168,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     text-decoration: none;
     text-transform: capitalize;
   }
-  /* line 644, ../../../components/sass/modules/_slice_header.scss */
+  /* line 655, ../../../components/sass/modules/_slice_header.scss */
   .slice_header .navbar ul {
     list-style-type: none;
   }
@@ -1262,7 +1274,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   }
   /* line 103, ../../../components/sass/modules/_slice_slideshow_full_width.scss */
   .slice_slideshow_full_width .bannerSlides .bx-wrapper .gallery_ul .gallery_li .caption .slideButton {
-    font-size: 1.4rem;
+    font-size: 1.68rem;
     padding: 10px;
     width: 135px;
   }
@@ -1849,6 +1861,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 /* line 89, ../../../components/sass/modules/_slice_block1_image.scss */
 .slice_block1_image a:hover {
   background-color: #2d9ebd;
+  border-color: #2d9ebd;
   color: #fff;
 }
 @media (min-width: 768px) {
@@ -2330,6 +2343,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 /* line 74, ../../../components/sass/modules/_slice_block1_image2.scss */
 .slice_block1_image2 a:hover {
   background-color: #129dc0;
+  border-color: #129dc0;
   color: #fff;
 }
 @media (min-width: 768px) {
