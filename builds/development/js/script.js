@@ -72,16 +72,14 @@ $(document).ready(function () {
   });
 
   $('.slice_slideshow_mini  .bannerSlides .gallery_ul').show().bxSlider({
-    mode: 'fade',
+    mode: 'horizontal',
     auto: true,
-    pause: 8000,
+    pause: 6000,
     speed: 500,
     pager: true,
     controls: true,
     preloadImages: 'all'
   });
-
-
 
 
 });

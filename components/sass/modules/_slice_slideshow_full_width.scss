@@ -182,19 +182,19 @@
 
       .bx-prev {
         left: 0;
-        background: rgba(0, 0, 0, 0.53) url(../images/arrow-prev-small.png) no-repeat 7px center;
+        background: rgba(0, 0, 0, 0.3) url(../images/arrow-prev-small.png) no-repeat 7px center;
 
         &:hover, &:focus {
-          background: rgba(0, 0, 0, 0.53) url(../images/arrow-prev-small.png) no-repeat 5px center;
+          background: #398d89 url(../images/arrow-prev-small-hover.png) no-repeat 5px center;
         }
       }
 
       .bx-next {
         right: 0;
-        background: rgba(0, 0, 0, 0.53) url(../images/arrow-next-small.png) no-repeat 9px center;
+        background: rgba(0, 0, 0, 0.3) url(../images/arrow-next-small.png) no-repeat 9px center;
 
         &:hover, &:focus {
-          background: rgba(0, 0, 0, 0.53) url(../images/arrow-next-small.png) no-repeat 11px center;
+          background: #398d89 url(../images/arrow-next-small-hover.png) no-repeat 11px center;
         }
       }
 
@@ -222,19 +222,19 @@
 
         .bx-prev {
           left: 0;
-          background: rgba(0, 0, 0, 0.53) url(../images/arrow-prev.png) no-repeat 20px center;
+          background: rgba(0, 0, 0, 0.3) url(../images/arrow-prev.png) no-repeat 20px center;
 
           &:hover, &:focus {
-            background: rgba(0, 0, 0, 0.53) url(../images/arrow-prev.png) no-repeat 17px center;
+            background: #398d89 url(../images/arrow-prev-hover.png) no-repeat 17px center;
           }
         }
 
         .bx-next {
           right: 0;
-          background: rgba(0, 0, 0, 0.53) url(../images/arrow-next.png) no-repeat 24px center;
+          background: rgba(0, 0, 0, 0.3) url(../images/arrow-next.png) no-repeat 24px center;
 
           &:hover, &:focus {
-            background: rgba(0, 0, 0, 0.53) url(../images/arrow-next.png) no-repeat 26px center;
+            background: #398d89 url(../images/arrow-next-hover.png) no-repeat 26px center;
           }
         }
       }

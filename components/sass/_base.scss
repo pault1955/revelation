@@ -148,102 +148,133 @@ img.preview_show {
 .popupwindow_title {
   color: $system_calendar_popup_window-color;
 }
+/* form submission window */
+.endis-jquery-ui {
+  .ui-dialog {
+        border-radius: 5px;
 
-/* view all forums  icon */
-.forums_boxout_contents a img {
-  width: 20px;
-  margin-right: 8px;
+    #divOverlay {
+
+      .button {
+        display: block;
+        margin: 0 auto 10px;
+        padding: 5px 10px;
+        border-radius: 2px;
+        -webkit-transition: background-color 500ms ease;
+        transition: background-color 500ms ease;
+        font-size: $block1_form_button-font-size;
+        text-align: center;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid $default_button-border-color;
+        background-color: $default_button-background-color;
+        color: $block1_form_button-color;
+
+        &:hover {
+          border: 2px solid $default_button-border-color--hover;
+          background-color: $default_button-background-color--hover;
+        }
+      }
+    }
+  }
 }
+    /* view all forums  icon */
+  .forums_boxout_contents a img {
+    width: 20px;
+    margin-right: 8px;
+  }
 
-/* directory search icon */
-tr.gridheader a img {
-  width: 25px;
-}
+  /* directory search icon */
+  tr.gridheader a img {
+    width: 25px;
+  }
 
-/* media list icons */
+  /* media list icons */
 
-.media_box_cell img {
-  width: 18px;
-}
-.MediaListRSS img {
-  width: 40px;
-}
-/* signup sheet */
-table.signup tr td, td.signup0 {
+  .media_box_cell img {
+    width: 18px;
+  }
+  .MediaListRSS img {
+    width: 40px;
+  }
+  /* signup sheet */
+  table.signup tr td, td.signup0 {
 
-  line-height: 0;
-  font-size: 0;
-  border-collapse: separate;
-}
+    line-height: 0;
+    font-size: 0;
+    border-collapse: separate;
+  }
 
-table.signup tr td img {
-  height: 8px !important;
-}
-/* form styling */
-input {
-  -webkit-appearance: none;
-}
-input[type="checkbox"] + label, input[type="radio"] +  label {
-  margin-left:10px;
-}
-
-
-// hide author info on articles
-.content_page_main .ArticleBody .author {
-  display: none;
-}
-
-
-@media (min-width: $breakpoint-sm) {
-
-  body {
-    font-size: 1.6rem;
-    // line-height: 2.4rem;
+  table.signup tr td img {
+    height: 8px !important;
+  }
+  /* form styling */
+  input {
+    -webkit-appearance: none;
+  }
+  input[type="checkbox"] + label, input[type="radio"] +  label {
+    margin-left:10px;
   }
 
 
-  h1 {
-    font-size: 4.4rem;
-    line-height: 5rem;
-    font-weight: $bold;
-  }
-
-  h2 {
-    font-size: 4.2rem;
-    line-height: 4.8rem;
-    font-weight: $bold;
-  }
-
-  h3 {
-    font-size: 2.4rem;
-    line-height: 3rem;
-    color: #129dc0;
-  }
-
-  h4 {
-    font-size: 2.2rem;
-    line-height: 2.6rem;
-    font-weight: $bold;
-  }
-
-  h5 {
-    font-size: 2rem;
-    line-height: 2.8rem;
-
-  }
-
-  h6 {
-    font-size: 1.4rem;
-    line-height: 2rem;
+  // hide author info on articles
+  .content_page_main .ArticleBody .author {
+    display: none;
   }
 
 
-  p {
-    margin-bottom: 2.4rem;
+  @media (min-width: $breakpoint-sm) {
+
+    body {
+      font-size: 1.6rem;
+      // line-height: 2.4rem;
+    }
+
+
+    h1 {
+      font-size: 4.4rem;
+      line-height: 5rem;
+      font-weight: $bold;
+    }
+
+    h2 {
+      font-size: 4.2rem;
+      line-height: 4.8rem;
+      font-weight: $bold;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      line-height: 3rem;
+      color: #129dc0;
+    }
+
+    h4 {
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+      font-weight: $bold;
+    }
+
+    h5 {
+      font-size: 2rem;
+      line-height: 2.8rem;
+
+    }
+
+    h6 {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+
+
+    p {
+      margin-bottom: 2.4rem;
+    }
+
+    blockquote {
+      font-size: 1.6rem;
+    }
+
   }
 
-  blockquote {
-    font-size: 1.6rem;
-  }
-
-}
