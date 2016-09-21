@@ -2,6 +2,44 @@
 // slice footerbar
 // ======================================
 
+// slice footerbar layout
+// ======================================
+/*
+.slice_footerbar {
+
+  .footerbar {
+    a {
+
+      &#footer_mobile, &#footer_copyright, &#footer_tc, &#footer_privacy, #footer_help {
+        line-height: 16px
+      }
+
+      &.footer {
+        @include span(12);
+
+        @include susy-breakpoint($breakpoint-sm) {
+          @include span(4);
+        }
+      }
+    }
+
+    span#footer_charity {
+      @include span(12);
+
+      @include susy-breakpoint($breakpoint-sm) {
+        @include span(4);
+      }
+
+    }
+  }
+
+
+}
+*/
+
+// slice footerbar style
+// ======================================
+
 .slice_footerbar {
 
   background-color: $footerbar-background-color;
@@ -62,7 +100,7 @@
 
       a {
         &.footer {
-          width: 25%;
+          width: 173px;
           margin-bottom: 25px;
         }
 

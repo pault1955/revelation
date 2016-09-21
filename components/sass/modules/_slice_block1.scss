@@ -9,8 +9,8 @@
 
   .ArticleBody {
     @include susy-breakpoint($breakpoint-md) {
-      @include span(6);
-      @include push(3);
+      @include span(8);
+      @include push(2);
     }
   }
 }
@@ -55,11 +55,12 @@
 
     &:hover {
       background-color: $block1_button_background-color--hover;
+      border-color: $block1_button-border-color;
       color: $block1_button-color--hover;
     }
 
     @include susy-breakpoint($breakpoint-sm) {
-      font-size: $block1_button_font-size * 1.2;
+      font-size: $block1_button_font-size + 0.5rem;
       max-width: 160px;
       margin-top: 40px;
     }

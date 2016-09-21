@@ -15,6 +15,8 @@
   background-image: $block1_image_slice_background-image;
   -webkit-background-size:cover;
   background-size:cover;
+  background-position: 50% 50%;
+  background-attachment: scroll;
   color: $block1_image-color;
   text-align: center;
   padding: 20px 15px 30px;
@@ -22,6 +24,7 @@
 
   .title1 {
     color: $block1_image_title1-color;
+    font-family: $block1_image_font-family;
     font-size: $block1_image_title1_font-size;
     margin-bottom: $block1_image_title1_margin-bottom;
 
@@ -93,7 +96,7 @@
     }
 
     @include susy-breakpoint($breakpoint-sm) {
-      font-size: $block1_image_button_font-size * 1.2;
+      font-size: $block1_image_button_font-size + 0.5rem;
       max-width: 160px;
       margin-top: 40px;
     }
@@ -106,6 +109,7 @@
   @include susy-breakpoint ($breakpoint-sm) {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-attachment: fixed;
   }
 
   @include susy-breakpoint ($breakpoint-md) {

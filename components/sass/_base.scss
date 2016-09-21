@@ -1,15 +1,18 @@
 // ======================================
 //  site wide
 // ======================================
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Montserrat:400,700);
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
+
 .clearfix:after {
   clear: both;
 }
+
 html {
   font-size: 0.625em;
 }
@@ -32,24 +35,24 @@ body {
 }
 
 .container {
- @include container();
- @include show-grid(12);
+  @include container();
+  @include show-grid(12);
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $default_font-family;
   margin: 0.1em 0;
 }
 
-
 h1 {
+  font-family: $default_font-family-2;
   font-size: 2.2rem;
   line-height: 2.5rem;
   font-weight: $bold;
 }
 
 h2 {
+  font-family: $default_font-family-2;
   font-size: 2.1rem;
   line-height: 2.4rem;
   font-weight: $bold;
@@ -59,9 +62,11 @@ h3 {
   font-size: 2.0rem;
   line-height: 2.2rem;
   color: #129dc0;
+  font-weight: $bold;
 }
 
 h4 {
+  font-family: $default_font-family-2;
   font-size: 1.9rem;
   line-height: 2rem;
   font-weight: $bold;
@@ -78,10 +83,8 @@ h6 {
   line-height: 2rem;
 }
 
-
-
 blockquote {
-  font-size: 1.4rem;
+  color: $default_link_color;
 }
 
 a {
@@ -115,7 +118,7 @@ input[type=button] {
   transition: all 500ms ease;
 }
 
-.sitebutton {
+.sitebutton, .button {
   display: inline-block;
   margin-top: 10px;
   margin-right: 5px;
@@ -123,22 +126,30 @@ input[type=button] {
   border-radius: 2px;
   font-size: 1.4rem;
   text-align: center;
-  letter-spacing: 2px;
   text-decoration: none;
-  text-transform: uppercase;
-  border: 1px solid $system_sitebutton_border-color;
+  border: 2px solid $system_sitebutton_border-color;
   background-color: transparent;
   color: $system_sitebutton_color;
 }
-.sitebutton:hover {
+
+.sitebutton:hover, .button:hover {
   color: #fff;
-  border: 1px solid #5ac5c5;
+  border: 2px solid #5ac5c5;
   background-color: #5ac5c5;
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder
+{
+color: $default_placeholder-color;
 }
 
 .preview_overlay_content img {
   width: 20px;
 }
+
 img.preview_show {
   width: 20px;
 }
@@ -148,10 +159,11 @@ img.preview_show {
 .popupwindow_title {
   color: $system_calendar_popup_window-color;
 }
+
 /* form submission window */
 .endis-jquery-ui {
   .ui-dialog {
-        border-radius: 5px;
+    border-radius: 5px;
 
     #divOverlay {
 
@@ -179,102 +191,158 @@ img.preview_show {
     }
   }
 }
-    /* view all forums  icon */
-  .forums_boxout_contents a img {
-    width: 20px;
-    margin-right: 8px;
+
+/* view all forums  icon */
+.forums_boxout_contents a img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+/* directory search icon */
+tr.gridheader a img {
+  width: 25px;
+}
+
+/* media list icons */
+
+.media_box_cell img {
+  width: 18px;
+}
+
+.MediaListRSS img {
+  width: 40px;
+}
+
+/* signup sheet */
+table.signup tr td, td.signup0 {
+
+  line-height: 0;
+  font-size: 0;
+  border-collapse: separate;
+}
+
+table.signup tr td img {
+  height: 8px !important;
+}
+
+/* form styling */
+
+input {
+  -webkit-appearance: none;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+  margin-left: 10px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: $normal;
+}
+
+input:not([type=checkbox]):not([type=radio]):not([type=button]) {
+  // -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+  margin-left: 10px;
+}
+
+.ArticleBody input:not([type=checkbox]):not([type=radio]):not([type=button]), .ArticleBody textarea,
+.ArticleEditor input:not([type=checkbox]):not([type=radio]):not([type=button]), .ArticleEditor textarea {
+  margin-bottom: 8px;
+  padding: 4px 3px;
+  border: 1px solid $default_form_border-color;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.ArticleBody textarea, .ArticleEditor textarea {
+  width: 100%;
+}
+
+.ArticleBody input:focus, .ArticleBody textarea:focus,
+.ArticleEditor input:focus, .ArticleEditor textarea:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(49, 167, 222, 0.8)
+}
+/*
+.ArticleBody input[type="button"], .ArticleEditor input[type="button"] {
+  background-color: transparent;
+  padding: 5px;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
+  -o-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
+  transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease
+}
+
+.ArticleBody input[type="button"]:hover, .ArticleEditor input[type="button"]:hover {
+  background-color: #f3f3f3;
+}
+*/
+// hide author info on articles
+.content_page_main .ArticleBody .author {
+  display: none;
+}
+
+@media (min-width: $breakpoint-sm) {
+
+  body {
+    font-size: $default_font-size + 0.2rem;
+    line-height: $default_font-size + 0.4rem;
   }
 
-  /* directory search icon */
-  tr.gridheader a img {
-    width: 25px;
+  h1 {
+    font-size: 4.4rem;
+    line-height: 5rem;
+    font-weight: $bold;
   }
 
-  /* media list icons */
-
-  .media_box_cell img {
-    width: 18px;
-  }
-  .MediaListRSS img {
-    width: 40px;
-  }
-  /* signup sheet */
-  table.signup tr td, td.signup0 {
-
-    line-height: 0;
-    font-size: 0;
-    border-collapse: separate;
+  h2 {
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    font-weight: $bold;
   }
 
-  table.signup tr td img {
-    height: 8px !important;
-  }
-  /* form styling */
-  input {
-    -webkit-appearance: none;
-  }
-  input[type="checkbox"] + label, input[type="radio"] +  label {
-    margin-left:10px;
+  h3 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #129dc0;
   }
 
-
-  // hide author info on articles
-  .content_page_main .ArticleBody .author {
-    display: none;
+  h4 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    font-weight: $bold;
   }
 
-
-  @media (min-width: $breakpoint-sm) {
-
-    body {
-      font-size: 1.6rem;
-      // line-height: 2.4rem;
-    }
-
-
-    h1 {
-      font-size: 4.4rem;
-      line-height: 5rem;
-      font-weight: $bold;
-    }
-
-    h2 {
-      font-size: 4.2rem;
-      line-height: 4.8rem;
-      font-weight: $bold;
-    }
-
-    h3 {
-      font-size: 2.4rem;
-      line-height: 3rem;
-      color: #129dc0;
-    }
-
-    h4 {
-      font-size: 2.2rem;
-      line-height: 2.6rem;
-      font-weight: $bold;
-    }
-
-    h5 {
-      font-size: 2rem;
-      line-height: 2.8rem;
-
-    }
-
-    h6 {
-      font-size: 1.4rem;
-      line-height: 2rem;
-    }
-
-
-    p {
-      margin-bottom: 2.4rem;
-    }
-
-    blockquote {
-      font-size: 1.6rem;
-    }
+  h5 {
+    font-size: 2rem;
+    line-height: 2.8rem;
 
   }
+
+  h6 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  p {
+    margin-bottom: 2.4rem;
+  }
+
+  blockquote {
+    font-size: 1.7rem;
+  }
+
+}
 

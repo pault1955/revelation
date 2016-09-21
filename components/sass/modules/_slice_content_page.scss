@@ -1,0 +1,264 @@
+// ======================================
+// slice  content page
+// ======================================
+
+// slice   content page layout
+// ======================================
+
+.slice_content_page {
+
+  @include susy-breakpoint($breakpoint-sm) {
+    .main-content {
+      @include span(9);
+    }
+
+    .sidebar {
+      @include span(3);
+    }
+  }
+}
+
+// slice   content page style
+// ======================================
+
+.slice_content_page {
+
+  background-color: $content_page_background-color;
+  border-top: 1px solid $content_page_background-color-2;
+
+  .main-content {
+    background-color: $content_page_content_background-color;
+    padding: 25px 32px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @include susy-breakpoint($breakpoint-md) {
+      margin-top: 30px;
+      padding-top: 40px;
+    }
+
+    ul {
+        li {
+          line-height: 26px;
+          list-style: none;
+
+          &:before {
+              /* For a round bullet */
+              content: '\2022';
+              /* For a square bullet */
+              /*content:'\25A0';*/
+              display: block;
+              position: relative;
+              max-width: 0;
+              max-height: 0;
+              left: -15px;
+              top: -1px;
+              color: $default_link_color;
+          }
+        }
+    }
+
+    ol {
+      line-height: 26px;
+    }
+  }
+
+  .sidebar {
+
+    .group-nav {
+      display: none;
+
+      @include susy-breakpoint($breakpoint-sm) {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        background: $sidebar_group_nav_background-color;
+
+        table {
+          border-collapse: separate;
+          border-spacing: 0;
+          td {
+            padding: 0 !important;
+          }
+        }
+        table.boxout_header {
+
+
+          .boxout_header_left, .boxout_header_right {
+            display: none
+          }
+
+          .boxout_header_middle {
+            margin-top: 0;
+            padding: 0
+          }
+
+          .boxout_header_middle a {
+            display: block;
+            padding: 10px 15px;
+            color: $sidebar_group_nav_header_color;
+            font-size: $sidebar_group_nav_header_font-size;
+            text-decoration: none;
+            margin-bottom: 1px;
+            float: left;
+            width: 100%;
+            background-color: $sidebar_group_nav_header_background-color;
+            text-transform: uppercase;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+
+        }
+
+        .group_nav_child, .group_nav_sibling, .group_nav_parent, .group_nav_selected {
+          float: left;
+          width: 100%;
+
+          a {
+            display: block;
+            padding: 10px 15px;
+            -webkit-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+            color:$sidebar_group_nav_color;
+            font-size: $sidebar_group_nav_font-size;
+            text-decoration: none;
+            margin-bottom: 1px;
+            float: left;
+            width: 100%;
+            background-color: $sidebar_group_nav_background-color;
+
+            &:hover {
+              background-color: $sidebar_group_nav_selected_background_color;
+              color: $sidebar_group_nav_selected_color;
+            }
+
+          }
+        }
+
+        .group_nav_selected {
+
+          a {
+            background-color: $sidebar_group_nav_selected_background_color;
+            color: $sidebar_group_nav_selected_color;
+          }
+          .group_nav_child {
+
+            a {
+              // background-color: #f0f1f2;
+              // color: #4d4d4d;
+              padding-left: 25px;
+
+              &:hover {
+                // background-color: #31a7de;
+                //  color: #2aabab
+              }
+            }
+
+          }
+
+          .group_nav_parent > div > a {
+            padding-left: 25px;
+          }
+
+        }
+
+      }
+    }
+
+    .sidebar_buttons {
+      padding-top: 5px;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      a {
+        font-size: $sidebar_buttons_font-size;
+        font-weight: $sidebar_buttons_font-weight;
+        color: $sidebar_buttons_color;
+        letter-spacing: 0.3px;
+        padding: 16px 20px 16px 75px;
+        display: block;
+        border: none;
+        margin-top: 4px;
+
+        &.button1 {
+          background: $sidebar_buttons_button1_background-color $sidebar_buttons_button1_background-image 35px 17px/21px no-repeat;
+          &:hover {
+            background-color: $sidebar_buttons_button1_background-color--hover;
+          }
+        }
+        &.button2 {
+          background: $sidebar_buttons_button2_background-color $sidebar_buttons_button2_background-image 35px 14px/21px no-repeat;
+          &:hover {
+            background-color: $sidebar_buttons_button2_background-color--hover;
+          }
+        }
+        &.button3 {
+          background: $sidebar_buttons_button3_background-color $sidebar_buttons_button3_background-image 35px 14px/21px no-repeat;
+          &:hover {
+            background-color: $sidebar_buttons_button3_background-color--hover;
+          }
+        }
+
+        @include susy-breakpoint($breakpoint-sm) {
+
+            padding: 13px 20px 13px 50px;
+
+          &.button1 {
+            background-position: 20px 15px;
+          }
+          &.button2 {
+            background-position: 20px 13px;
+          }
+          &.button3 {
+            background-position: 20px 13px;
+          }
+        }
+        @include susy-breakpoint($breakpoint-md) {
+
+            padding: 13px 20px 13px 60px;
+
+          &.button1 {
+            background-position: 20px 15px;
+          }
+          &.button2 {
+            background-position: 20px 12px;
+          }
+          &.button3 {
+            background-position: 20px 12px;
+          }
+        }
+      }
+
+      @include susy-breakpoint ($breakpoint-sm) {
+        /* required when not nested in another section
+        background: $sidebar_buttons_slice-background-image;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        */
+        margin-top: 50px;
+        margin-bottom: 40px;
+
+      }
+
+      @include susy-breakpoint ($breakpoint-sm) {
+        margin-top: 0;
+        margin-bottom: 30px;
+
+      }
+    }
+
+  }
+
+  @include  susy-breakpoint($breakpoint-sm) {
+    background-color: $content_page_background-color-2;
+  }
+
+  @include  susy-breakpoint($breakpoint-md) {
+    border-top: none;
+  }
+}

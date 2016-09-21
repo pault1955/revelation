@@ -18,6 +18,7 @@
     @include susy-breakpoint($breakpoint-ti) {
       & {
         height: 270px !important;
+        pointer-events: auto;
       }
     }
 

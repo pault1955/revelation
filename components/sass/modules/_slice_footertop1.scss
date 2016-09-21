@@ -11,7 +11,7 @@
   @include span(12);
 
   @include  susy-breakpoint($breakpoint-sm) {
-      @include span(3 at 10 isolate);
+      @include span(3 at 10  isolate);
   }
 
 }
@@ -28,7 +28,7 @@
   @include span(12);
 
   @include  susy-breakpoint($breakpoint-sm) {
-      @include span(4);
+      @include span(5);
   }
 }
 
@@ -70,6 +70,12 @@
 
         &:hover {
           background-color: $footertop1_icon_background-color--hover;
+        }
+      }
+
+      .ArticleBody {
+        @include susy-breakpoint($breakpoint-sm) {
+          float: right;
         }
       }
 
