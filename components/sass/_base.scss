@@ -1,7 +1,7 @@
 // ======================================
 //  site wide
 // ======================================
-@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Montserrat:400,700);
 
 .clearfix:before,
 .clearfix:after {
@@ -105,9 +105,9 @@ a {
 /* remove ios shadow */
 
 input, textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+ // -webkit-appearance: none;
+ // -moz-appearance: none;
+ // appearance: none;
 }
 
 input[type=button] {
@@ -228,7 +228,7 @@ table.signup tr td img {
 /* form styling */
 
 input {
-  -webkit-appearance: none;
+ // -webkit-appearance: none;
 }
 
 input[type="checkbox"] + label, input[type="radio"] + label {
@@ -271,24 +271,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   outline: none;
   box-shadow: 0 0 4px rgba(49, 167, 222, 0.8)
 }
-/*
-.ArticleBody input[type="button"], .ArticleEditor input[type="button"] {
-  background-color: transparent;
-  padding: 5px;
-  text-transform: uppercase;
-  border: 1px solid #ccc;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
-  -o-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
-  transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease
-}
 
-.ArticleBody input[type="button"]:hover, .ArticleEditor input[type="button"]:hover {
-  background-color: #f3f3f3;
-}
-*/
 // hide author info on articles
 .content_page_main .ArticleBody .author {
   display: none;

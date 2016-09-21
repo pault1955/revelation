@@ -181,13 +181,15 @@
             bottom: -20px;
 
             a {
-              background: #f5f5f5;
+              background: $slideshow_mini_pager-background-color;
               -webkit-transition: background-color 500ms ease;
               -o-transition: background-color 500ms ease;
               transition: background-color 500ms ease;
+              border: 2px solid $slideshow_mini_pager-border-color;
+              border-radius: 7px;
 
               &:hover, &.active {
-                background: #4acfc7;
+                background: $slideshow_mini_pager-background-color--active;
               }
             }
           }

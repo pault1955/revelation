@@ -63,6 +63,7 @@
   .title3 {
     color: $block1_image_title3-color;
     font-size: $block1_image_title3_font-size;
+    font-weight: $thin;
     margin-bottom: $block1_image_title3_margin-bottom;
 
     @include susy-breakpoint($breakpoint-ti) {

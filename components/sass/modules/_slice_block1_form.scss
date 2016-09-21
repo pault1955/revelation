@@ -65,22 +65,25 @@
 
       color: $block1_form-color;
       font-size: $block1_form_font-size;
+      font-weight: $thin;
       line-height: $block1_form_line-height;
       text-align: center;
+      margin-top: 2px;
 
       h1 {
         color: $block1_form_text_title-color;
         font-size: $block1_form_text_title_font-size;
+        font-weight: $normal;
         margin-bottom: $block1_form_text_title_margin-bottom;
         text-align: center;
 
         @include susy-breakpoint($breakpoint-sm) {
-          font-size: $block1_form_text_title_font-size * 1.5;
+          font-size: $block1_form_text_title_font-size + 0.2rem;
           text-align: left;
         }
 
         @include susy-breakpoint($breakpoint-md) {
-          font-size: $block1_form_text_title_font-size * 1.6;
+          font-size: $block1_form_text_title_font-size + 0.8rem;
           margin-bottom: $block1_form_text_title_margin-bottom * 0.8;
 
         }
@@ -91,8 +94,8 @@
        // @include span(6);
         text-align: left;
         padding-right: 30px;
-        font-size: $block1_form_font-size * 1.3;
-        line-height: $block1_form_font-size + 0.8rem;
+        font-size: $block1_form_font-size + 0.5rem;
+        line-height: $block1_form_font-size + 1rem;
       }
 
       @include susy-breakpoint($breakpoint-md) {
@@ -116,7 +119,7 @@
 
       input.form-control,  textarea.form-control {
         width: 100%;
-        height: 44px;
+        height: 50px;
         padding: 18px 12px;
         background-color: $block1_form_input_background-color;
         border: 1px solid $block1_form_input_background-color;
@@ -153,8 +156,8 @@
       input.sitebutton {
         display: block;
         margin: 10px auto 10px;
-        padding: 9px 15px;
-        border-radius: 2px;
+        padding: 9px 25px;
+        border-radius: 4px;
         -webkit-transition: background-color 500ms ease;
         transition: background-color 500ms ease;
         font-size: $block1_form_button-font-size;
@@ -173,6 +176,7 @@
 
         @include  susy-breakpoint($breakpoint-sm) {
             margin: 10px 0 20px;
+            padding:  9px 30px;
         }
       }
 

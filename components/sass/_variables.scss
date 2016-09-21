@@ -24,7 +24,7 @@ $breakpoint-lg: 1200px;
 
 
 //Font variables
-$thin     : 200;
+$thin     : 300;
 $normal   : 400;
 $bold     : 700;
 $heavy    : 800;
@@ -193,7 +193,7 @@ $block1_form_text_title_font-size: 1.8rem;
 $block1_form_text_title_margin-bottom: 1.8rem;
 $block1_form_input_background-color: #fff;
 $block1_form_input_color: #7f7e7e;
-$block1_form_input_font-size: 1.5rem;
+$block1_form_input_font-size: 1.7rem;
 
 // ======================================
 //  slice block 1 background image
@@ -230,8 +230,9 @@ $slideshow_mini_title_font-size: 2rem;
 $slideshow_mini_title_margin-bottom: 1rem;
 $slideshow_mini_slice-background-image:  #fff url(../images/stripes.png);
 $slideshow_mini-background-color: #fff;
-$slideshow_mini_pager-background-color: #c9dfdd;
-$slideshow_mini_pager-background-color--active: #4acfc7;
+$slideshow_mini_pager-background-color: transparent;
+$slideshow_mini_pager-border-color: #898989;
+$slideshow_mini_pager-background-color--active: #898989;
 $slideshow_mini_pager-width-height: 14px;
 $slideshow_mini_control-background-color: transparent;
 
