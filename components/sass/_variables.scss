@@ -390,10 +390,10 @@ $system_my_area_navigation-background-color: #999;
 
 $system_griditem-background-color: #eef7fb;
 $system_comment_form_button-background-color: transparent;
-$system_comment_form_button-border-color: #d1d2d4;
+$system_comment_form_button-border-color: $default_button-border-color;
 $system_comment_form_button-color: #129dc0;
-$system_comment_form_button-background-color--hover: #5ac5c5;
-$system_comment_form_button-border-color--hover: #5ac5c5;
+$system_comment_form_button-background-color--hover: $default_button-background-color;
+$system_comment_form_button-border-color--hover: $default_button-border-color--hover;
 $system_comment_form_button-color--hover: #fff;
 
 //  system - media
@@ -405,8 +405,8 @@ $system_media_recording_title-color: #129dc0;
 // ======================================
 
 $system_subMenu-color: #fff;
-$system_subMenu-border-color: #0cc;
-$system_subMenu-background-color: #0cc;
+$system_subMenu-border-color: $default_button-border-color;
+$system_subMenu-background-color: $default_button-background-color;
 
 //  system - address
 // ======================================

@@ -110,7 +110,7 @@ input, textarea {
  // appearance: none;
 }
 
-input[type=button] {
+input[type=button], input[type=submit]       {
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -118,7 +118,7 @@ input[type=button] {
   transition: all 500ms ease;
 }
 
-.sitebutton, .button {
+.sitebutton, .button, .aspNetDisabled {
   display: inline-block;
   margin-top: 10px;
   margin-right: 5px;
@@ -132,7 +132,7 @@ input[type=button] {
   color: $system_sitebutton_color;
 }
 
-.sitebutton:hover, .button:hover {
+.sitebutton:hover, .button:hover, .aspNetDisabled:hover {
   color: #fff;
   border: 2px solid #5ac5c5;
   background-color: #5ac5c5;
@@ -291,7 +291,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   }
 
   h2 {
-    font-size: 4.2rem;
+    font-size: 4.0rem;
     line-height: 4.8rem;
     font-weight: $bold;
   }

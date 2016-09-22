@@ -27,6 +27,7 @@
     font-family: $block1_image_font-family;
     font-size: $block1_image_title1_font-size;
     margin-bottom: $block1_image_title1_margin-bottom;
+    font-weight: $bold;
 
     @include susy-breakpoint($breakpoint-ti) {
       font-size: $block1_image_title1_font-size * 1.2;

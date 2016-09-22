@@ -32,8 +32,11 @@
     margin-top: 0;
     margin-bottom: 30px;
 
-    @include susy-breakpoint($breakpoint-md) {
+    @include susy-breakpoint($breakpoint-sm) {
       margin-top: 30px;
+    }
+
+    @include susy-breakpoint($breakpoint-md) {
       padding-top: 40px;
     }
 

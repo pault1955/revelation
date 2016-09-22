@@ -73,7 +73,7 @@
       h1 {
         color: $block1_form_text_title-color;
         font-size: $block1_form_text_title_font-size;
-        font-weight: $normal;
+        font-weight: $bold;
         margin-bottom: $block1_form_text_title_margin-bottom;
         text-align: center;
 
@@ -99,12 +99,13 @@
       }
 
       @include susy-breakpoint($breakpoint-md) {
-        padding-top: 5px;
+        padding-top: 0;
+        padding-left: 27px;
       }
     }
 
     .form_fields {
-      margin-top: 20px;
+      margin-top: 5px;
 
       label {
         display: none;
@@ -114,12 +115,13 @@
           font-size: $block1_form_label-font-size;
           color: $block1_form_label-color;
         }
+
       }
 
 
       input.form-control,  textarea.form-control {
         width: 100%;
-        height: 50px;
+        height: 40px;
         padding: 18px 12px;
         background-color: $block1_form_input_background-color;
         border: 1px solid $block1_form_input_background-color;
@@ -175,13 +177,17 @@
         }
 
         @include  susy-breakpoint($breakpoint-sm) {
-            margin: 10px 0 20px;
+            margin: 10px 0;
             padding:  9px 30px;
         }
       }
 
       @include susy-breakpoint($breakpoint-sm) {
         @include span(6);
+      }
+
+      @include susy-breakpoint($breakpoint-md) {
+        padding-right: 27px;
       }
 
     }
