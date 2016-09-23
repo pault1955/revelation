@@ -25,7 +25,7 @@
     -webkit-transition: color 500ms ease, border-color 500ms ease;
     -o-transition: color 500ms ease, border-color 500ms ease;
     transition: color 500ms ease, border-color 500ms ease;
-    font-size: 15px;
+    font-size: 20px;
     text-decoration: none;
 
     &:hover {
@@ -54,13 +54,6 @@
       display: table-cell;
       padding: 0 25px 25px;
 
-      h1 {
-        margin-top: 0;
-        margin-bottom: 20px;
-        font-size: 38px;
-        font-weight: $bold;
-        text-transform: uppercase;
-      }
 
       td {
         // vertical-align: top;
@@ -243,33 +236,33 @@
         padding: 5px
       }
 
-      .systemPageContent a img {
+       a img {
         width: auto !important;
         max-width: 100px
       }
 
-      .systemPageContent .shadedbox, .systemPageContent .messagesbox {
+      .shadedbox, .messagesbox {
         width: 100% !important;
         margin: 15px auto;
         background-color: $system_shadedBox-background-color;
         padding: 15px
       }
 
-      .systemPageContent .shadedbox td {
+       .shadedbox td {
         padding: 10px 15px
       }
 
-      .systemPageContent tr.gridheader td.header {
+       tr.gridheader td.header {
         padding-top: 10px;
       }
 
-      .systemPageContent .shadedbox td input.button {
+       .shadedbox td input.button {
         width: auto !important;
         padding-right: 15px;
         padding-left: 15px
       }
 
-      .systemPageContent textarea {
+       textarea {
         margin: 10px;
         padding: 4px 3px;
         width: 100%;
@@ -280,7 +273,7 @@
         border-radius: 4px
       }
 
-      .systemPageContent textarea:focus {
+       textarea:focus {
         outline: none;
         border: 1px solid #000;
         box-shadow: 0 0 4px rgba(49, 167, 222, 0.8)
@@ -373,7 +366,7 @@
         width: 100%
       }
 
-      .systemPageContent td.subMenu {
+       td.subMenu {
         text-align: right;
       }
 
@@ -482,7 +475,7 @@
       /* ==========================================================================
          Rotas
          ========================================================================== */
-      .systemPageContent td#tdOldEventButtons, .systemPageContent td.subMenu {
+       td#tdOldEventButtons,  td.subMenu {
         vertical-align: top
       }
 
@@ -495,31 +488,23 @@
       }
 
         .subMenu a {
-        display: inline-block;
-        height: 45px;
-        margin-top: 0;
-        margin-right: 5px;
-        padding-top: 11px;
-        padding-bottom: 11px;
-        padding-right: 5px;
-        padding-left: 5px;
-        border: 2px solid $default_button-border-color;
-        border-radius: 2px;
-        background-color: $default_button-background-color;
-        -webkit-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
-        -o-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
-        transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
-        font-size: 12px;
-        color: #fff !important;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase
+          display: inline-block;
+          margin-top: 10px;
+          margin-right: 5px;
+          padding: 9px 15px;
+          border-radius: 2px;
+          font-size: 1.4rem;
+          text-align: center;
+          text-decoration: none;
+          border: 2px solid $default_button-border-color;
+          background-color: $default_button-background-color;
+          color: $default_button-color;
       }
 
       .subMenu a:hover {
-        color: $system_subMenu-color;
-        border-color: $system_subMenu-border-color;
-        background-color: $system_subMenu-background-color;
+        color: $default_button-color--hover;
+        border: 2px solid $default_button-border-color--hover;
+        background-color: $default_button-background-color--hover;
 
       }
 
