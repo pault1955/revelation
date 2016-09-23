@@ -57,7 +57,7 @@
     @include susy-breakpoint($breakpoint-sm) {
       & {
         font-size: $buttons_3_font-size * 1.2;
-        padding: 22px 20px 20px 75px;
+        padding: 22px 20px 20px 95px;
       }
 
       &.button1 {
@@ -65,6 +65,7 @@
       }
       &.button2 {
         background-position: 35px 16px;
+        padding-left: 90px;
       }
       &.button3 {
         background-position: 35px 16px;
@@ -73,14 +74,17 @@
     @include susy-breakpoint($breakpoint-md) {
       & {
         font-size: $buttons_3_font-size * 1.5;
-        padding: 28px 20px 30px 90px;
+        letter-spacing:1px;
+        padding: 28px 20px 30px 115px;
       }
 
       &.button1 {
         background-position: 35px 26px;
+        padding-left: 120px;
       }
       &.button2 {
         background-position: 35px 23px;
+        padding-left: 100px;
       }
       &.button3 {
         background-position: 35px 23px;

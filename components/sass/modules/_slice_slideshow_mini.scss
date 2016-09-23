@@ -199,26 +199,30 @@
       .bx-controls-direction a {
         width: 24px;
         height: 34px;
-      }
+        top:45%;
 
+        .bx-prev {
+          left: 0;
+          background:  url(../images/arrow-prev-small.png) no-repeat 7px center;
 
-      .bx-prev {
-        left: 0;
-        background:  url(../images/arrow-prev-small.png) no-repeat 7px center;
-
-        &:hover, &:focus {
-          background:  url(../images/arrow-prev-small-hover.png) no-repeat 5px center;
+          &:hover, &:focus {
+            background:  url(../images/arrow-prev-small-hover.png) no-repeat 5px center;
+          }
         }
-      }
 
-      .bx-next {
-        right: 0;
-        background:  url(../images/arrow-next-small.png) no-repeat 9px center;
+        .bx-next {
+          right: 0;
+          background:  url(../images/arrow-next-small.png) no-repeat 9px center;
 
-        &:hover, &:focus {
-          background:  url(../images/arrow-next-small-hover.png) no-repeat 11px center;
+          &:hover, &:focus {
+            background:  url(../images/arrow-next-small-hover.png) no-repeat 11px center;
+          }
         }
+
       }
+
+
+
 
 
 
@@ -229,9 +233,9 @@
               bottom: -30px;
 
               a {
-                width: 14px;
-                height: 14px;
-                border-radius: 7px;
+                width: 16px;
+                height: 16px;
+                border-radius: 8px;
               }
             }
           }

@@ -67,7 +67,7 @@ $(document).ready(function () {
     var data = $.parseHTML( alt );
     var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
     var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
-    var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
+    var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">Read more</a></div>';
     $(caption).insertAfter( this );
   });
 

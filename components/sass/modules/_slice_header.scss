@@ -2,6 +2,7 @@
 // slice  header
 // ======================================
 
+
 // slice  header layout
 // ======================================
 
@@ -27,9 +28,7 @@
 .slice_header {
 
   #mobile_nav {
-
     z-index: 200;
-
   }
 
   // slicknav styles
@@ -430,7 +429,6 @@
           }
 
           .header-icon {
-            width: 16px;
             margin-right: 5px;
             float: left;
           }
@@ -440,7 +438,6 @@
           .header-link {
             display: inline-block;
             float: left;
-            font-family: Montserrat, sans-serif;
             font-size: 10px;
             line-height: 20px;
             text-decoration: none;
