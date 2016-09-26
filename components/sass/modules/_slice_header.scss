@@ -442,6 +442,12 @@
             line-height: 20px;
             text-decoration: none;
             text-transform: uppercase;
+
+            i {
+              font-size: $top_links_font-size;
+              color: $top_links_icon-color;
+              line-height:$top_links_line-height;
+            }
           }
 
         }
@@ -509,7 +515,7 @@
 
       & {
         margin-top: 15px;
-        margin-left: 15px;
+        margin-left: 40px;
       }
       .logo-icon {
         a {

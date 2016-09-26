@@ -50,31 +50,23 @@
   .footer-column {
 
     a {
-      color: $footertop1_font-color-link;
-      
       &:hover {
-        color: $footertop1_font-color-link--hover;
+        opacity: 0.8;
       }
     }
 
     &.footer-column-1 {
       a {
         display: inline-block;
-        background-color: $footertop1_icon_background-color;
         margin-right: 10px;
         margin-top: 7px;
         margin-bottom: 15px;
-        width: 35px;
-        height: 35px;
-        border-radius: 4px;
-
-        img {
-          margin-top: 7px;
+        
+        i:before {
+          font-size: $footertop1_icon_font-size;
+          color: $footertop1_icon_color;
         }
 
-        &:hover {
-          background-color: $footertop1_icon_background-color--hover;
-        }
       }
 
       .ArticleBody {

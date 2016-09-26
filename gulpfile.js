@@ -19,7 +19,7 @@ var env,
     lineComments,
     sassStyle;
 
-env = 'development';
+env = 'production';
 
 if (env==='development') {
     outputDir = 'builds/development/';

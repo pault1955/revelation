@@ -187,24 +187,64 @@
       .bx-controls-direction a {
         width: 24px;
         height: 34px;
+        margin-top: -16px;
       }
 
 
       .bx-prev {
         left: 0;
-        background: rgba(0, 0, 0, 0.3) url(../images/arrow-prev-small.png) no-repeat 7px center;
+        background: rgba(0, 0, 0, 0.3);
+
+        &:after {
+          content: "\e901";
+          font-family: journey;
+          position: absolute;
+          font-size: $banner_slideshow_icon_font-size;
+          color: $banner_slideshow_icon_color;
+          top: 9px;
+          left: 3px;
+          text-indent: 0;
+          -webkit-transition: all 500ms ease;
+          -o-transition: all 500ms ease;
+          transition: all  500ms ease;
+        }
 
         &:hover, &:focus {
-          background: #398d89 url(../images/arrow-prev-small-hover.png) no-repeat 5px center;
+          background: #398d89;
+
+          &:after {
+            color: $banner_slideshow_icon_color--hover;
+            left: 0;
+          }
+
         }
       }
 
       .bx-next {
         right: 0;
-        background: rgba(0, 0, 0, 0.3) url(../images/arrow-next-small.png) no-repeat 9px center;
+        background: rgba(0, 0, 0, 0.3);
+
+        &:after {
+          content: "\e900";
+          font-family: journey;
+          position: absolute;
+          font-size: $banner_slideshow_icon_font-size;
+          color: $banner_slideshow_icon_color;
+          top: 9px;
+          left: 3px;
+          text-indent: 0;
+          -webkit-transition: all 500ms ease;
+          -o-transition: all 500ms ease;
+          transition: all  500ms ease;
+        }
 
         &:hover, &:focus {
-          background: #398d89 url(../images/arrow-next-small-hover.png) no-repeat 11px center;
+          background: #398d89;
+
+          &:after {
+            color: $banner_slideshow_icon_color--hover;
+            left: 5px;
+          }
         }
       }
 
@@ -228,25 +268,46 @@
         .bx-controls-direction a {
           width: 55px;
           height: 90px;
+          margin-top: -45px;
         }
 
+
+
         .bx-prev {
-          left: 0;
-          background: rgba(0, 0, 0, 0.3) url(../images/arrow-prev.png) no-repeat 20px center;
+
+          &:after {
+            font-size: $banner_slideshow_icon_font-size + 2;
+            top: 35px;
+            left: 9px;
+          }
 
           &:hover, &:focus {
-            background: #398d89 url(../images/arrow-prev-hover.png) no-repeat 17px center;
+            background: #398d89;
+
+            &:after {
+              left: 0;
+            }
+
           }
         }
 
         .bx-next {
-          right: 0;
-          background: rgba(0, 0, 0, 0.3) url(../images/arrow-next.png) no-repeat 24px center;
+
+          &:after {
+            font-size: $banner_slideshow_icon_font-size + 2;
+            top: 35px;
+            left: 9px;
+          }
 
           &:hover, &:focus {
-            background: #398d89 url(../images/arrow-next-hover.png) no-repeat 26px center;
+            background: #398d89;
+
+            &:after {
+              left: 15px;
+            }
           }
         }
+
       }
 
     }

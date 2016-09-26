@@ -24,7 +24,6 @@
     }
   }
 
-
   .bannerSlides {
     margin: 0 15px;
 
@@ -142,7 +141,7 @@
 
                 .slideText {
                   margin-bottom: 4rem;
-                  font-size: $banner_slideshow_slidetext-font-size * 2.5  ;
+                  font-size: $banner_slideshow_slidetext-font-size * 2.5;
                   line-height: $banner_slideshow_slidetext-font-size + 0.5rem;
                 }
               }
@@ -158,7 +157,7 @@
 
                 .slideText {
                   margin-bottom: 4rem;
-                  font-size: $banner_slideshow_slidetext-font-size * 2.5  ;
+                  font-size: $banner_slideshow_slidetext-font-size * 2.5;
                   line-height: $banner_slideshow_slidetext-font-size + 0.5rem;
                   margin-top: 6rem;
                 }
@@ -199,32 +198,12 @@
       .bx-controls-direction a {
         width: 24px;
         height: 34px;
-        top:45%;
-
-        .bx-prev {
-          left: 0;
-          background:  url(../images/arrow-prev-small.png) no-repeat 7px center;
-
-          &:hover, &:focus {
-            background:  url(../images/arrow-prev-small-hover.png) no-repeat 5px center;
-          }
-        }
-
-        .bx-next {
-          right: 0;
-          background:  url(../images/arrow-next-small.png) no-repeat 9px center;
-
-          &:hover, &:focus {
-            background:  url(../images/arrow-next-small-hover.png) no-repeat 11px center;
-          }
-        }
-
+        top: 45%;
+        -webkit-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+        margin-top: -3px;
       }
-
-
-
-
-
 
       @include susy-breakpoint($breakpoint-sm) {
         .bx-controls {
@@ -233,41 +212,117 @@
               bottom: -30px;
 
               a {
-                width: 16px;
-                height: 16px;
-                border-radius: 8px;
+                width: 18px;
+                height: 18px;
+                border-radius: 9px;
+                border-width: 3px;
               }
             }
           }
         }
 
         .bx-controls-direction a {
-          width: 55px;
-          height: 70px;
+          width: 40px;
+          height: 50px;
         }
 
         .bx-prev {
           left: 0;
-          background:  url(../images/arrow-prev.png) no-repeat 20px center;
+          background: rgba(0, 0, 0, 0.3);
+
+          &:after {
+            content: "\e901";
+            font-family: journey;
+            position: absolute;
+            font-size: $banner_slideshow_icon_font-size;
+            color: $banner_slideshow_icon_color;
+            top: 9px;
+            left: 3px;
+            text-indent: 0;
+            -webkit-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+          }
 
           &:hover, &:focus {
-            background:  url(../images/arrow-prev-hover.png) no-repeat 17px center;
+            background: #398d89;
+
+            &:after {
+              color: $banner_slideshow_icon_color--hover;
+              left: 0;
+            }
+
           }
         }
 
         .bx-next {
           right: 0;
-          background:  url(../images/arrow-next.png) no-repeat 24px center;
+          background: rgba(0, 0, 0, 0.3);
+
+          &:after {
+            content: "\e900";
+            font-family: journey;
+            position: absolute;
+            font-size: $slideshow_mini_icon_font-size;
+            color: $slideshow_mini_icon_color;
+            top: 9px;
+            left: 3px;
+            text-indent: 0;
+            -webkit-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+          }
 
           &:hover, &:focus {
-            background:  url(../images/arrow-next-hover.png) no-repeat 26px center;
+            background: #398d89;
+
+            &:after {
+              color: $slideshow_mini_icon_color--hover;
+              left: 5px;
+            }
+          }
+        }
+      }
+
+      @include susy-breakpoint ($breakpoint-sm) {
+
+        .bx-prev {
+
+          &:after {
+            font-size: $slideshow_mini_icon_font-size + 1;
+            top: 17px;
+            left: 8px;
+          }
+
+          &:hover, &:focus {
+            background: #398d89;
+
+            &:after {
+              left: 2px;
+            }
+
+          }
+        }
+
+        .bx-next {
+
+          &:after {
+            font-size: $slideshow_mini_icon_font-size + 1;
+            top: 17px;
+            left: 4px;
+          }
+
+          &:hover, &:focus {
+            background: #398d89;
+
+            &:after {
+              left: 10px;
+            }
           }
         }
       }
 
     }
-
-
   }
 
   @include susy-breakpoint ($breakpoint-sm) {
@@ -277,10 +332,8 @@
   }
 
   @include susy-breakpoint ($breakpoint-md) {
-    background: $slideshow_mini_slice-background-image;
     padding-top: 50px;
     padding-bottom: 30px;
   }
-
 }
 

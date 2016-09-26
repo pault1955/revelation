@@ -17,7 +17,7 @@
   background-size:cover;
   color: $block1_image2-color;
   text-align: center;
-  padding: 20px 15px 30px;
+  padding: 40px 15px;
 
 
   .title1 {
@@ -88,8 +88,7 @@
   }
 
   @include susy-breakpoint ($breakpoint-ti) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+
   }
   @include susy-breakpoint ($breakpoint-sm) {
     padding-top: 60px;

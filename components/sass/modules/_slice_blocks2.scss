@@ -61,21 +61,67 @@
 
   .block2-1 {
     border-bottom: 1px solid $block2_border-color;
+    position: relative;
     
     @include susy-breakpoint( $breakpoint-sm) {
-      background-image: url(../images/icon-clock.png), url(../images/border-line.png);
-      background-position: 20px 27px, right;
-      background-repeat: no-repeat, no-repeat;
       border-bottom: none;
+      background-image: url(../images/border-line.png);
+      background-position: right;
+      background-repeat: no-repeat;
+
+      &:after {
+        content: "\e906";
+        font-family: journey;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: absolute;
+        font-size: 30px;
+        color: $block2_icon_color;
+        top: 23px;
+        left: 40px;
+        z-index: 1;
+      }
     }
+
+    @include susy-breakpoint( $breakpoint-md) {
+
+      &:after {
+        font-size: 40px;
+        top: 35px;
+        left: 30px;
+      }
+    }
+
+
   }
 
   .block2-2 {
-
+    position: relative;
     @include susy-breakpoint( $breakpoint-sm) {
-      background-image: url(../images/icon-marker.png);
-      background-position: 20px 27px;
-      background-repeat: no-repeat;
+
+      &:after {
+        content: "\e905";
+        font-family: journey;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: absolute;
+        font-size: 30px;
+        color: $block2_icon_color;
+        top: 23px;
+        left: 40px;
+        z-index: 1;
+      }
+    }
+
+    @include susy-breakpoint( $breakpoint-md) {
+
+      &:after {
+        font-size: 40px;
+        top: 35px;
+        left: 30px;
+      }
     }
   }
 
