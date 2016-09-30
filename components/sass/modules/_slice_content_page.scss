@@ -64,6 +64,30 @@
     ol {
       line-height: 26px;
     }
+
+    /* component styling */
+
+    /* article list */
+
+    .articleListTitle {
+      font-weight: $bold;
+    }
+
+    /* upcoming events list */
+
+    .eventsListTitle {
+      font-weight: $bold;
+    }
+    
+    .eventsListDate {
+      font-style: italic;
+    }
+
+    /* media list */
+
+    .mediaListTitle {
+      font-weight: $bold;
+    }
   }
 
   .sidebar {
@@ -187,52 +211,119 @@
         display: block;
         border: none;
         margin-top: 4px;
+        position: relative;
+
 
         &.button1 {
-          background: $sidebar_buttons_button1_background-color $sidebar_buttons_button1_background-image 35px 17px/21px no-repeat;
+          background: $sidebar_buttons_button1_background-color;
           &:hover {
             background-color: $sidebar_buttons_button1_background-color--hover;
           }
+
+          &:after {
+            content: "\e908";
+            font-family: journey;
+            position: absolute;
+            font-size: $sidebar_buttons_button1_icon_font-size;
+            color: $sidebar_buttons_button1_icon_color;
+            top: 18px;
+            left: 22px;
+          }
         }
         &.button2 {
-          background: $sidebar_buttons_button2_background-color $sidebar_buttons_button2_background-image 35px 14px/21px no-repeat;
+          background: $sidebar_buttons_button2_background-color;
           &:hover {
             background-color: $sidebar_buttons_button2_background-color--hover;
           }
+
+          &:after {
+            content: "\e910";
+            font-family: journey;
+            position: absolute;
+            font-size: $sidebar_buttons_button2_icon_font-size;
+            color: $sidebar_buttons_button2_icon_color;
+            left: 22px;
+          }
         }
         &.button3 {
-          background: $sidebar_buttons_button3_background-color $sidebar_buttons_button3_background-image 35px 14px/21px no-repeat;
+          background: $sidebar_buttons_button3_background-color;
           &:hover {
             background-color: $sidebar_buttons_button3_background-color--hover;
+          }
+
+          &:after {
+            content: "\e907";
+            font-family: journey;
+            position: absolute;
+            font-size: $sidebar_buttons_button3_icon_font-size;
+            color: $sidebar_buttons_button3_icon_color;
+            top: 18px;
+            left: 22px;
           }
         }
 
         @include susy-breakpoint($breakpoint-sm) {
-
-            padding: 13px 20px 13px 50px;
+          & {
+            font-size: $sidebar_buttons_font-size - 0.3;
+            padding: 18px 20px 18px 42px;
+          }
 
           &.button1 {
-            background-position: 20px 15px;
+
+            &:after {
+              font-size: $sidebar_buttons_button1_icon_font-size - 0.5;
+              top: 20px;
+              left: 14px;
+            }
           }
           &.button2 {
-            background-position: 20px 13px;
+
+            &:after {
+              font-size: $sidebar_buttons_button2_icon_font-size - 0.5;
+              top: 19px;
+              left: 14px;
+            }
           }
           &.button3 {
-            background-position: 20px 13px;
+
+            &:after {
+              font-size: $sidebar_buttons_button3_icon_font-size - 0.5;
+              top: 17px;
+              left: 14px;
+            }
           }
         }
         @include susy-breakpoint($breakpoint-md) {
-
-            padding: 13px 20px 13px 60px;
+          & {
+            font-size: $sidebar_buttons_font-size;
+            letter-spacing:1px;
+            padding: 15px 20px 15px 62px;
+          }
 
           &.button1 {
-            background-position: 20px 15px;
+
+            &:after {
+              font-size: $sidebar_buttons_button1_icon_font-size;
+              top: 17px;
+              left: 18px;
+            }
+
           }
           &.button2 {
-            background-position: 20px 12px;
+
+            &:after {
+              font-size: $sidebar_buttons_button1_icon_font-size;
+              top: 17px;
+              left: 18px;
+            }
           }
           &.button3 {
-            background-position: 20px 12px;
+
+            &:after {
+              font-size: $sidebar_buttons_button1_icon_font-size;
+              top: 15px;
+              left: 18px;
+            }
           }
         }
       }

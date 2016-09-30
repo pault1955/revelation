@@ -4,38 +4,6 @@
 
 // slice footerbar layout
 // ======================================
-/*
-.slice_footerbar {
-
-  .footerbar {
-    a {
-
-      &#footer_mobile, &#footer_copyright, &#footer_tc, &#footer_privacy, #footer_help {
-        line-height: 16px
-      }
-
-      &.footer {
-        @include span(12);
-
-        @include susy-breakpoint($breakpoint-sm) {
-          @include span(4);
-        }
-      }
-    }
-
-    span#footer_charity {
-      @include span(12);
-
-      @include susy-breakpoint($breakpoint-sm) {
-        @include span(4);
-      }
-
-    }
-  }
-
-
-}
-*/
 
 // slice footerbar style
 // ======================================

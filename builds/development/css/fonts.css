@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'journey';
-  src:  url('../fonts/journey.eot?vyctev');
-  src:  url('../fonts/journey.eot?vyctev#iefix') format('embedded-opentype'),
-  url('../fonts/journey.ttf?vyctev') format('truetype'),
-  url('../fonts/journey.woff?vyctev') format('woff'),
-  url('../fonts/journey.svg?vyctev#journey') format('svg');
+  src:  url('../fonts/journey.eot?yb1miw');
+  src:  url('../fonts/journey.eot?yb1miw#iefix') format('embedded-opentype'),
+  url('../fonts/journey.ttf?yb1miw') format('truetype'),
+  url('../fonts/journey.woff?yb1miw') format('woff'),
+  url('../fonts/journey.svg?yb1miw#journey') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -75,4 +75,15 @@
 .journey-icon-events:before {
   content: "\e910";
 }
-
+.journey-icon-searchbox:before {
+  content: "\e911";
+}
+.journey-icon-search-mobile:before {
+  content: "\e912";
+}
+.journey-icon-dd-up:before {
+  content: "\e913";
+}
+.journey-icon-dd-down:before {
+  content: "\e914";
+}

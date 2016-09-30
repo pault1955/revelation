@@ -121,7 +121,7 @@ $banner_slideshow-button-background-color: #2d9ebd;
 $banner_slideshow-button-background-color--hover: #2d9ebd;
 $banner_slideshow-button-font-size: 0.7rem;
 $banner_slideshow_icon_font-size: 2rem;
-$banner_slideshow_icon_color: #7b878a;
+$banner_slideshow_icon_color: #b4bbbd;
 $banner_slideshow_icon_color--hover: #fff;
 
 // ======================================
@@ -263,11 +263,11 @@ $buttons_3_button1_icon_font-size: 2.5rem;
 $buttons_3_button2_background-color: #e84c3d;
 $buttons_3_button2_background-color--hover: #d84638;
 $buttons_3_button2_icon_color: #f4a69e;
-$buttons_3_button1_icon_font-size: 2.5rem;
+$buttons_3_button2_icon_font-size: 2.5rem;
 $buttons_3_button3_background-color: #129dc0;
 $buttons_3_button3_background-color--hover: #1590af;
-$buttons_3_button3_icon_color: #8ac8d7;
-$buttons_3_button1_icon_font-size: 2.5rem;
+$buttons_3_button3_icon_color: #c3dcf6;
+$buttons_3_button3_icon_font-size: 2.5rem;
 // ======================================
 //  slice block 1 image2
 // ======================================
@@ -319,6 +319,11 @@ $footertop1_font-size: 1.4rem;
 $footertop1_line-height: $footertop1_font-size * 1.5;
 $footertop1_icon_color: #4acfc7;
 $footertop1_icon_font-size: 4rem;
+$footertop1_icon_facebook_color: #3b5998;
+$footertop1_icon_twitter_color: #1da1f2;
+$footertop1_icon_vimeo_color: #1ab7ea;
+$footertop1_icon_googleplus_color: #d34836;
+$footertop1_icon_linkedin_color: #0077b5;
 
 // ======================================
 //  content page
@@ -351,12 +356,18 @@ $sidebar_buttons_color: #fff;
 $sidebar_buttons_button1_background-color: #4acfc7;
 $sidebar_buttons_button1_background-color--hover: #24bfb6;
 $sidebar_buttons_button1_background-image: url(../images/icon-news.png);
+$sidebar_buttons_button1_icon_font-size: 2.5rem;
+$sidebar_buttons_button1_icon_color: #a5e7e3;
 $sidebar_buttons_button2_background-color: #e84c3d;
 $sidebar_buttons_button2_background-color--hover: #d84638;
 $sidebar_buttons_button2_background-image: url(../images/icon-events.png);
+$sidebar_buttons_button2_icon_font-size: 2.5rem;
+$sidebar_buttons_button2_icon_color: #f4a69e;
 $sidebar_buttons_button3_background-color: #129dc0;
 $sidebar_buttons_button3_background-color--hover: #1590af;
 $sidebar_buttons_button3_background-image: url(../images/icon-headphones.png);
+$sidebar_buttons_button3_icon_font-size: 2.5rem;
+$sidebar_buttons_button3_icon_color: #c3dcf6;
 // ======================================
 //  system
 // ======================================
@@ -440,7 +451,4 @@ $system_calendar_popup_window-background-color: #fff;
 $system_calendar_popup_window-title-background-color: #fff;
 $system_calendar_popup_window-table-background-color: #fff;
 $system_calendar_day_header-border-color: #43525a;
-
-
-
 

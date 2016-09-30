@@ -244,7 +244,7 @@
             transition: all 500ms ease;
           }
 
-          &:hover, &:focus {
+          &:hover  {
             background: #398d89;
 
             &:after {
@@ -273,7 +273,7 @@
             transition: all 500ms ease;
           }
 
-          &:hover, &:focus {
+          &:hover  {
             background: #398d89;
 
             &:after {
@@ -295,7 +295,7 @@
           }
 
           &:hover, &:focus {
-            background: #398d89;
+            // background: #398d89;
 
             &:after {
               left: 2px;
@@ -313,7 +313,7 @@
           }
 
           &:hover, &:focus {
-            background: #398d89;
+            // background: #398d89;
 
             &:after {
               left: 10px;
