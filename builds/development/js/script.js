@@ -67,7 +67,7 @@ $(document).ready(function () {
     var data = $.parseHTML( alt );
     var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
     var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
-    var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
+    var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">Read more</a></div>';
     $(caption).insertAfter( this );
   });
 
@@ -81,5 +81,10 @@ $(document).ready(function () {
     preloadImages: 'all'
   });
 
+
+  $('.slice_al_4 .articleListTitle4 a').each(function (index) {
+    var titleLink = $(this).attr("href");
+    $(this).parent().parent().find('.articleListLink4').wrapInner('<a  class="info_cards_button" href="' + titleLink + '">');
+  });
 
 });

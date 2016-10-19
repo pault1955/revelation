@@ -1,0 +1,122 @@
+// ======================================
+//  article list - 4 articles - Image-Title-Summary
+// ======================================
+
+// article list - 4 articles layout
+// ======================================
+.slice_al_4 {
+  @include span(12);
+
+  .info_cards > div {
+
+
+    @include susy-breakpoint($breakpoint-sm) {
+        @include span(6);
+      }
+
+    @include susy-breakpoint($breakpoint-md) {
+      @include span(3);
+    }
+  }
+}
+
+// article list - 4 articles  style
+// ======================================
+
+.slice_al_4 {
+
+  padding-bottom: 30px;
+  text-align: center;
+
+  .info_cards > div {
+
+    padding-top: 30px;
+
+    .articleListImage4 {
+
+      a {
+        border-radius: 50%;
+        border: 5px solid $al_4_image-border-color;
+        overflow: hidden;
+        width: 180px;
+        height: 180px;
+        display: block;
+        margin: 0 auto;
+
+        img {
+          width: 175px;
+          height: 171px;
+        }
+
+      }
+    }
+
+    .articleListTitle4 {
+
+      margin-top: 18px;
+
+      a {
+        font-size: $al_4_title-font-size;
+        color: $al_4_title-color;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+    }
+
+    .articleListSummary4 {
+
+      margin-top: 12px;
+      margin-bottom: 12px;
+      padding: 0 35px !important;
+      font-size: $al_4_summary-font-size;
+      color: $al_4_summary-color;
+
+      @include susy-breakpoint($breakpoint-sm) {
+        min-height: 50px;
+      }
+
+      @include susy-breakpoint($breakpoint-md) {
+        min-height: 90px;
+      }
+
+
+    }
+
+    .articleListLink4 {
+
+      a {
+        font-size: $al_4_link-font-size;
+        color: $al_4_link-color;
+        border: 2px solid $al_4_link-border-color;
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 5px;
+        padding: 9px 15px;
+        border-radius: 2px;
+        -webkit-transition: background-color 500ms ease;
+        transition: background-color 500ms ease;
+        text-align: center;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: transparent;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+  }
+
+  @include susy-breakpoint($breakpoint-sm) {
+    padding-bottom: 50px;
+  }
+
+  @include susy-breakpoint($breakpoint-md) {
+    padding-bottom: 60px;
+  }
+}

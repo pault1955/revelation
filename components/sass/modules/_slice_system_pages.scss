@@ -25,7 +25,7 @@
     -webkit-transition: color 500ms ease, border-color 500ms ease;
     -o-transition: color 500ms ease, border-color 500ms ease;
     transition: color 500ms ease, border-color 500ms ease;
-    font-size: 20px;
+    font-size: 1.6rem;
     text-decoration: none;
 
     &:hover {
@@ -191,7 +191,7 @@
         background-color: #eef7fb;
       }
 
-      .systemPageContent .tabSelected {
+      .tabSelected {
         background-color: $system_tabSelected-background-color;
         height: 20px;
         line-height: 20px;
@@ -205,7 +205,7 @@
         word-spacing: 4px
       }
 
-      .systemPageContent .tableft {
+      .tableft {
         width: auto;
         color: $system_tabLeft-color;
         padding: 0;
@@ -216,7 +216,7 @@
         word-spacing: 4px
       }
 
-      .systemPageContent .tabright {
+      .tabright {
         width: auto;
         color: $system_tabRight-color;
         padding: 0;
@@ -397,7 +397,7 @@
       .forums_boxout_contents a img {
         width: 20px;
       }
-
+/*
       div[id$="CommentForm"] .button {
         display: block;
         margin: 20px auto 40px;
@@ -421,6 +421,7 @@
         border: 2px solid $system_comment_form_button-border-color--hover;
         color: $system_comment_form_button-color--hover;
       }
+*/
 
       .messagesbox .forumrow td, .messagesbox .altforumrow td {
         padding: 10px 15px;
@@ -596,7 +597,7 @@
       .search_option_right {
         padding-bottom: 20px;
       }
-
+/*
       .system_controls .button {
         color: #fff;
         border: 2px solid $default_button-border-color;
@@ -620,7 +621,7 @@
           opacity: 0.8;
         }
       }
-
+*/
 
 
     }
@@ -704,4 +705,32 @@ body.eventpopupwindow table {
   .systemPageContent {
     padding: 0 0 25px;
   }
+}
+
+/* ==========================================================================
+  Registration Page
+   ========================================================================== */
+
+
+input#_ctl0__ctl0_cphBody_cphContents_ctlRegistration_day.text,
+input#_ctl0__ctl0_cphBody_cphContents_ctlRegistration_month.text {
+  width: 35px !important;
+}
+
+input#_ctl0__ctl0_cphBody_cphContents_ctlRegistration_year.text {
+  width: 70px !important;
+}
+
+
+/* ==========================================================================
+  Profile Page
+   ========================================================================== */
+
+input#_ctl0__ctl0_cphBody_cphContents_txt_dob_day_uk,
+input#_ctl0__ctl0_cphBody_cphContents_txt_dob_month_uk {
+  width: 40px !important;
+}
+
+input#_ctl0__ctl0_cphBody_cphContents_txt_dob_year_uk {
+  width: 80px !important;
 }
