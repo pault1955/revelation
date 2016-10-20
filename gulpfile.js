@@ -34,7 +34,7 @@ if (env==='development') {
 
 jsSources = [
     'components/scripts/jquery.bxslider.min.js',
-    'components/scripts/jquery.slicknav.min.js'
+    'components/scripts/jquery.slicknav.min.V1.0.7.js'
 ];
 
 sassSources = ['components/sass/style.scss'];

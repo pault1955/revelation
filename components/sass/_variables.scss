@@ -145,7 +145,7 @@ $nav_dropdown_link-color--hover: #129dc0;
 $nav_dropdown-background-color: #f5f5f5;
 $nav_dropdown-background-color--hover: #ffffff;
 
-
+$nav_dropdown-reverse-last-item-opening-direction: true; // set to true or false
 
 // ======================================
 //  slice blocks 2
@@ -304,9 +304,12 @@ $al_4_title-color: #2d4048;
 $al_4_title-font-size: 2rem;
 $al_4_summary-color: #2d4048;
 $al_4_summary-font-size: 1.6rem;
-$al_4_link-color: #2d4048;
+$al_4_summary-line-height: 2.4rem;
+$al_4_link-color: #129dc0;
+$al_4_link-color--hover: #fff;
 $al_4_link-font-size: 1.4rem;
-$al_4_link-border-color: #d1d2d4;
+$al_4_link-border-color: #129dc0;
+$al_4_link-background-color--hover: #129dc0;
 // ======================================
 //  slice footerbar
 // ======================================

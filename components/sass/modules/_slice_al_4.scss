@@ -58,6 +58,7 @@
       a {
         font-size: $al_4_title-font-size;
         color: $al_4_title-color;
+        font-weight:$bold;
 
         &:hover {
           opacity: 0.8;
@@ -72,14 +73,15 @@
       margin-bottom: 12px;
       padding: 0 35px !important;
       font-size: $al_4_summary-font-size;
+      line-height:$al_4_summary-line-height;
       color: $al_4_summary-color;
 
       @include susy-breakpoint($breakpoint-sm) {
-        min-height: 50px;
+        min-height: 60px;
       }
 
       @include susy-breakpoint($breakpoint-md) {
-        min-height: 90px;
+        min-height: 100px;
       }
 
 
@@ -95,9 +97,8 @@
         margin-top: 10px;
         margin-right: 5px;
         padding: 9px 15px;
-        border-radius: 2px;
-        -webkit-transition: background-color 500ms ease;
-        transition: background-color 500ms ease;
+        border-radius: 5px;
+        transition: all 500ms ease;
         text-align: center;
         letter-spacing: 1px;
         text-decoration: none;
@@ -105,7 +106,8 @@
         background-color: transparent;
 
         &:hover {
-          opacity: 0.8;
+          color: $al_4_link-color--hover;
+          background-color: $al_4_link-background-color--hover;
         }
       }
     }

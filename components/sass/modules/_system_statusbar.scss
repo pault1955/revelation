@@ -57,7 +57,6 @@
   border-style: outset !important;
   border-width: 2px !important;
   border-color: rgba(69, 95, 107, 0.2) !important;
-  -webkit-box-shadow: 0 0 20px 0 rgba(000, 000, 000, 0.1);
   box-shadow: 0 0 20px 0 rgba(000, 000, 000, 0.1);
   font-size: 1.6rem;
   line-height: 2.0rem;
@@ -130,8 +129,6 @@
     margin-right: 5px;
     padding: 8px 17px 11px;
     border-radius: 2px;
-    -webkit-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
-    -o-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
     transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
     text-align: center;
     text-decoration: none;
