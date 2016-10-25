@@ -1,0 +1,117 @@
+// ======================================
+//  gallery 6
+// ======================================
+
+// gallery 6 layout
+// ======================================
+.slice_gallery_6 {
+
+  .gallery_6_cards {
+    @include span(12);
+
+    .gallery_ul .gallery_li {
+      @include susy-breakpoint($breakpoint-ti) {
+        @include span(6);
+      }
+
+      @include susy-breakpoint($breakpoint-sm) {
+        @include span(4);
+      }
+
+    }
+  }
+}
+
+// gallery 6 styles
+// ======================================
+
+.slice_gallery_6 {
+
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: $gallery_6-background-color;
+  text-align: center;
+
+  .gallery_6_cards .gallery_ul {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: left;
+
+    .gallery_li {
+      margin-bottom: 40px;
+
+      a img {
+        transition: all 500ms ease;
+        display: block;
+        -webkit-backface-visibility: hidden; // fix for moving images on hover
+        width: 100%;
+
+        &:hover {
+          opacity: 0.7;
+          transform: rotate(0); // fix for moving images on hover
+        }
+
+      }
+    }
+
+    .gallery_6_title {
+      padding: 10px 20px 0 !important;
+      background-color: $gallery_6_card-background-color;
+      font-size: $gallery_6_title-font-size;
+      color: $gallery_6_title-color;
+      font-weight: $bold;
+    }
+
+    .gallery_6_subtitle {
+
+      background-color: $gallery_6_card-background-color;
+      padding: 5px 20px 20px !important;
+      font-size: $gallery_6_summary-font-size;
+      line-height: $gallery_6_summary-line-height;
+      color: $gallery_6_summary-color;
+
+      @include susy-breakpoint($breakpoint-ti) {
+       min-height: 100px !important;
+      }
+
+      @include susy-breakpoint($breakpoint-md) {
+        min-height: 100px !important;
+      }
+
+    }
+
+  }
+
+
+  .gallery_6_button  {
+    font-size: $gallery_6_button-font-size;
+    color: $gallery_6_button-color;
+    border: 2px solid $gallery_6_button-border-color;
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 5px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+
+    &:hover {
+      color: $gallery_6_button-color--hover;
+      background-color: $gallery_6_button-background-color--hover;
+    }
+  }
+
+  @include susy-breakpoint($breakpoint-sm) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include susy-breakpoint($breakpoint-md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

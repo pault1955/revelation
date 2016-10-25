@@ -353,24 +353,25 @@
   @include  susy-breakpoint($breakpoint-md) {
     border-top: none;
   }
+
+  // ======================================
+  // slice   content page custom 'modules'
+  // ======================================
+
+
+  // slice   sermon series
+  // ======================================
+  .MediaList > div {
+    margin-right: 15px;
+  }
+
+  #lstSermons::before, #lstSermons::after {
+    content: " ";
+    display: table;
+  }
+  #lstSermons::after {
+    clear: both;
+  }
 }
 
 
-// ======================================
-// slice   content page custom 'modules'
-// ======================================
-
-
-// slice   sermon series
-// ======================================
-.MediaList > div {
-  margin-right: 15px;
-}
-
-#lstSermons::before, #lstSermons::after {
-  content: " ";
-  display: table;
-}
-#lstSermons::after {
-  clear: both;
-}

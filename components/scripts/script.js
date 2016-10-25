@@ -7,7 +7,7 @@ $(document).ready(function () {
   $('ul.root_menu > li:first-child').addClass('first first_item');
   $('ul.root_menu > li:last-child').addClass('last last_item');
 
-   /* remove sub menus from Home   */
+  /* remove sub menus from Home   */
 
   $('ul.root_menu > li.has_sub_menu:first-child > ul.sub_menu').remove();
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
     var data = $.parseHTML( alt );
     var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
     var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
-    var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
+    var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">Read more</a></div>';
     $(caption).insertAfter( this );
   });
 
@@ -81,5 +81,33 @@ $(document).ready(function () {
     preloadImages: 'all'
   });
 
+  $('.slice_al_4 .articleListTitle4 a').each(function (index) {
+    var titleLink = $(this).attr("href");
+    $(this).parent().parent().find('.articleListLink4').wrapInner('<a  class="info_cards_button" href="' + titleLink + '">');
+  });
+
+
+  // recent_media
+
+  $('.slice_ml_3 .mediaListTitle3 a').each(function (index) {
+    var titleLink = $(this).attr("href");
+    $(this).parent().parent().find('.mediaListLink3').wrapInner('<a  href="' + titleLink + '">');
+  });
+
+  $('.slice_ml_3 .mediaListImage3 img').each(function (index) {
+    var imagePath = $(this).attr('src');
+    $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=280&h=157&url=/", "/"));
+  });
+
+  // Gallery 6
+
+  $( ".slice_gallery_6 .gallery_6_cards .gallery_li img" ).each(function( index ) {
+    var cardGridAlt = $(this).attr('alt');
+    var cardGridData = $.parseHTML( cardGridAlt );
+    var cardGridTitle = '<div class="gallery_6_title">' + ($(cardGridData).text().split('*')[ 0 ] || '') + '</div>';
+    var cardGridSubtitle = '<div class="gallery_6_subtitle">' + ($(cardGridData).text().split('*')[ 1 ] || '') + '</div>';
+    var cardGridCaption = '<div class="gallery_6_caption">' + cardGridTitle + cardGridSubtitle + '</div>';
+    $(cardGridCaption).insertAfter( this );
+  });
 
 });

@@ -258,7 +258,11 @@
         width: 100% !important;
         margin: 15px auto;
         background-color: $system_shadedBox-background-color;
-        padding: 15px
+        padding: 15px;
+      }
+
+      .messagesbox {
+        padding: 15px 0 0;
       }
 
        .shadedbox td {
@@ -328,7 +332,7 @@
       }
 
       /* ==========================================================================
-         Forums
+         Forums Instant messaging
          ========================================================================== */
       TABLE.gridstyle {
         border-collapse: collapse;
@@ -393,31 +397,6 @@
       .forums_boxout_contents a img {
         width: 20px;
       }
-/*
-      div[id$="CommentForm"] .button {
-        display: block;
-        margin: 20px auto 40px;
-        max-width: 206px;
-        padding: 9px 15px;
-        border-radius: 2px;
-        -webkit-transition: background-color 500ms ease;
-        transition: background-color 500ms ease;
-        font-size: 14px;
-        text-align: center;
-        letter-spacing: 1px;
-        text-decoration: none;
-        text-transform: uppercase;
-        border: 2px solid $system_comment_form_button-border-color;
-        background-color: $system_comment_form_button-background-color;
-        color: $system_comment_form_button-color
-      }
-
-      div[id$="CommentForm"] .button:hover {
-        background-color: $system_comment_form_button-background-color--hover;
-        border: 2px solid $system_comment_form_button-border-color--hover;
-        color: $system_comment_form_button-color--hover;
-      }
-*/
 
       .messagesbox .forumrow td, .messagesbox .altforumrow td {
         padding: 10px 15px;
@@ -427,6 +406,14 @@
         width: 25px;
       }
 
+      .messagesbox tr[id*="ctlCommentList_comment_body"] td {
+          border-bottom: 10px solid white;
+      }
+
+      .forum-thread-comment-box {
+        font-size: 1.7rem;
+        color: $default_font-color;
+      }
       /* ==========================================================================
          Media
          ========================================================================== */

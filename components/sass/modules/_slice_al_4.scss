@@ -87,7 +87,8 @@
 
     }
 
-    .articleListLink4 {
+    // temp name change for class 4 removed untill mini-layout bug fixed as cannot change author details
+    .articleListLink4, .articleListLink {
 
       a {
         font-size: $al_4_link-font-size;

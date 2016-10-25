@@ -13,6 +13,28 @@
   clear: both;
 }
 
+// Sometimes there are problems with slices affecting one-another.
+// Use the isolate_element="yes" attribute in HTML to try and fix this.
+
+section[isolate_element=yes], div[isolate_element=yes]{
+  float:none; // de-float the item.
+  // Apply clearfix to the item.
+  &::before, &::after {
+    content: " ";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+// Attempt to deal with the annoying Android font-boosting feature
+// by setting the max-height property to a large value.
+// 100,000 pixels is about 50-100 screens worth, so should be fine, for our slices.
+section {max-height:100000px;}
+
+
+
 html {
   font-size: 0.625em;
 }

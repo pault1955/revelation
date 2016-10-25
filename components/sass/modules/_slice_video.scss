@@ -1,0 +1,66 @@
+// ======================================
+//  Video
+// ======================================
+
+// Video layout
+// ======================================
+.slice_video {
+
+  .video-wrapper{
+    @include span(12);
+
+
+    @include susy-breakpoint($breakpoint-sm) {
+      @include span(8);
+      margin-left: span(2 wide of 12);
+    }
+
+  }
+
+}
+
+// media list - 4 articles  style
+// ======================================
+
+.slice_video {
+
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: $video-background-color;
+  text-align: center;
+
+  .video-article {
+    margin-top: 30px;
+  }
+
+  .video_button  {
+    font-size: $video_button-font-size;
+    color: $video_button-color;
+    border: 2px solid $video_button-border-color;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+
+    &:hover {
+      color: $video_button-color--hover;
+      background-color: $video_button-background-color--hover;
+    }
+  }
+  
+  @include susy-breakpoint($breakpoint-sm) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include susy-breakpoint($breakpoint-md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

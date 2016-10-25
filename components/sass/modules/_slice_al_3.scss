@@ -1,0 +1,172 @@
+// ======================================
+//  article list  - Image-Title-Summary
+// ======================================
+
+// article list - 3 article layout
+// ======================================
+.slice_al_3 {
+
+  .article_cards3 > div {
+    @include span(12);
+
+    @include susy-breakpoint($breakpoint-ti) {
+      @include span(6);
+
+      &:last-of-type {
+        margin-left: span(3 wide of 12);
+      }
+    }
+
+    @include susy-breakpoint($breakpoint-sm) {
+      @include span(4);
+
+      &:last-of-type {
+        margin-left:gutter(12);
+
+      }
+    }
+
+
+  }
+}
+
+// article list - 4 articles  style
+// ======================================
+
+.slice_al_3 {
+
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: $al_3-background-color;
+  text-align: center;
+
+  .article_cards3 {
+
+    padding-bottom: 30px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > div {
+
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+
+      .articleListImage {
+
+        a {
+          display: block;
+          margin: 0 auto;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+
+      .articleListTitle {
+
+        padding: 10px 20px 0 !important;
+        background-color: $al_3_card-background-color;
+        flex: 0 0 0;
+
+        a {
+          font-size: $al_3_title-font-size;
+          color: $al_3_title-color;
+          font-weight:$bold;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+      }
+
+      .articleListDate {
+
+        padding: 10px 20px 0 !important;
+        background-color: $al_3_card-background-color;
+
+        a {
+          font-size: $al_3_date-font-size;
+          color: $al_3_date-color;
+          font-weight:$bold;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+      }
+
+      .articleListSummary {
+
+        background-color: $al_3_card-background-color;
+        padding: 10px 20px !important;
+        font-size: $al_3_summary-font-size;
+        line-height:$al_3_summary-line-height;
+        color: $al_3_summary-color;
+        flex: 1 0 auto;
+      }
+
+      .articleListLink {
+
+        background-color: $al_3_link-background-color;
+        border-top: 1px solid $al_3_link-border-color;
+
+
+        a {
+          display: inline-block;
+          font-size: $al_3_link-font-size;
+          text-decoration: none;
+          color: $al_3_link-color;
+          padding: 10px 20px !important;
+
+          &:hover {
+            color: $al_3_link-color--hover;
+            opacity: 0.8;
+          }
+        }
+      }
+
+    }
+  }
+
+  .article_cards_button  {
+    font-size: $al_3_button-font-size;
+    color: $al_3_button-color;
+    border: 2px solid $al_3_button-border-color;
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 5px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+
+    &:hover {
+      color: $al_3_button-color--hover;
+      background-color: $al_3_button-background-color--hover;
+    }
+  }
+
+  @include susy-breakpoint($breakpoint-sm) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include susy-breakpoint($breakpoint-md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
