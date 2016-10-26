@@ -16,7 +16,7 @@
         margin-left: span(3 wide of 12);
       }
     }
-git
+
     @include susy-breakpoint($breakpoint-sm) {
       @include span(4);
 
