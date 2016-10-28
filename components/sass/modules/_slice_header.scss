@@ -265,7 +265,6 @@
 
   }
 
-
   .mobile-search {
     position: absolute;
     top: -3px;
@@ -344,7 +343,7 @@
           background-size: auto 20px;
           background-repeat: no-repeat;
           transition: background-color 500ms ease, border 500ms ease;
-          font-family: Asap, sans-serif;
+          font-family: $default_font-family;
           font-size: 15px;
           text-align: center;
           width: 100%;
@@ -353,23 +352,23 @@
           margin-left: 10px;
 
           &:hover {
-            border-color: white;
-            background-color: white;
+            border-color: $search_box_input-border-color--hover;
+            background-color: $search_box_input-background-color--hover;
             background-image: url('../images/searchbox-icon.png');
-            color: #000;
+            color: $search_box_input-color--hover;
           }
         }
       }
 
     }
 
-    @include  susy-breakpoint($breakpoint_ti) {
+    @include susy-breakpoint($breakpoint_ti) {
       & {
         top: 70px;
       }
     }
 
-    @include  susy-breakpoint($breakpoint_md) {
+    @include susy-breakpoint($breakpoint_md) {
       & {
         top: 114px;
       }
@@ -401,16 +400,16 @@
           padding-left: 25px;
           margin-left: 2px;
           border-radius: 3px;
-          background-color: #f5f5f5;
+          background-color: $top_links-background-color;
           transition: background-color 500ms ease;
-          color: #2b4049;
+          color: $top_links-color;
           font-size: 11px;
           text-decoration: none;
           float: left;
 
           &:hover {
-            background-color: #dceff4;
-            color: black;
+            background-color: $top_links-background-color--hover;
+            color: $top_links-color--hover;
 
           }
 
@@ -432,7 +431,7 @@
             i {
               font-size: $top_links_font-size;
               color: $top_links_icon-color;
-              line-height:$top_links_line-height;
+              line-height: $top_links_line-height;
             }
           }
 
@@ -441,8 +440,6 @@
 
     }
   }
-
-
 
   .logo-container {
     position: absolute;
@@ -523,19 +520,15 @@
   // dropdown menu  styles
   // ======================================
 
-
   .nav-menu {
     display: none;
   }
-
 
   @media (min-width: $breakpoint-md) {
 
     #mobile_nav {
       display: none;
     }
-
-
 
     .navbar {
       background-color: $nav_background-color;
@@ -548,13 +541,12 @@
       .nav-menu {
         display: block;
         float: right;
-        margin-top:15px;
+        margin-top: 15px;
 
         .root_menu {
 
           padding-left: 0;
           margin: 0 auto;
-
 
           ul {
             display: none;
@@ -631,31 +623,38 @@
                 left: auto; // left is set previously, so clear for this ul.
                 right: 0; // aligns the right border with that of the parent.
               }
+
+              // Make the 2nd level menus open to the left for the last 2 columns of the menu.
+              &:last-child > ul ul, &:nth-last-child(2) > ul ul {
+                position: absolute;
+                top: 0; // no vertical movement required.
+                left: auto; // left is set previously, so clear for this ul.
+                right: 100%; // aligns the right border with that of the parent.
+              }
+
             }
 
           }
+        }
 
+        a {
+          color: $nav_link-color;
+          font-size: $nav_link-font-size;
+          font-weight: $nav_link-font-weight;
+          display: block;
+          transition: background-color 400ms ease;
+          text-decoration: none;
+          text-transform: capitalize;
+        }
+
+        ul {
+          list-style-type: none;
         }
       }
 
-      a {
-        color: $nav_link-color;
-        font-size: $nav_link-font-size;
-        font-weight: $nav_link-font-weight;
-        display: block;
-        transition: background-color 400ms ease;
-        text-decoration: none;
-        text-transform: capitalize;
-      }
-
-      ul {
-        list-style-type: none;
-      }
     }
 
-
   }
-
 }
 
 

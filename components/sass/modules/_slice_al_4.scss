@@ -9,7 +9,6 @@
 
   .info_cards > div {
 
-
     @include susy-breakpoint($breakpoint-sm) {
         @include span(6);
       }
@@ -84,10 +83,9 @@
         min-height: 100px;
       }
 
-
     }
 
-    // temp name change for class 4 removed untill mini-layout bug fixed as cannot change author details
+    // temp name change for class 4 removed until mini-layout bug fixed as cannot change author details
     .articleListLink4, .articleListLink {
 
       a {

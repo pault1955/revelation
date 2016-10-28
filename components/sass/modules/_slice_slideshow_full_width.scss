@@ -163,11 +163,11 @@
               bottom: 10px;
 
             a {
-              background: #f5f5f5;
+              background: $banner_slideshow_pager-background-color;
               transition: background-color 500ms ease;
 
               &:hover, &.active {
-                background: #4acfc7;
+                background: $banner_slideshow_pager-background-color--active;
               }
             }
           }

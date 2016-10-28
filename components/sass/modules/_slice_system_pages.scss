@@ -155,7 +155,6 @@
         height: 30px;
         padding: 0 8px;
         background: transparent;
-        -webkit-appearance: none;
         font-size: 14px;
         border: 1px solid #000;
         margin-right: 4px
@@ -195,9 +194,9 @@
         line-height: 20px;
         width: 33.33333%;
         text-align: center;
-        color: #0CC;
+        color: $system_tabSelected-color;
         font-size: 16px;
-        border: 2px solid #FFF;
+        border: 2px solid $system_tabSelected-border-color;
         border-bottom: 2px solid $system_tabSelected-border-color;
         vertical-align: middle;
         word-spacing: 4px
@@ -283,8 +282,8 @@
         margin: 10px;
         padding: 4px 3px;
         width: 100%;
-        border: 1px solid #AAA;
-        color: #7d8891;
+        border: 1px solid $system_textarea_border-color;
+        color: $system_textarea-color;
         border-radius: 4px
       }
 
@@ -362,7 +361,7 @@
 
       TR.altgriditemrow TD.griditem {
         background-color: $system_griditem-background-color;
-        border-color: #aaa;
+        border-color: $system_altGridRow_border-color;
         border-collapse: collapse
       }
 
@@ -594,8 +593,6 @@
         margin: 10px auto 0;
         display: block;
         width: auto;
-        -webkit-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
         transition: all  500ms ease;
         text-decoration: none;
         height: auto;
@@ -624,7 +621,7 @@
 
 .eventpopupwindow a:hover {
   opacity: 0.7;
-  border-bottom-color: #000;
+  border-bottom-color: $system_calendar_popup_window-bottom-border-color;
 }
 
 
@@ -656,9 +653,9 @@ BODY.popupwindow, BODY.eventpopupwindow, BODY.signuppopupwindow, TD.signuppopupt
 }
 
 td.popupwindow_title {
-  border-width: 0px;
+  border-width: 0;
   font-size: 20px;
-  color: #333;
+  color: $system_calendar_popup_window-color;
   background-color: $system_calendar_popup_window-title-background-color;
 }
 

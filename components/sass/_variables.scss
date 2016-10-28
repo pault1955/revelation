@@ -13,7 +13,7 @@ $susy: (
                 // output: background
         ),
         use-custom: (
-          clearfix: false
+          clearfix: true
         )
 );
 
@@ -63,6 +63,10 @@ $site_name-color: #2b4049;
 $top_links_icon-color: #129dc0;
 $top_links_font-size: 16px;
 $top_links_line-height: 20px;
+$top_links_color: #2b4049;
+$top_links_color--hover: #000;
+$top_links-background-color: #f5f5f5;
+$top_links-background-color--hover: #dceff4;
 
 // ======================================
 //  search overlay
@@ -70,8 +74,12 @@ $top_links_line-height: 20px;
 
 $search_box-background-color: #4acfc7;
 $search_box_input-border-color: #fff;
+$search_box_input-border-color--hover: #fff;
 $search_box_input-background-color: #f5f5f5;
+$search_box_input-background-color--hover: #fff;
 $search_box_input-color: #2c4048;
+$search_box_input-color--hover: #2c4048;
+
 
 // ======================================
 //  slicknav mobile menu
@@ -473,6 +481,7 @@ $video_button-background-color--hover: #129dc0;
 $system_sitebutton_border-color: #129dc0;
 $system_sitebutton_color: #129dc0;
 
+
 //  system - statusbar
 // ======================================
 
@@ -498,6 +507,7 @@ $system_profile-background-color: #eef7fb;
 
 $system_tabSelected-background-color: #eef7fb;
 $system_tabSelected-border-color: #eef7fb;
+$system_tabSelected-color: #0cc;
 $system_tabLeft-color: #fff;
 $system_tabLeft-border-color: #fff;
 $system_tabRight-color: #fff;
@@ -508,6 +518,11 @@ $system_tabLink-color--hover: #0CC;
 $system_tabLink-background-color--hover: #e3f1f8;
 
 $system_shadedBox-background-color: #eef7fb;
+
+$system_textarea_border-color: #aaa;
+$system_textarea-color: #2b4049;
+
+$system_altGridRow_border-color: #aaa;
 
 $system_my_area_navigation-background-color: #999;
 
@@ -548,5 +563,6 @@ $system_calendar_popup_window-color: #129dc0;
 $system_calendar_popup_window-background-color: #fff;
 $system_calendar_popup_window-title-background-color: #fff;
 $system_calendar_popup_window-table-background-color: #fff;
-$system_calendar_day_header-border-color: #43525a;
+$system_calendar_popup_window-bottom-border-color: #000;
 
+$system_calendar_day_header-border-color: #43525a;

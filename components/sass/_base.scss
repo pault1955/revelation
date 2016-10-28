@@ -3,24 +3,12 @@
 // ======================================
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Montserrat:400,700);
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
 
-.clearfix:after {
-  clear: both;
-}
-
-// Sometimes there are problems with slices affecting one-another.
-// Use the isolate_element="yes" attribute in HTML to try and fix this.
-
-section[isolate_element=yes], div[isolate_element=yes]{
-  float:none; // de-float the item.
+section, .isolate_element {
+  float:none !important; // de-float the item.
   // Apply clearfix to the item.
   &::before, &::after {
-    content: " ";
+    content: "";
     display: table;
   }
   &::after {
