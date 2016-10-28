@@ -9,7 +9,8 @@ var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
     minifyHTML = require('gulp-minify-html'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    fileinclude = require('gulp-file-include');
 
 var env,
     jsSources,
@@ -39,6 +40,7 @@ jsSources = [
 
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
+htmlSources = ['components/html/index.html'];
 
 gulp.task('js', function() {
     'use strict';
@@ -82,6 +84,8 @@ gulp.task('watch', function() {
     gulp.watch(jsSources, ['js']);
     gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass']);
     gulp.watch('builds/development/*.html', ['html']);
+    gulp.watch('components/*.html', ['fileinclude']);
+    gulp.watch('components/html/*.html', ['fileinclude']);
 });
 
 gulp.task('connect', function() {
@@ -91,7 +95,14 @@ gulp.task('connect', function() {
         livereload: true
     });
 });
-
+gulp.task('fileinclude', function() {
+    gulp.src(['components/index.html'])
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: './components/html/'
+        }))
+        .pipe(gulp.dest(outputDir))
+});
 gulp.task('html', function() {
     'use strict';
     gulp.src('builds/development/*.html')
@@ -107,5 +118,5 @@ gulp.task('move', function() {
         .pipe(gulpif(env === 'production', gulp.dest(outputDir+'images')));
 });
 
-gulp.task('default', ['watch', 'html', 'compass', 'move', 'connect']);
+gulp.task('default', ['watch', 'fileinclude', 'compass', 'move', 'connect']);
 // js task removed

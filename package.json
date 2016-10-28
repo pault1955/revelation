@@ -14,6 +14,7 @@
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.3.4",
     "gulp-connect": "^4.1.0",
+    "gulp-file-include": "^1.0.0",
     "gulp-htmlmin": "^2.0.0",
     "gulp-if": "^2.0.1",
     "gulp-jsbeautifier": "0.0.4",
@@ -23,7 +24,8 @@
     "gulp-util": "^3.0.7",
     "gulp-w3cjs": "^1.2.0",
     "jquery": "^3.0.0",
-    "jshint-stylish": "^2.2.0"
+    "jshint-stylish": "^2.2.0",
+    "gulp-file-include": "^1.0.0"
   },
   "bugs": {
     "url": "https://github.com/pault1955/susyTemplate/issues"
