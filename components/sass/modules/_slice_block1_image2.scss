@@ -4,7 +4,7 @@
 
 // slice  1 block image2
 // ======================================
-.slice_block1_image2{
+.slice_block1_image2 {
 }
 
 // slice  1 block image2 style
@@ -70,7 +70,7 @@
     font-size: $block1_image2_button_font-size;
     max-width: 125px;
     margin: 15px auto 0;
-    border-radius: 2px;
+    border-radius: 4px;
 
     &:hover {
       background-color: $block1_image2_button_background-color--hover;

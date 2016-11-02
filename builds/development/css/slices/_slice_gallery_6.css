@@ -1,0 +1,102 @@
+@media (min-width: 467px) {
+    .slice_gallery_6 .gallery_6_cards .gallery_ul .gallery_li {
+        width: 47.42268%;
+        float: left;
+        margin-left: 1.28866%;
+        margin-right: 1.28866%;
+    }
+}
+
+@media (min-width: 768px) {
+    .slice_gallery_6 .gallery_6_cards .gallery_ul .gallery_li {
+        width: 30.75601%;
+        float: left;
+        margin-left: 1.28866%;
+        margin-right: 1.28866%;
+    }
+}
+
+.slice_gallery_6 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.slice_gallery_6 .gallery_6_cards .gallery_ul {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slice_gallery_6 .gallery_6_cards .gallery_ul .gallery_li {
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+
+.slice_gallery_6 .gallery_6_cards .gallery_ul .gallery_li a img {
+    transition: all 500ms ease;
+    display: block;
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+}
+
+.slice_gallery_6 .gallery_6_cards .gallery_ul .gallery_li a img:hover {
+    opacity: 0.7;
+    transform: rotate(0);
+}
+
+.slice_gallery_6 .gallery_6_cards .gallery_ul .gallery_6_caption .gallery_6_title {
+    padding: 10px 20px 0 !important;
+    background-color: #fff;
+    font-size: 2rem;
+    color: #2d4048;
+    font-weight: 700;
+}
+
+.slice_gallery_6 .gallery_6_cards .gallery_ul .gallery_6_caption .gallery_6_subtitle {
+    background-color: #fff;
+    padding: 5px 20px 20px !important;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #2d4048;
+    flex: 1 0 auto;
+}
+
+.slice_gallery_6 .gallery_6_button {
+    font-size: 1.4rem;
+    color: #129dc0;
+    border: 2px solid #129dc0;
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 5px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.slice_gallery_6 .gallery_6_button:hover {
+    color: #fff;
+    background-color: #129dc0;
+}
+
+@media (min-width: 768px) {
+    .slice_gallery_6 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .slice_gallery_6 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}

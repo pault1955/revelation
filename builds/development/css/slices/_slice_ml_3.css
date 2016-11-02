@@ -1,0 +1,154 @@
+
+.slice_ml_3 .media_cards > span > div {
+    width: 97.42268%;
+    float: left;
+    margin-left: 1.28866%;
+    margin-right: 1.28866%;
+}
+
+@media (min-width: 467px) {
+    .slice_ml_3 .media_cards > span > div {
+        width: 47.42268%;
+        float: left;
+        margin-left: 1.28866%;
+        margin-right: 1.28866%;
+    }
+
+    .slice_ml_3 .media_cards > span > div:last-of-type {
+        margin-left: 25%;
+    }
+}
+
+@media (min-width: 768px) {
+    .slice_ml_3 .media_cards > span > div {
+        width: 30.75601%;
+        float: left;
+        margin-left: 1.28866%;
+        margin-right: 1.28866%;
+    }
+
+    .slice_ml_3 .media_cards > span > div:last-of-type {
+        margin-left: 1.28866%;
+    }
+}
+
+.slice_ml_3 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.slice_ml_3 .media_cards {
+    padding-bottom: 30px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slice_ml_3 .media_cards > span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slice_ml_3 .media_cards > span > div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slice_ml_3 .media_cards > span > div .mediaListImage3 a {
+    display: block;
+    margin: 0 auto;
+}
+
+.slice_ml_3 .media_cards > span > div .mediaListImage3 a:hover {
+    opacity: 0.8;
+}
+
+.slice_ml_3 .media_cards > span > div .mediaListImage3 a img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slice_ml_3 .media_cards > span > div .mediaListTitle3 {
+    padding: 10px 20px 0 !important;
+    background-color: #fff;
+    height: auto !important;
+    flex: 0 0 0;
+}
+
+.slice_ml_3 .media_cards > span > div .mediaListTitle3 a {
+    font-size: 2rem;
+    color: #2d4048;
+    font-weight: 700;
+}
+
+.slice_ml_3 .media_cards > span > div .mediaListTitle3 a:hover {
+    opacity: 0.8;
+}
+
+.slice_ml_3 .media_cards > span > div .mediaListDesc3 {
+    background-color: #fff;
+    padding: 5px 20px 20px !important;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #2d4048;
+    height: auto !important;
+    flex: 1 0 auto;
+}
+
+.slice_ml_3 .media_cards > span > div .mediaListLink3 {
+    background-color: #fff;
+    border-top: 1px solid #f5f5f5;
+}
+
+.slice_ml_3 .media_cards > span > div .mediaListLink3 a {
+    display: inline-block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #2d4048;
+    padding: 8px 20px 9px !important;
+}
+
+.slice_ml_3 .media_cards > span > div .mediaListLink3 a:hover {
+    color: #2d4048;
+    opacity: 0.8;
+}
+
+.slice_ml_3 .media_cards_button {
+    font-size: 1.4rem;
+    color: #129dc0;
+    border: 2px solid #129dc0;
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 5px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.slice_ml_3 .media_cards_button:hover {
+    color: #fff;
+    background-color: #129dc0;
+}
+
+@media (min-width: 768px) {
+    .slice_ml_3 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .slice_ml_3 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}

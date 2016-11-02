@@ -110,20 +110,4 @@ $(document).ready(function () {
     $(cardGridCaption).insertAfter( this );
   });
 
-  // Latest News
-
-  $('.slice_al_3 .articleListTitle a').each(function (index) {
-    var titleLink = $(this).attr("href");
-    $(this).parent().parent().find('.articleListLink').wrapInner('<a  href="' + titleLink + '">');
-  });
-
-  $('.slice_al_3 .articleListImage img').each(function (index) {
-    var imagePath = $(this).attr('src');
-    $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=380&h=157&url=/", "/"));
-  });
-
-  // video slice
-
-  $('.video-wrapper').fitVids();
-
 });

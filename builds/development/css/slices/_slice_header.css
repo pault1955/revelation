@@ -1,0 +1,588 @@
+
+.slice_header .siteLogoName {
+    width: 30.75601%;
+    float: left;
+    margin-left: 1.28866%;
+    margin-right: 1.28866%;
+}
+
+@media (min-width: 992px) {
+    .slice_header .siteLogoName {
+        width: 22.42268%;
+        float: left;
+        margin-left: 1.28866%;
+        margin-right: 1.28866%;
+    }
+}
+
+.slice_header .navbar {
+    width: 97.42268%;
+    float: left;
+    margin-left: 1.28866%;
+    margin-right: 1.28866%;
+}
+
+@media (min-width: 992px) {
+    .slice_header .navbar {
+        width: 72.42268%;
+        float: left;
+        margin-left: 1.28866%;
+        margin-right: 1.28866%;
+    }
+}
+
+.slice_header #mobile_nav {
+    z-index: 200;
+}
+
+.slice_header .slicknav_menu {
+    font-size: 1.6rem;
+    margin-bottom: 0 !important;
+    /* IE6/7 support */
+    *zoom: 1;
+}
+
+.slice_header .slicknav_menu:before, .slice_header .slicknav_menu:after {
+    content: " ";
+    display: table;
+}
+
+.slice_header .slicknav_menu:after {
+    clear: both;
+}
+
+.slice_header .slicknav_menu .slicknav_btn {
+    text-decoration: none;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    float: right;
+    padding: 24px 0.625em 0.638em 0.825em;
+    line-height: 1.125em;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.slice_header .slicknav_menu .slicknav_btn .slicknav_menutxt {
+    display: block;
+    line-height: 1.188em;
+    float: right;
+    color: #2c4048;
+}
+
+.slice_header .slicknav_menu .slicknav_btn .slicknav_icon {
+    float: right;
+    margin: 0.33em 0.438em 0 0.438em;
+    color: #2c4048;
+}
+
+.slice_header .slicknav_menu .slicknav_btn .slicknav_icon .slicknav_icon-bar {
+    display: block;
+    width: 1.125em;
+    height: 0.125em;
+    background-color: #5acfc6;
+}
+
+.slice_header .slicknav_menu .slicknav_btn .slicknav_icon .slicknav_icon-bar + .slicknav_icon-bar {
+    margin-top: 0.188em;
+}
+
+.slice_header .slicknav_menu .slicknav_btn .slicknav_icon .slicknav_no-text {
+    margin: 0;
+}
+
+@media (min-width: 467px) {
+    .slice_header .slicknav_menu .slicknav_btn {
+        margin-bottom: 18px;
+    }
+}
+
+.slice_header .slicknav_menu .slicknav_nav {
+    clear: both;
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.slice_header .slicknav_menu .slicknav_nav a {
+    color: #2b4049;
+    display: block;
+    padding: 12px 20px;
+}
+
+.slice_header .slicknav_menu .slicknav_nav a:hover {
+    background: #fff;
+    color: #129dc0;
+}
+
+.slice_header .slicknav_menu .slicknav_nav ul, .slice_header .slicknav_menu .slicknav_nav li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.slice_header .slicknav_menu .slicknav_nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.slice_header .slicknav_menu .slicknav_nav ul li {
+    border-top: none;
+    border-bottom: none;
+}
+
+.slice_header .slicknav_menu .slicknav_nav ul ul li a {
+    padding-left: 25px;
+}
+
+.slice_header .slicknav_menu .slicknav_nav .slicknav_arrow {
+    float: right;
+    width: 11px;
+    height: 7px;
+    padding-top: 17px;
+    display: none;
+}
+
+.slice_header .slicknav_menu .slicknav_nav .slicknav_arrow .close {
+    width: 11px;
+    height: 7px;
+    background: url(../images/dd_down.png) center no-repeat;
+    margin-top: 6px;
+    display: none;
+}
+
+.slice_header .slicknav_menu .slicknav_nav .slicknav_arrow .open {
+    width: 11px;
+    height: 7px;
+    background: url(../images/dd_up.png) center no-repeat;
+    margin-top: 6px;
+    display: none;
+}
+
+.slice_header .slicknav_menu .slicknav_nav .slicknav_arrow a {
+    display: block;
+    padding: 12px 20px;
+    margin-left: 0;
+}
+
+.slice_header .slicknav_menu .slicknav_nav .slicknav_item {
+    display: block;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+
+.slice_header .slicknav_menu .slicknav_nav .slicknav_item a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+.slice_header .slicknav_menu .slicknav_nav ul li a {
+    padding: 12px 20px;
+}
+
+.slice_header .slicknav_menu .slicknav_nav .login_item :hover {
+    background-color: #0068a6;
+    color: #ffffff;
+}
+
+.slice_header .slicknav_menu .slicknav_open > a {
+    background: #f5f5f5;
+}
+
+.slice_header .slicknav_menu .slicknav_open > ul {
+    background: #f5f5f5;
+}
+
+.slice_header .slicknav_menu .slicknav_open.menu_item_level_1 > a {
+    margin-left: 0;
+}
+
+.slice_header .slicknav_menu .slicknav_open.menu_item_level_1 > ul > li > a {
+    padding-left: 30px !important;
+}
+
+.slice_header .slicknav_menu .slicknav_open.menu_item_level_2 > ul > li > a {
+    padding-left: 40px !important;
+}
+
+.slice_header .slicknav_menu .slicknav_open .slicknav_item {
+    background: transparent url(../images/dd-up.png) 93% center no-repeat;
+}
+
+.slice_header .slicknav_menu .slicknav_open .slicknav_item:hover {
+    background: #fff url(../images/dd-up-hover.png) 93% center no-repeat;
+    color: #129dc0;
+}
+
+.slice_header .slicknav_menu .slicknav_collapsed .slicknav_item {
+    background: transparent url(../images/dd-down.png) 93% center no-repeat;
+}
+
+.slice_header .slicknav_menu .slicknav_collapsed .slicknav_item:hover {
+    background: #fff url(../images/dd-down-hover.png) 93% center no-repeat;
+    color: #129dc0;
+}
+
+.slice_header .mobile-search {
+    position: absolute;
+    top: -3px;
+    right: 100px;
+    display: block;
+    z-index: 999;
+}
+
+.slice_header .mobile-search a {
+    display: block;
+    height: 40px;
+    padding-top: 27px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.slice_header .mobile-search a :hover {
+    opacity: 0.7;
+}
+
+.slice_header .search-overlay {
+    transition: opacity 500ms;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    right: 0;
+    z-index: 999;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #4acfc7;
+}
+
+.slice_header .search-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.slice_header .search-overlay .search-form {
+    margin: 0 50px 0 0;
+}
+
+.slice_header .search-overlay .search-form input.button {
+    display: none;
+}
+
+.slice_header .search-overlay .search-form .search-close {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    transition: all 200ms;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+}
+
+.slice_header .search-overlay .search-form .search-close:hover {
+    color: #0068a6;
+}
+
+.slice_header .search-overlay .search-form .search_div input.text {
+    height: 50px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    background-image: url("../images/searchbox-icon.png");
+    background-position: 22px 50%;
+    background-size: auto 20px;
+    background-repeat: no-repeat;
+    transition: background-color 500ms ease, border 500ms ease;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    color: #2c4048;
+    outline: none;
+    margin-left: 10px;
+}
+
+.slice_header .search-overlay .search-form .search_div input.text:hover {
+    border-color: #fff;
+    background-color: #fff;
+    background-image: url("../images/searchbox-icon.png");
+    color: #2c4048;
+}
+
+@media (min-width: 467px) {
+    .slice_header .search-overlay {
+        top: 70px;
+    }
+}
+
+@media (min-width: 992px) {
+    .slice_header .search-overlay {
+        top: 114px;
+    }
+}
+
+.slice_header .top-link-wrapper {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .slice_header .top-link-wrapper {
+        display: block;
+        top: 0px;
+        right: 25px;
+        bottom: 0px;
+        height: 50px;
+        margin-top: 0;
+        z-index: 10;
+        position: static;
+        margin-right: 60px;
+        margin-left: 10px;
+        float: right;
+    }
+
+    .slice_header .top-link-wrapper .header-link-block {
+        height: 50px;
+        padding-top: 15px;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-left: 2px;
+        border-radius: 3px;
+        background-color: #f5f5f5;
+        transition: background-color 500ms ease;
+        color: #2b4049;
+        font-size: 11px;
+        text-decoration: none;
+        float: left;
+    }
+
+    .slice_header .top-link-wrapper .header-link-block:hover {
+        background-color: #dceff4;
+        color: #000;
+    }
+
+    .slice_header .top-link-wrapper .header-link-block .header-icon {
+        margin-right: 5px;
+        float: left;
+    }
+
+    .slice_header .top-link-wrapper .header-link-block .header-link {
+        display: inline-block;
+        float: left;
+        font-size: 10px;
+        line-height: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .slice_header .top-link-wrapper .header-link-block .header-link i {
+        font-size: 16px;
+        color: #129dc0;
+        line-height: 20px;
+    }
+}
+
+.slice_header .logo-container {
+    position: absolute;
+    top: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+    z-index: 300;
+    height: 50px;
+}
+
+.slice_header .logo-container .logo-icon {
+    float: left;
+}
+
+.slice_header .logo-container .logo-icon a {
+    display: block;
+}
+
+.slice_header .logo-container .logo-icon a img {
+    width: 40px;
+}
+
+.slice_header .logo-container .logo-name {
+    float: left;
+    margin-top: 22px;
+    margin-left: 3px;
+}
+
+.slice_header .logo-container .logo-name a {
+    display: block;
+    font-size: 2.2rem;
+    color: #2b4049;
+    font-weight: 700;
+}
+
+.slice_header .logo-container .logo-name a:hover {
+    opacity: 0.7;
+}
+
+@media (min-width: 467px) {
+    .slice_header .logo-container .logo-name a {
+        font-size: 2.86rem;
+        margin-top: 6px;
+    }
+
+    .slice_header .logo-container .logo-icon a img {
+        width: 55px;
+    }
+}
+
+@media (min-width: 992px) {
+    .slice_header .logo-container {
+        margin-top: 15px;
+        margin-left: 40px;
+    }
+
+    .slice_header .logo-container .logo-icon a {
+        margin-top: 25px;
+    }
+
+    .slice_header .logo-container .logo-name a {
+        margin-top: 33px;
+    }
+
+    .slice_header .logo-container .logo-name a img {
+        width: 70px;
+    }
+}
+
+.slice_header .nav-menu {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .slice_header #mobile_nav {
+        display: none;
+    }
+
+    .slice_header .navbar {
+        background-color: transparent;
+        z-index: 10;
+        float: right;
+        width: 100%;
+        margin-top: 0;
+        margin-right: 39px;
+    }
+
+    .slice_header .navbar .nav-menu {
+        display: block;
+        float: right;
+        margin-top: 15px;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu {
+        padding-left: 0;
+        margin: 0 auto;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu ul {
+        display: none;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu li {
+        position: relative;
+        list-style-type: none;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu li:hover > ul {
+        display: block;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu > li {
+        float: left;
+        position: relative;
+        margin-top: 4px;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu > li > a {
+        padding: 17px 20px;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu > li ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #f5f5f5;
+        min-width: 210px;
+        padding: 0;
+        z-index: 999;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu > li ul a {
+        color: #2c4048;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 15px 23px;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu > li ul ul {
+        top: 0;
+        left: 100%;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu > li ul li.has_sub_menu:after {
+        content: ">";
+        color: #2c4048;
+        position: absolute;
+        right: 15px;
+        top: 9px;
+        line-height: 30px;
+        height: 30px;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu > li:hover > a {
+        background-color: #f5f5f5;
+        color: #129dc0;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu > li li:hover > a {
+        color: #129dc0;
+        background-color: #ffffff;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu > li:last-child > ul {
+        position: absolute;
+        top: 100%;
+        left: auto;
+        right: 0;
+    }
+
+    .slice_header .navbar .nav-menu .root_menu > li:last-child > ul ul, .slice_header .navbar .nav-menu .root_menu > li:nth-last-child(2) > ul ul {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 100%;
+    }
+
+    .slice_header .navbar .nav-menu a {
+        color: #2c4048;
+        font-size: 1.6rem;
+        font-weight: 700;
+        display: block;
+        transition: background-color 400ms ease;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .slice_header .navbar .nav-menu ul {
+        list-style-type: none;
+    }
+}

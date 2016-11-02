@@ -1,0 +1,160 @@
+.slice_al_3 .article_cards3 > div {
+  width: 97.42268%;
+  float: left;
+  margin-left: 1.28866%;
+  margin-right: 1.28866%;
+}
+
+@media (min-width: 467px) {
+  .slice_al_3 .article_cards3 > div {
+    width: 47.42268%;
+    float: left;
+    margin-left: 1.28866%;
+    margin-right: 1.28866%;
+  }
+
+  .slice_al_3 .article_cards3 > div:last-of-type {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .slice_al_3 .article_cards3 > div {
+    width: 30.75601%;
+    float: left;
+    margin-left: 1.28866%;
+    margin-right: 1.28866%;
+  }
+
+  .slice_al_3 .article_cards3 > div:last-of-type {
+    margin-left: 1.28866%;
+  }
+}
+
+.slice_al_3 {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.slice_al_3 .article_cards3 {
+  padding-bottom: 30px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slice_al_3 .article_cards3 > div {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slice_al_3 .article_cards3 > div .articleListImage a {
+  display: block;
+  margin: 0 auto;
+}
+
+.slice_al_3 .article_cards3 > div .articleListImage a:hover {
+  opacity: 0.8;
+}
+
+.slice_al_3 .article_cards3 > div .articleListImage a img {
+  display: block;
+  width: 100%;
+}
+
+.slice_al_3 .article_cards3 > div .articleListTitle {
+  padding: 10px 20px 0 !important;
+  background-color: #f5f5f5;
+  flex: 0 0 0;
+}
+
+.slice_al_3 .article_cards3 > div .articleListTitle a {
+  font-size: 2rem;
+  color: #2d4048;
+  font-weight: 700;
+}
+
+.slice_al_3 .article_cards3 > div .articleListTitle a:hover {
+  opacity: 0.8;
+}
+
+.slice_al_3 .article_cards3 > div .articleListDate {
+  padding: 10px 20px 0 !important;
+  background-color: #f5f5f5;
+}
+
+.slice_al_3 .article_cards3 > div .articleListDate a {
+  font-size: 1.4rem;
+  color: #2d4048;
+  font-weight: 700;
+}
+
+.slice_al_3 .article_cards3 > div .articleListDate a:hover {
+  opacity: 0.8;
+}
+
+.slice_al_3 .article_cards3 > div .articleListSummary {
+  background-color: #f5f5f5;
+  padding: 10px 20px !important;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #2d4048;
+  flex: 1 0 auto;
+}
+
+.slice_al_3 .article_cards3 > div .articleListLink {
+  background-color: #f5f5f5;
+  border-top: 1px solid #fff;
+}
+
+.slice_al_3 .article_cards3 > div .articleListLink a {
+  display: inline-block;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #2d4048;
+  padding: 10px 20px !important;
+}
+
+.slice_al_3 .article_cards3 > div .articleListLink a:hover {
+  color: #2d4048;
+  opacity: 0.8;
+}
+
+.slice_al_3 .article_cards_button {
+  font-size: 1.4rem;
+  color: #129dc0;
+  border: 2px solid #129dc0;
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 5px;
+  padding: 9px 15px;
+  border-radius: 5px;
+  transition: all 500ms ease;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.slice_al_3 .article_cards_button:hover {
+  color: #fff;
+  background-color: #129dc0;
+}
+
+@media (min-width: 768px) {
+  .slice_al_3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .slice_al_3 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

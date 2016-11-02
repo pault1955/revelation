@@ -88,7 +88,7 @@
     font-size: $block1_image_button_font-size;
     max-width: 125px;
     margin: 15px auto 0;
-    border-radius: 2px;
+    border-radius: 4px;
 
     &:hover {
       background-color: $block1_image_button_background-color--hover;
@@ -103,9 +103,6 @@
     }
   }
 
-  @include susy-breakpoint ($breakpoint-ti) {
-
-  }
   @include susy-breakpoint ($breakpoint-sm) {
     padding-top: 60px;
     padding-bottom: 60px;

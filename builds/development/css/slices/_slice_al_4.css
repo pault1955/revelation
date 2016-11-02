@@ -1,0 +1,118 @@
+
+.slice_al_4 {
+    width: 97.42268%;
+    float: left;
+    margin-left: 1.28866%;
+    margin-right: 1.28866%;
+}
+
+@media (min-width: 768px) {
+    .slice_al_4 .info_cards > div {
+        width: 47.42268%;
+        float: left;
+        margin-left: 1.28866%;
+        margin-right: 1.28866%;
+    }
+}
+
+@media (min-width: 992px) {
+    .slice_al_4 .info_cards > div {
+        width: 22.42268%;
+        float: left;
+        margin-left: 1.28866%;
+        margin-right: 1.28866%;
+    }
+}
+
+.slice_al_4 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.slice_al_4 .info_cards > div {
+    padding-top: 30px;
+}
+
+.slice_al_4 .info_cards > div .articleListImage4 a {
+    border-radius: 50%;
+    border: 5px solid #d1d2d4;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+.slice_al_4 .info_cards > div .articleListImage4 a img {
+    width: 175px;
+    height: 171px;
+}
+
+.slice_al_4 .info_cards > div .articleListTitle4 {
+    margin-top: 18px;
+}
+
+.slice_al_4 .info_cards > div .articleListTitle4 a {
+    font-size: 2rem;
+    color: #2d4048;
+    font-weight: 700;
+}
+
+.slice_al_4 .info_cards > div .articleListTitle4 a:hover {
+    opacity: 0.8;
+}
+
+.slice_al_4 .info_cards > div .articleListSummary4 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 0 35px !important;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #2d4048;
+}
+
+@media (min-width: 768px) {
+    .slice_al_4 .info_cards > div .articleListSummary4 {
+        min-height: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .slice_al_4 .info_cards > div .articleListSummary4 {
+        min-height: 100px;
+    }
+}
+
+.slice_al_4 .info_cards > div .articleListLink4 a, .slice_al_4 .info_cards > div .articleListLink a {
+    font-size: 1.4rem;
+    color: #129dc0;
+    border: 2px solid #129dc0;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.slice_al_4 .info_cards > div .articleListLink4 a:hover, .slice_al_4 .info_cards > div .articleListLink a:hover {
+    color: #fff;
+    background-color: #129dc0;
+}
+
+@media (min-width: 768px) {
+    .slice_al_4 {
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .slice_al_4 {
+        padding-bottom: 60px;
+    }
+}

@@ -122,19 +122,21 @@ input[type=button], input[type=submit]       {
   margin-top: 10px;
   margin-right: 5px;
   padding: 9px 15px;
-  border-radius: 2px;
+  border-radius: 4px;
   font-size: 1.4rem;
   text-align: center;
   text-decoration: none;
   border: 2px solid $system_sitebutton_border-color;
   background-color: transparent;
   color: $system_sitebutton_color;
+
 }
 
 .sitebutton:hover, .button:hover, .aspNetDisabled:hover {
   color: #fff;
-  border: 2px solid #5ac5c5;
-  background-color: #5ac5c5;
+  border: 2px solid $system_sitebutton_border-color--hover;
+  background-color: $system_sitebutton_background-color--hover;
+  cursor: pointer;
 }
 ::-ms-input-placeholder,
 ::-webkit-input-placeholder,
@@ -264,7 +266,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 }
 
 // hide author info on articles
-.content_page_main .ArticleBody .author {
+.main_content .ArticleBody .author {
   display: none;
 }
 

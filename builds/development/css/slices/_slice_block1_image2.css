@@ -1,0 +1,101 @@
+
+.slice_block1_image2 {
+    background-image: url(../images/piano.jpg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 40px 15px;
+}
+
+.slice_block1_image2 .title1 {
+    color: #fff;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 467px) {
+    .slice_block1_image2 .title1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .slice_block1_image2 .title1 {
+        font-size: 5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .slice_block1_image2 .title1 {
+        font-size: 6.25rem;
+        margin-bottom: 6rem;
+    }
+}
+
+.slice_block1_image2 .title3 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 467px) {
+    .slice_block1_image2 .title3 {
+        font-size: 1.61rem;
+        margin-bottom: 0.75rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .slice_block1_image2 .title3 {
+        font-size: 2.24rem;
+        line-height: 2rem;
+        margin-bottom: 1.85rem;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.slice_block1_image2 a {
+    display: block;
+    border: 2px solid #9db9c5;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    max-width: 125px;
+    margin: 15px auto 0;
+    border-radius: 4px;
+}
+
+.slice_block1_image2 a:hover {
+    background-color: #129dc0;
+    border-color: #129dc0;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .slice_block1_image2 a {
+        font-size: 1.8rem;
+        max-width: 168px;
+        padding: 12px 19px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .slice_block1_image2 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .slice_block1_image2 {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}

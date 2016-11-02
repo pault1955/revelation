@@ -2,23 +2,23 @@
 // slice  header
 // ======================================
 
-
 // slice  header layout
 // ======================================
+.slice_header {
+  .siteLogoName {
+    @include span(4);
 
-.siteLogoName {
-  @include span(4);
-
-  @include susy-breakpoint($breakpoint-md) {
-    @include span(3);
+    @include susy-breakpoint($breakpoint-md) {
+      @include span(3);
+    }
   }
-}
 
-.navbar {
-  @include span(12);
+  .navbar {
+    @include span(12);
 
-  @include susy-breakpoint($breakpoint-md) {
-    @include span(9)
+    @include susy-breakpoint($breakpoint-md) {
+      @include span(9)
+    }
   }
 }
 

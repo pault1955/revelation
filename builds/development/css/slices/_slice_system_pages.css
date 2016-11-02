@@ -1,0 +1,615 @@
+
+.slice_system_page {
+    padding-top: 30px;
+    background-color: #fff;
+    border-top: 1px solid #ebebeb;
+}
+
+.slice_system_page a {
+    padding-bottom: 0;
+    border-bottom: 0;
+    transition: color 500ms ease, border-color 500ms ease;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.slice_system_page a:hover {
+    opacity: 0.7;
+    border-bottom-color: #000;
+}
+
+.slice_system_page .system_content {
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+}
+
+.slice_system_page .system_content .systemPageLeft {
+    display: none;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.slice_system_page .system_content .systemPageContent {
+    display: table-cell;
+    padding: 0 25px 25px;
+}
+
+.slice_system_page .system_content .systemPageContent ul {
+    margin: 20px 0 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.slice_system_page .system_content .systemPageContent ul ul li {
+    margin-bottom: 12px;
+}
+
+.slice_system_page .system_content .systemPageContent ul ul li ul {
+    list-style: disc;
+    margin: 10px 0 30px 30px;
+}
+
+.slice_system_page .system_content .systemPageContent .system_controls {
+    float: left;
+    padding-bottom: 0;
+}
+
+.slice_system_page .system_content .systemPageContent .system_controls button,
+.slice_system_page .system_content .systemPageContent .system_controls input,
+.slice_system_page .system_content .systemPageContent .system_controls select,
+.slice_system_page .system_content .systemPageContent .system_controls textarea {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.slice_system_page .system_content .systemPageContent .system_option {
+    margin-bottom: 12px;
+    float: left;
+    width: 100%;
+}
+
+.slice_system_page .system_content .systemPageContent .system_option .button {
+    padding: 0 15px;
+    margin-top: 0;
+}
+
+.slice_system_page .system_content .systemPageContent .system_option input, .slice_system_page .system_content .systemPageContent .system_option label {
+    float: left;
+    margin-right: 5px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.slice_system_page .system_content .systemPageContent .system_title {
+    margin-bottom: 10px;
+}
+
+.slice_system_page .system_content .systemPageContent #btnSave {
+    width: auto !important;
+}
+
+.slice_system_page .system_content .systemPageContent .calendar_day_wrapper, .slice_system_page .system_content .systemPageContent .calendar_day_header {
+    background-color: #f6f6f6;
+    border-collapse: collapse;
+    color: #129dc0;
+    border: 1px solid #43525a;
+}
+
+.slice_system_page .system_content .systemPageContent .calendar_day_wrapper_today {
+    background-color: #fff;
+}
+
+.slice_system_page .system_content .systemPageContent .calendar_event a {
+    font-style: normal;
+}
+
+.slice_system_page .system_content .systemPageContent #calendar_header ul {
+    margin: 0;
+}
+
+.slice_system_page .system_content .systemPageContent #calendar_title {
+    height: 30px;
+    line-height: 30px;
+}
+
+.slice_system_page .system_content .systemPageContent #calendar_title input {
+    line-height: 30px;
+    margin-top: 7px;
+}
+
+.slice_system_page .system_content .systemPageContent #calendar_title select {
+    height: 30px;
+    padding: 0 8px;
+    background: transparent;
+    font-size: 14px;
+    border: 1px solid #000;
+    margin-right: 4px;
+}
+
+.slice_system_page .system_content .systemPageContent #calendar_title select:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+.slice_system_page .system_content .systemPageContent .calendar_day_other_month, .slice_system_page .system_content .systemPageContent .calendar_day_wrapper_other_month {
+    background: #fff;
+}
+
+.slice_system_page .system_content .systemPageContent .calendar_day_today {
+    background: #fff;
+}
+
+.slice_system_page .system_content .systemPageContent .calendar_event_all_day {
+    background: #fff;
+}
+
+.slice_system_page .system_content .systemPageContent td.cal_row, .slice_system_page .system_content .systemPageContent td.cal_altrow {
+    padding-bottom: 10px;
+}
+
+.slice_system_page .system_content .systemPageContent table.profilebox {
+    background-color: #eef7fb;
+}
+
+.slice_system_page .system_content .systemPageContent .tabSelected {
+    background-color: #eef7fb;
+    height: 20px;
+    line-height: 20px;
+    width: 33.33333%;
+    text-align: center;
+    color: #0cc;
+    font-size: 16px;
+    border: 2px solid #eef7fb;
+    border-bottom: 2px solid #eef7fb;
+    vertical-align: middle;
+    word-spacing: 4px;
+}
+
+.slice_system_page .system_content .systemPageContent .tableft {
+    width: auto;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #fff;
+    vertical-align: middle;
+    word-spacing: 4px;
+}
+
+.slice_system_page .system_content .systemPageContent .tabright {
+    width: auto;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #fff;
+    vertical-align: middle;
+    word-spacing: 4px;
+}
+
+.slice_system_page .system_content .systemPageContent .tableft a, .slice_system_page .system_content .systemPageContent .tabright a {
+    border: none;
+    color: #0cc;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    background-color: #f7fbfd;
+}
+
+.slice_system_page .system_content .systemPageContent .tableft:hover a, .slice_system_page .system_content .systemPageContent .tabright:hover a {
+    border: none;
+    background-color: #e3f1f8;
+    color: #0CC;
+    display: inline-block;
+}
+
+.slice_system_page .system_content .systemPageContent table.profilebox td {
+    padding: 20px;
+}
+
+.slice_system_page .system_content .systemPageContent table.profilebox td table td {
+    padding: 5px;
+}
+
+.slice_system_page .system_content .systemPageContent a img {
+    width: auto !important;
+    max-width: 100px;
+}
+
+.slice_system_page .system_content .systemPageContent .shadedbox, .slice_system_page .system_content .systemPageContent .messagesbox {
+    width: 100% !important;
+    margin: 15px auto;
+    background-color: #eef7fb;
+    padding: 15px;
+}
+
+.slice_system_page .system_content .systemPageContent .messagesbox {
+    padding: 15px 0 0;
+}
+
+.slice_system_page .system_content .systemPageContent .shadedbox td {
+    padding: 10px 15px;
+}
+
+.slice_system_page .system_content .systemPageContent tr.gridheader td.header {
+    padding-top: 10px;
+}
+
+.slice_system_page .system_content .systemPageContent .shadedbox td input.button {
+    width: auto !important;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.slice_system_page .system_content .systemPageContent textarea {
+    margin: 10px;
+    padding: 4px 3px;
+    width: 100%;
+    border: 1px solid #aaa;
+    color: #2b4049;
+    border-radius: 4px;
+}
+
+.slice_system_page .system_content .systemPageContent textarea:focus {
+    outline: none;
+    border: 1px solid #000;
+    box-shadow: 0 0 4px rgba(49, 167, 222, 0.8);
+}
+
+.slice_system_page .system_content .systemPageContent .my-area-navigation {
+    background: red;
+}
+
+.slice_system_page .system_content .systemPageContent .my-area-navigation ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.slice_system_page .system_content .systemPageContent .my-area-navigation ul li {
+    float: left;
+    list-style: none;
+    margin: 5px;
+    background-color: #999;
+}
+
+.slice_system_page .system_content .systemPageContent .my-area-navigation ul li a {
+    width: 230px;
+    height: 80px;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.slice_system_page .system_content .systemPageContent .my-area-navigation ul li a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 479px) {
+    .slice_system_page .system_content .systemPageContent .my-area-navigation ul li {
+        margin: 0 10px 10px 0;
+    }
+}
+
+.slice_system_page .system_content .systemPageContent TABLE.gridstyle {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.slice_system_page .system_content .systemPageContent TR.gridheader, .slice_system_page .system_content .systemPageContent TR.gridheader A, .slice_system_page .system_content .systemPageContent TD.gridheader, .slice_system_page .system_content .systemPageContent TD.gridheader A {
+    color: #52524E;
+    border-collapse: collapse;
+}
+
+.slice_system_page .system_content .systemPageContent TD.gridheader {
+    padding-bottom: 10px;
+}
+
+.slice_system_page .system_content .systemPageContent TR.griditemrow, .slice_system_page .system_content .systemPageContent TR.altgriditemrow, .slice_system_page .system_content .systemPageContent TD.griditem {
+    background-color: #eef7fb;
+    border-color: #aaa;
+    border-width: 1px;
+    padding: 5px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-collapse: collapse;
+}
+
+.slice_system_page .system_content .systemPageContent TR.altgriditemrow TD.griditem {
+    background-color: #eef7fb;
+    border-color: #aaa;
+    border-collapse: collapse;
+}
+
+.slice_system_page .system_content .systemPageContent TD.griditem img {
+    margin-right: 7px;
+}
+
+.slice_system_page .system_content .systemPageContent .forums_boxout_contents td a {
+    border-bottom: none;
+}
+
+.slice_system_page .system_content .systemPageContent .forums_boxout_contents td.smallText {
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(49, 167, 222, 0.2);
+    margin-top: 20px;
+    width: 100%;
+}
+
+.slice_system_page .system_content .systemPageContent td.subMenu {
+    text-align: right;
+    width: 12% !important;
+}
+
+.slice_system_page .system_content .systemPageContent .messagesbox .forumrow:nth-child(odd), .slice_system_page .system_content .systemPageContent .messagesbox .altforumrow:nth-child(odd) {
+    border-top: 10px solid #fff;
+}
+
+.slice_system_page .system_content .systemPageContent input[type="checkbox"][id$="chkSubscribe"] {
+    margin: 4px 6px 4px 0;
+}
+
+.slice_system_page .system_content .systemPageContent .forums_boxout_contents a img {
+    width: 20px;
+}
+
+.slice_system_page .system_content .systemPageContent .messagesbox .forumrow td, .slice_system_page .system_content .systemPageContent .messagesbox .altforumrow td {
+    padding: 10px 15px;
+}
+
+.slice_system_page .system_content .systemPageContent table[id$="ThreadGrid"] .griditem img {
+    width: 25px;
+}
+
+.slice_system_page .system_content .systemPageContent .messagesbox tr[id*="ctlCommentList_comment_body"] td {
+    border-bottom: 10px solid white;
+}
+
+.slice_system_page .system_content .systemPageContent .forum-thread-comment-box {
+    font-size: 1.7rem;
+    color: #2b4049;
+}
+
+.slice_system_page .system_content .systemPageContent .media_summary_image {
+    vertical-align: top;
+    padding: 13px 10px 0 10px;
+}
+
+.slice_system_page .system_content .systemPageContent .media_summary_image img {
+    width: auto;
+    height: auto;
+}
+
+.slice_system_page .system_content .systemPageContent ul.media_recording_links {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.slice_system_page .system_content .systemPageContent .media_option_right {
+    float: right;
+}
+
+.slice_system_page .system_content .systemPageContent .media_option_left input, .slice_system_page .system_content .systemPageContent .media_option_left label {
+    float: none;
+}
+
+.slice_system_page .system_content .systemPageContent .system_header .system_option input.button {
+    height: 30px;
+    margin-top: 5px;
+}
+
+.slice_system_page .system_content .systemPageContent .media_option_right #btnSearchTemplate {
+    margin-bottom: 10px;
+}
+
+.slice_system_page .system_content .systemPageContent #media_controls .system_option {
+    width: 100%;
+}
+
+.slice_system_page .system_content .systemPageContent .media_recording img {
+    max-width: inherit;
+}
+
+.slice_system_page .system_content .systemPageContent .media_recording_title {
+    color: #129dc0;
+}
+
+@media (max-width: 767px) {
+    .slice_system_page .system_content .systemPageContent #media_controls .system_option {
+        width: 100%;
+    }
+
+    .slice_system_page .system_content .systemPageContent .media_summary_image {
+        display: none;
+    }
+}
+
+.slice_system_page .system_content .systemPageContent td#tdOldEventButtons, .slice_system_page .system_content .systemPageContent td.subMenu {
+    vertical-align: top;
+}
+
+.slice_system_page .system_content .systemPageContent #tdOldEventButtons input.button {
+    width: 100% !important;
+    font-size: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 0;
+}
+
+.slice_system_page .system_content .systemPageContent .subMenu a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 9px 15px;
+    border-radius: 2px;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #129dc0;
+    background-color: #129dc0;
+    color: #fff;
+}
+
+.slice_system_page .system_content .systemPageContent .subMenu a:hover {
+    color: #fff;
+    border: 2px solid #129dc0;
+    background-color: #129dc0;
+}
+
+.slice_system_page .system_content .systemPageContent #tblRota .griditem {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.slice_system_page .system_content .systemPageContent .address_column {
+    border: 3px solid #fff;
+}
+
+@media (max-width: 767px) {
+    .slice_system_page .system_content .systemPageContent .system-section {
+        padding-top: 0;
+    }
+
+    .slice_system_page .system_content .systemPageContent .address_cell {
+        border-width: 0;
+    }
+
+    .slice_system_page .system_content .systemPageContent .address_user_details_cell {
+        border-bottom: 8px solid #fff;
+    }
+}
+
+@media (max-width: 479px) {
+    .slice_system_page .system_content .systemPageContent #_ctl0__ctl0_cphBody_cphAltContents_txtSearchTemplate {
+        margin-top: 40px;
+    }
+}
+
+.slice_system_page .system_content .systemPageContent .address_family_details_column, .slice_system_page .system_content .systemPageContent .address_family_details_column a {
+    font-size: 16px;
+}
+
+.slice_system_page .system_content .systemPageContent .address_user_first_name, .slice_system_page .system_content .systemPageContent .family_title {
+    background: #f6f6f6;
+}
+
+.slice_system_page .system_content .systemPageContent .address_user_email a.address_email_link {
+    font-size: 14px;
+}
+
+.slice_system_page .system_content .systemPageContent #address_controls input[type="button"] {
+    margin-bottom: 20px;
+    height: 22px;
+    padding: 0 10px 2px;
+}
+
+.slice_system_page .system_content .systemPageContent input[id$='txtSearchStringTemplate'] {
+    margin-top: 16px;
+    height: 26px;
+}
+
+.slice_system_page .system_content .systemPageContent .system_column .search_article_title {
+    font-size: 20px;
+}
+
+.slice_system_page .system_content .systemPageContent #_ctl0__ctl0_cphBody_cphAltContents_txtSearchStringTemplate {
+    float: none;
+}
+
+.slice_system_page .system_content .systemPageContent .search_option_right {
+    padding-bottom: 20px;
+}
+
+.eventpopupwindow a {
+    padding-bottom: 0;
+    border-bottom: 0;
+    transition: color 500ms ease, border-color 500ms ease;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.eventpopupwindow a:hover {
+    opacity: 0.7;
+    border-bottom-color: #000;
+}
+
+/* ==========================================================================
+   Address Book Popup
+   ========================================================================== */
+.system_popup {
+    padding: 10px 10px 10px 30px;
+}
+
+.system_popup .shadedbox {
+    width: 100% !important;
+}
+
+.system_popup .shadedbox .addressfield {
+    text-align: left;
+}
+
+/* ==========================================================================
+   Pop Up Windows
+   ========================================================================== */
+BODY.popupwindow, BODY.eventpopupwindow, BODY.signuppopupwindow, TD.signuppopuptd {
+    background-color: #fff;
+    padding: 0 12px;
+}
+
+td.popupwindow_title {
+    border-width: 0;
+    font-size: 20px;
+    color: #129dc0;
+    background-color: #fff;
+}
+
+body.eventpopupwindow table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    border: none;
+    background-color: #fff;
+}
+
+/* ==========================================================================
+   password reset styling
+   ========================================================================== */
+.headerbox i {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .section {
+        margin: 30px 0;
+    }
+
+    .systemPageContent {
+        padding: 0 0 25px;
+    }
+}
+
+/* ==========================================================================
+  Registration Page
+   ========================================================================== */
+input#_ctl0__ctl0_cphBody_cphContents_ctlRegistration_day.text,
+input#_ctl0__ctl0_cphBody_cphContents_ctlRegistration_month.text {
+    width: 35px !important;
+}
+
+input#_ctl0__ctl0_cphBody_cphContents_ctlRegistration_year.text {
+    width: 70px !important;
+}
+
+/* ==========================================================================
+  Profile Page
+   ========================================================================== */
+input#_ctl0__ctl0_cphBody_cphContents_txt_dob_day_uk,
+input#_ctl0__ctl0_cphBody_cphContents_txt_dob_month_uk {
+    width: 40px !important;
+}
+
+input#_ctl0__ctl0_cphBody_cphContents_txt_dob_year_uk {
+    width: 80px !important;
+}

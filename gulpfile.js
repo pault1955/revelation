@@ -24,8 +24,8 @@ env = 'development';
 
 if (env==='development') {
     outputDir = 'builds/development/';
-    sassStyle = 'expanded';
-    lineComments = true;
+    sassStyle = 'nested';
+    lineComments = false;
 
 } else {
     outputDir = 'builds/production/';
