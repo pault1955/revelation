@@ -967,12 +967,10 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       padding-bottom: 60px; } }
 
 .slice_map_full_width > div > div {
-  height: 230px !important;
-  pointer-events: none; }
+  height: 230px !important; }
   @media (min-width: 467px) {
     .slice_map_full_width > div > div {
-      height: 270px !important;
-      pointer-events: none; } }
+      height: 270px !important; } }
   @media (min-width: 768px) {
     .slice_map_full_width > div > div {
       height: 350px !important; } }

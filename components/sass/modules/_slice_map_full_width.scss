@@ -13,12 +13,10 @@
 .slice_map_full_width {
   > div > div {
     height: 230px !important;
-    pointer-events: none;
 
     @include susy-breakpoint($breakpoint-ti) {
       & {
         height: 270px !important;
-        pointer-events: none;
       }
     }
 
