@@ -378,7 +378,7 @@
   .top-link-wrapper {
     display: none;
 
-    @media (min-width: 992px) {
+    @include susy-breakpoint($breakpoint_md) {
 
       & {
         display: block;
@@ -450,7 +450,7 @@
     height: 50px;
 
     .logo-icon {
-      float: left;;
+      float: left;
 
       a {
         display: block;

@@ -1,19 +1,22 @@
 $(document).ready(function () {
 
   'use strict';
+/*
+
+original non-working code
 
   //add classes
 
   $('ul.root_menu > li:first-child').addClass('first first_item');
   $('ul.root_menu > li:last-child').addClass('last last_item');
-
+*/
   /* remove sub menus from Home   */
 
-  $('ul.root_menu > li.has_sub_menu:first-child > ul.sub_menu').remove();
+//  $('ul.root_menu > li.has_sub_menu:first-child > ul.sub_menu').remove();
 
   /* remove 1st item in dropdown menu re-instate my area>my details.
    set background color on ul where no groups below top-level item   */
-
+/*
 
   $('.menu_item_level_2.first').each(function() {
     if($(this).find('a[href=\'/MyArea/MyDetails.aspx\']').length === 0) {
@@ -25,7 +28,27 @@ $(document).ready(function () {
     }
   });
 
-  /* mobile menu */
+  */
+
+
+    //add classes
+    $( "ul.root_menu > li:first-child" ).addClass( "first" );
+    $( "ul.root_menu > li:last-child" ).addClass( "last" );
+
+    $("ul.root_menu li:first-child").addClass("first_item");
+    $("ul.root_menu li:last-child").addClass("last_item");
+
+
+  /* remove 1st item in dropdown menu re-instate my area>my details.
+   remove ul where no groups below top-level item  */
+
+    $('ul.sub_menu.sub_menu_level_1 > li.menu_item.menu_item_level_2.first_item').css('display','none');
+    $("li.menu_item.menu_item_level_1.has_sub_menu.last_item > ul.sub_menu.sub_menu_level_1 > li.menu_item.menu_item_level_2.first_item a[href='/MyArea/MyDetails.aspx']").parent().css('display','list-item');
+
+
+
+
+    /* mobile menu */
 
   $('.root_menu').slicknav({
     prependTo: '#mobile_nav',
