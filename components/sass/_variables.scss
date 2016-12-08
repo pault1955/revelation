@@ -47,6 +47,44 @@ $default_button-color--hover: #fff;
 $default_form_border-color: #dadee4;
 $default_placeholder-color: #4acfc7;
 
+// ======================================
+//  slice full width video
+// ======================================
+
+$full_width_video-color: #fff;
+$full_width_video_form_title_font-family: $default_font-family;
+$full_width_video_title-color: #fff;
+$full_width_video_title_font-size: 2rem;
+$full_width_video_title_margin-bottom: 1rem;
+$full_width_video_background-color: #fff;
+$full_width_video_button-font-size: 1.6rem;
+$full_width_video_button-color: #fff;
+$full_width_video_button-color--hover: #000;
+$full_width_video_button-border-color: #fff;
+$full_width_video_button-border-color--hover: #fff;
+$full_width_video_button_background-color: transparent;
+$full_width_video_button_background-color--hover: #fff;
+$full_width_video_font-size: 1.6rem;
+$full_width_video_line-height: $full_width_video_font-size + 0.5rem;
+
+// ======================================
+//  slice bible text
+// ======================================
+
+$bible_text-color: #2b4049;
+$bible_text_form_title_font-family: $default_font-family;
+$bible_text_title-color: #2c4048;
+$bible_text_title_font-size: 2rem;
+$bible_text_title_margin-bottom: 1rem;
+$bible_text_background-color: #fff;
+$bible_text_button-font-size: 1.3rem;
+$bible_text_button-color: #129dc0;
+$bible_text_button-color--hover: #fff;
+$bible_text_button-border-color: #129dc0;
+$bible_text_button_background-color--hover: #129dc0;
+$bible_text_font-size: 1.5rem;
+$bible_text_line-height: $bible_text_font-size + 0.5rem;
+
 
 // ======================================
 //  site logo & site name

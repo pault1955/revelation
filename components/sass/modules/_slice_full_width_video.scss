@@ -1,0 +1,123 @@
+// ======================================
+// slice  full width video
+// ======================================
+
+// slice  video full width layout
+// ======================================
+.slice_full_width_video {
+
+}
+
+// slice  full width style
+// ======================================
+
+.slice_full_width_video {
+
+  background-color: $full_width_video-background-color;
+  color: $full_width_video-color;
+  font-size: $full_width_video_font-size;
+  line-height: $full_width_video_line-height;
+  text-align: center;
+  position: relative;
+
+  .video-cast {
+    width: 100%;
+    background: rgba(18, 19, 32, .4);
+    z-index: 40;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  }
+
+  .video-bg {
+    video {
+      width: 100%;
+    }
+  }
+
+  .container {
+
+    .video-overlay {
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .ArticleBody {
+        width: 100%;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 25%;
+        max-width: 280px;
+
+        @include susy-breakpoint($breakpoint-sm) {
+          width: 100%;
+        }
+
+      }
+
+
+      .video-buttons {
+        width: 30%;
+        margin: 0 auto;
+
+        a {
+          display: none;
+          border: 2px solid $full_width_video_button-border-color;
+          background-color: transparent;
+          color: $full_width_video_button-color;
+          padding: 9px 15px 10px;
+          font-size: $full_width_video_button_font-size;
+          width: 180px;
+          margin: 15px auto 0;
+          border-radius: 0;
+
+          &:first-of-type {
+            float: left;
+          }
+          &:last-of-type {
+            float: right;
+          }
+          &:hover {
+            background-color: $full_width_video_button_background-color--hover;
+            border-color: $full_width_video_button-border-color--hover;
+            color: $full_width_video_button-color--hover;
+          }
+
+          @include susy-breakpoint($breakpoint-sm) {
+            font-size: $full_width_video_button_font-size + 0.5rem;
+            width: 220px;
+            margin-top: 40px;
+            display: inline-block;
+          }
+        }
+      }
+
+      @include susy-breakpoint ($breakpoint-sm) {
+        font-size: $full_width_video_font-size * 2;
+        line-height: $full_width_video_line-height * 1.5;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        top: 0;
+
+      }
+      @include susy-breakpoint ($breakpoint-md) {
+        padding-top: 40px;
+        padding-bottom: 60px;
+      }
+    }
+  }
+
+}
+
