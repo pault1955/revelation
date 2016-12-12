@@ -14,6 +14,9 @@
 .slice_mobile_logo {
 
   position: relative;
+  margin: 4px 0 0 20px;
+  z-index: 201;
+  width: 60px;
 
   .mobile-logo-dark, .mobile-logo-light {
     display: none;
@@ -21,5 +24,11 @@
 
   .mobile-logo-display {
     display: block;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    & {
+      display: none;
+    }
   }
 }

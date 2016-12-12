@@ -162,36 +162,7 @@ img.preview_show {
   color: $system_calendar_popup_window-color;
 }
 
-/* form submission window */
-.endis-jquery-ui {
-  .ui-dialog {
-    border-radius: 5px;
 
-    #divOverlay {
-
-      .button {
-        display: block;
-        margin: 0 auto 10px;
-        padding: 5px 10px;
-        border-radius: 2px;
-        transition: background-color 500ms ease;
-        font-size: $block1_form_button-font-size;
-        text-align: center;
-        letter-spacing: 1px;
-        text-decoration: none;
-        text-transform: uppercase;
-        border: 2px solid $default_button-border-color;
-        background-color: $default_button-background-color;
-        color: $block1_form_button-color;
-
-        &:hover {
-          border: 2px solid $default_button-border-color--hover;
-          background-color: $default_button-background-color--hover;
-        }
-      }
-    }
-  }
-}
 
 /* view all forums  icon */
 .forums_boxout_contents a img {

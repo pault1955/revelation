@@ -28,7 +28,13 @@
 
 .slice_blocks2 {
 
-  background-color: $block2-background-color;
+  background-image: $block2_background-image;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: scroll;
+  color: $block2_color;
+  text-align: center;
+  padding: 40px 15px;
 
   .block2-1, .block2-2 {
     padding: 15px;
@@ -62,6 +68,20 @@
   .block2-1 {
     border-bottom: 1px solid $block2_border-color;
     position: relative;
+
+    &:after {
+      content: "\e916";
+      font-family: journey;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      position: absolute;
+      font-size: 30px;
+      color: $block2_icon_color;
+      top: 23px;
+      left: 40px;
+      z-index: 1;
+    }
     
     @include susy-breakpoint( $breakpoint-sm) {
       border-bottom: none;
@@ -69,19 +89,7 @@
       background-position: right;
       background-repeat: no-repeat;
 
-      &:after {
-        content: "\e906";
-        font-family: journey;
-        font-style: normal;
-        font-weight: normal;
-        text-decoration: inherit;
-        position: absolute;
-        font-size: 30px;
-        color: $block2_icon_color;
-        top: 23px;
-        left: 40px;
-        z-index: 1;
-      }
+
     }
 
     @include susy-breakpoint( $breakpoint-md) {
@@ -98,22 +106,21 @@
 
   .block2-2 {
     position: relative;
-    @include susy-breakpoint( $breakpoint-sm) {
 
-      &:after {
-        content: "\e905";
-        font-family: journey;
-        font-style: normal;
-        font-weight: normal;
-        text-decoration: inherit;
-        position: absolute;
-        font-size: 30px;
-        color: $block2_icon_color;
-        top: 23px;
-        left: 40px;
-        z-index: 1;
-      }
+    &:after {
+      content: "\e915";
+      font-family: journey;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      position: absolute;
+      font-size: 30px;
+      color: $block2_icon_color;
+      top: 23px;
+      left: 40px;
+      z-index: 1;
     }
+
 
     @include susy-breakpoint( $breakpoint-md) {
 

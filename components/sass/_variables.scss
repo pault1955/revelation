@@ -71,19 +71,14 @@ $full_width_video_line-height: $full_width_video_font-size + 0.5rem;
 //  slice bible text
 // ======================================
 
-$bible_text-color: #2b4049;
+$bible_text-color: #373737;
 $bible_text_form_title_font-family: $default_font-family;
-$bible_text_title-color: #2c4048;
-$bible_text_title_font-size: 2rem;
-$bible_text_title_margin-bottom: 1rem;
-$bible_text_background-color: #fff;
-$bible_text_button-font-size: 1.3rem;
-$bible_text_button-color: #129dc0;
-$bible_text_button-color--hover: #fff;
-$bible_text_button-border-color: #129dc0;
-$bible_text_button_background-color--hover: #129dc0;
 $bible_text_font-size: 1.5rem;
 $bible_text_line-height: $bible_text_font-size + 0.5rem;
+$bible_text_margin: 0.5rem;
+$bible_ref-color: #2d9ebd;
+$bible_ref_font-size: 1.2rem;
+$bible_ref_margin: 1rem;
 
 
 // ======================================
@@ -95,16 +90,6 @@ $site_logo-margin-bottom: 10px;
 $site_name-font-size: 2.2rem;
 $site_name-color: #2b4049;
 
-// ======================================
-//  top links
-// ======================================
-$top_links_icon-color: #129dc0;
-$top_links_font-size: 16px;
-$top_links_line-height: 20px;
-$top_links_color: #2b4049;
-$top_links_color--hover: #000;
-$top_links-background-color: #f5f5f5;
-$top_links-background-color--hover: #dceff4;
 
 // ======================================
 //  search overlay
@@ -132,7 +117,7 @@ $slicknav_icon-menu-background-color: #e4e4e4;
 
 $slicknav-color: #b5b5b5;
 $slicknav-text-shadow: none;
-$slicknav-header-background-color: #fff;
+$slicknav-header-background-color: transparent;
 $slicknav-top-level-background-color: #fff;
 $slicknav-background-color: #fff;
 $slicknav-background-color--hover: #fff;
@@ -149,45 +134,23 @@ $slicknav-background-parent--collapsed: #fff;
 $slicknav-background-parent--open: #fff;
 
 // ======================================
-//  slice banner slideshow
-// ======================================
-$banner_slideshow-background-color: #fff;
-$banner_slideshow_pager-background-color: #f5f5f5;
-$banner_slideshow_pager-background-color--active: #4acfc7;
-$banner_slideshow_pager-width-height: 14px;
-$banner_slideshow_control-background-color: transparent;
-$banner_slideshow_slidetitle-font-family: $default_font-family-2;
-$banner_slideshow_slidetitle-font-size: 2.5rem;
-$banner_slideshow_slidetitle-color: #fff;
-$banner_slideshow_slidetext-font-family: $default_font-family;
-$banner_slideshow_slidetext-font-size: 1.1rem;
-$banner_slideshow_slidetext-color: #fff;
-$banner_slideshow-button-color: #fff;
-$banner_slideshow-button-background-color: #2d9ebd;
-$banner_slideshow-button-background-color--hover: #2d9ebd;
-$banner_slideshow-button-font-size: 0.7rem;
-$banner_slideshow_icon_font-size: 2rem;
-$banner_slideshow_icon_color: #b4bbbd;
-$banner_slideshow_icon_color--hover: #fff;
-
-// ======================================
 //  nav - dropdown menu
 // ======================================
 
 $nav_background-color: transparent;
-$nav_link-color: #2c4048;
-$nav_link-color--hover: #129dc0;
-$nav_link-font-size: 1.6rem;
-$nav_link-font-weight: $bold;
+$nav_link-color: #7f7e7e;
+$nav_link-color--hover: #000;
+$nav_link-font-size: 1.8rem;
+$nav_link-font-weight: $normal;
 $nav_link-background-color: #ffffff;
 $nav_link-background-color--hover: #f5f5f5;
 $nav_link_top-margin-top: 4px;
 $nav_link_home-margin-top: 0;
 
-$nav_dropdown_link-font-size: 1.6rem;
+$nav_dropdown_link-font-size: 1.7rem;
 $nav_dropdown_link-background-color: #f5f5f5;
-$nav_dropdown_link-color: #2c4048;
-$nav_dropdown_link-color--hover: #129dc0;
+$nav_dropdown_link-color: #000;
+$nav_dropdown_link-color--hover: #000;
 $nav_dropdown-background-color: #f5f5f5;
 $nav_dropdown-background-color--hover: #ffffff;
 
@@ -197,12 +160,13 @@ $nav_dropdown-reverse-last-item-opening-direction: true; // set to true or false
 //  slice blocks 2
 // ======================================
 
-$block2-color: #2d4048;
-$block2_title-color: #2d4048;
-$block2_background-color: #f5f5f5;
-$block2_border-color: #e1e1e1;
-$block2_icon_color: #4acfc7;
-$block2_icon_font-size: 4rem;
+$block2-color: #fff;
+$block2_title-color: #fff;
+$block2_background-color: #fff;
+$block2_background-image: url(../images/visiting-us.jpg);
+$block2_border-color: #fff;
+$block2_icon_color: #fff;
+$block2_icon_font-size: 8rem;
 
 // ======================================
 //  slice block 1
@@ -222,34 +186,6 @@ $block1_button_background-color--hover: #129dc0;
 $block1_font-size: 1.5rem;
 $block1_line-height: $block1_font-size + 0.5rem;
 
-// ======================================
-//  slice block 1 form
-// ======================================
-
-$block1_form-color: #fff;
-$block1_form_title-color: #2d4048;
-$block1_form_title_font-size: 2rem;
-$block1_form_title_font-family: $default_font-family-2;
-$block1_form_title_margin-bottom: 1rem;
-$block1_form_slice_background-image: #fff url(../images/stripes.png);
-$block1_form_background-color: #5acfc6;
-$block1_form_button-font-size: 1.3rem;
-$block1_form_button-color: #fff;
-$block1_form_button-color--hover: #fff;
-$block1_form_button-border-color: #2b91ad;
-$block1_form_button-border-color--hover: #2d9ebd;
-$block1_form_button_background-color: #2b91ad;
-$block1_form_button_background-color--hover: #2d9ebd;
-$block1_form_font-size: 1.5rem;
-$block1_form_line-height: $block1_font-size + 0.8rem;
-$block1_form_label-font-size: 1.5rem;
-$block1_form_label-color: #fff;
-$block1_form_text_title-color: #fff;
-$block1_form_text_title_font-size: 1.8rem;
-$block1_form_text_title_margin-bottom: 1.8rem;
-$block1_form_input_background-color: #fff;
-$block1_form_input_color: #7f7e7e;
-$block1_form_input_font-size: 1.7rem;
 
 // ======================================
 //  slice block 1 background image
@@ -257,81 +193,37 @@ $block1_form_input_font-size: 1.7rem;
 
 $block1_image-color: #fff;
 $block1_image_font-family: $default_font-family-2;
-$block1_image_slice_background-image: url(../images/children.jpg);
+$block1_image_slice_background-image: url(../images/our-vision.jpg);
 $block1_image_title1-color: #fff;
 $block1_image_title1_font-size: 2.5rem;
 $block1_image_title1_margin-bottom: 1rem;
 $block1_image_title2-color: #fff;
 $block1_image_title2_font-size: 1.5rem;
 $block1_image_title2_margin-bottom: 1rem;
-$block1_image_title3-color: #fff;
-$block1_image_title3_font-size: 1.4rem;
-$block1_image_title3_line-height: 3rem;
-$block1_image_title3_margin-bottom: 0.5rem;
 $block1_image_background-color: #fff;
 $block1_image_button-font-size: 1.3rem;
 $block1_image_button-color: #fff;
-$block1_image_button-color--hover: #fff;
-$block1_image_button-border-color: #9fb9c4;
-$block1_image_button-border-color--hover: #2d9ebd;
+$block1_image_button-color--hover: #202020;
+$block1_image_button-border-color: #fff;
+$block1_image_button-border-color--hover: #fff;
 $block1_image_button_background-color: transparent;
-$block1_image_button_background-color--hover: #2d9ebd;
+$block1_image_button_background-color--hover: #fff;
 
-// ======================================
-//  slice slideshow mini
-// ======================================
-$slideshow_mini-color: #fff;
-$slideshow_mini_title-color: #2d4048;
-$slideshow_mini_title_font-size: 2rem;
-$slideshow_mini_title_margin-bottom: 1rem;
-$slideshow_mini_slice-background-image:  #fff url(../images/stripes.png);
-$slideshow_mini-background-color: #fff;
-$slideshow_mini_pager-background-color: transparent;
-$slideshow_mini_pager-border-color: #898989;
-$slideshow_mini_pager-background-color--active: #898989;
-$slideshow_mini_pager-width-height: 14px;
-$slideshow_mini_control-background-color: transparent;
-$slideshow_mini_icon_font-size: 2rem;
-$slideshow_mini_icon_color: #7b878a;
-$slideshow_mini_icon_color--hover: #fff;
-
-// ======================================
-//  slice buttons 3
-// ======================================
-$buttons_3_slice-background-image:  #fff url(../images/stripes.png);
-$buttons_3_font-size: 1.5rem;
-$buttons_3_font-weight: $bold;
-$buttons_3_color: #fff;
-$buttons_3_button1_background-color: #4acfc7;
-$buttons_3_button1_background-color--hover: #24bfb6;
-$buttons_3_button1_icon_color: #a5e7e3;
-$buttons_3_button1_icon_font-size: 2.5rem;
-$buttons_3_button2_background-color: #e84c3d;
-$buttons_3_button2_background-color--hover: #d84638;
-$buttons_3_button2_icon_color: #f4a69e;
-$buttons_3_button2_icon_font-size: 2.5rem;
-$buttons_3_button3_background-color: #129dc0;
-$buttons_3_button3_background-color--hover: #1590af;
-$buttons_3_button3_icon_color: #c3dcf6;
-$buttons_3_button3_icon_font-size: 2.5rem;
-// ======================================
-//  slice block 1 image2
-// ======================================
 
 // ======================================
 //  slice block 1 background image2
 // ======================================
 
 $block1_image2-color: #fff;
-$block1_image2_slice_background-image: url(../images/piano.jpg);
+$block1_image2_font-family: $default_font-family-2;
+$block1_image2_slice_background-image: url(../images/whats-on.jpg);
 $block1_image2_title1-color: #fff;
-$block1_image2_title_font-family: $default_font-family-2;
 $block1_image2_title1_font-size: 2.5rem;
 $block1_image2_title1_margin-bottom: 1rem;
-$block1_image2_title3-color: #fff;
-$block1_image2_title3_font-size: 1.4rem;
-$block1_image2_title3_line-height: 2rem;
-$block1_image2_title3_margin-bottom: 0.5rem;
+$block1_image2_title2-color: #fff;
+$block1_image2_title2_font-size: 1.5rem;
+$block1_image2_title2_line-height: 3rem;
+$block1_image2_title2_margin-bottom: 0.5rem;
 $block1_image2_background-color: #fff;
 $block1_image2_button-font-size: 1.3rem;
 $block1_image2_button-color: #fff;
@@ -340,89 +232,6 @@ $block1_image2_button-border-color: #9db9c5;
 $block1_image2_button-border-color--hover: #129dc0;
 $block1_image2_button_background-color: transparent;
 $block1_image2_button_background-color--hover: #129dc0;
-
-// ======================================
-//  slice article list 4
-// ======================================
-
-$al_4_image-border-color: #d1d2d4;
-$al_4_title-color: #2d4048;
-$al_4_title-font-size: 2rem;
-$al_4_summary-color: #2d4048;
-$al_4_summary-font-size: 1.6rem;
-$al_4_summary-line-height: 2.4rem;
-$al_4_link-color: #129dc0;
-$al_4_link-color--hover: #fff;
-$al_4_link-font-size: 1.4rem;
-$al_4_link-border-color: #129dc0;
-$al_4_link-background-color--hover: #129dc0;
-
-// ======================================
-//  slice media list 3
-// ======================================
-
-$ml_3-background-color: #f5f5f5;
-$ml_3_card-background-color: #fff;
-$ml_3_title-color: #2d4048;
-$ml_3_title-font-size: 2rem;
-$ml_3_summary-color: #2d4048;
-$ml_3_summary-font-size: 1.6rem;
-$ml_3_summary-line-height: 2.4rem;
-$ml_3_link-color: #2d4048;
-$ml_3_link-color--hover: #2d4048;
-$ml_3_link-font-size: 1.4rem;
-$ml_3_link-border-color: #f5f5f5;
-$ml_3_link-background-color: #fff;
-$ml_3_button-color: #129dc0;
-$ml_3_button-color--hover: #fff;
-$ml_3_button-font-size: 1.4rem;
-$ml_3_button-border-color: #129dc0;
-$ml_3_button-background-color--hover: #129dc0;
-
-// ======================================
-//  gallery 6
-// ======================================
-$gallery_6-background-color: #f5f5f5;
-$gallery_6_card-background-color: #fff;
-$gallery_6_title-color: #2d4048;
-$gallery_6_title-font-size: 2rem;
-$gallery_6_summary-color: #2d4048;
-$gallery_6_summary-font-size: 1.6rem;
-$gallery_6_summary-line-height: 2.4rem;
-$gallery_6_link-color: #2d4048;
-$gallery_6_link-color--hover: #2d4048;
-$gallery_6_link-font-size: 1.4rem;
-$gallery_6_link-border-color: #f5f5f5;
-$gallery_6_link-background-color: #fff;
-$gallery_6_button-color: #129dc0;
-$gallery_6_button-color--hover: #fff;
-$gallery_6_button-font-size: 1.4rem;
-$gallery_6_button-border-color: #129dc0;
-$gallery_6_button-background-color--hover: #129dc0;
-
-// ======================================
-//  slice article list 3
-// ======================================
-
-$al_3-background-color: #fff;
-$al_3_card-background-color: #f5f5f5;
-$al_3_title-color: #2d4048;
-$al_3_title-font-size: 2rem;
-$al_3_date-color: #2d4048;
-$al_3_date-font-size: 1.4rem;
-$al_3_summary-color: #2d4048;
-$al_3_summary-font-size: 1.6rem;
-$al_3_summary-line-height: 2.4rem;
-$al_3_link-color: #2d4048;
-$al_3_link-color--hover: #2d4048;
-$al_3_link-font-size: 1.4rem;
-$al_3_link-border-color: #fff;
-$al_3_link-background-color: #f5f5f5;
-$al_3_button-color: #129dc0;
-$al_3_button-color--hover: #fff;
-$al_3_button-font-size: 1.4rem;
-$al_3_button-border-color: #129dc0;
-$al_3_button-background-color--hover: #129dc0;
 
 
 // ======================================

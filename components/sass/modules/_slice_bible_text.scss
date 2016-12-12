@@ -4,76 +4,81 @@
 
 // slice  Bible text layout
 // ======================================
-.slice_block1 {
-@include span(12);
+.slice_bible_text {
+  @include span(12);
 
-.ArticleBody {
-@include susy-breakpoint($breakpoint-md) {
-@include span(8);
-@include push(2);
-}
-}
+  .ArticleBody {
+    @include susy-breakpoint($breakpoint-md) {
+      @include span(8);
+      @include push(2);
+    }
+  }
 }
 
 // slice  Bible text style
 // ======================================
 
-.slice_block1 {
+.slice_bible_text {
 
-    background-color: $bible_text-background-color;
+  color: $bible_text-color;
+  font-size: $bible_text_font-size;
+  line-height: $bible_text_line-height;
+  text-align: center;
+  padding: 7px 15px 15px;
+
+  .bible-text {
     color: $bible_text-color;
     font-size: $bible_text_font-size;
-    line-height:$bible_text_line-height;
-    text-align: center;
-    padding: 15px 15px 30px;
+    line-height: $bible_text_font-size + 1;
+    margin-top: $bible_text_margin + 1;
+    margin-bottom: $bible_text_margin;
 
-h1 {
-    color: $bible_text_title-color;
-    font-size: $bible_text_title_font-size;
-    margin-bottom: $bible_text_title_margin-bottom;
+    @include susy-breakpoint($breakpoint-ti) {
+      font-size: $bible_text_font-size * 1.5;
+      line-height: $bible_text_font-size + 2;
+      margin-top: $bible_text_margin * 1.5;
+      margin-bottom: $bible_text_margin * 1.5;
+    }
 
-@include susy-breakpoint($breakpoint-sm) {
-    font-size: $bible_text_title_font-size * 1.5;
-    margin-bottom: $bible_text_title_margin-bottom * 1.5;
-}
+    @include susy-breakpoint($breakpoint-md) {
+      font-size: $bible_text_font-size * 2;
+      line-height: $bible_text_font-size + 2;
+      margin-top: $bible_text_margin * 6;
+      margin-bottom: $bible_text_margin * 2;
+    }
+  }
 
-@include susy-breakpoint($breakpoint-md) {
-    font-size: $bible_text_title_font-size * 2;
-    margin-bottom: $bible_text_title_margin-bottom * 1.7;
-}
-}
+  .bible-ref {
+    color: $bible_ref-color;
+    font-size: $bible_ref_font-size;
+    margin-bottom: $bible_ref_margin;
 
-a {
-    display: block;
-    border: 2px solid $bible_text_button-border-color;
-    color: $bible_text_button-color;
-    padding: 9px 15px 10px;
-    font-size: $bible_text_button_font-size;
-    max-width: 125px;
-    margin: 15px auto 0;
-    border-radius: 5px;
+    @include susy-breakpoint($breakpoint-ti) {
+      font-size: $bible_ref_font-size * 1.5;
+      line-height: $bible_ref_font-size + 1rem;
+      margin-top: $bible_ref_margin * 1.5;
+    }
 
-&:hover {
-     background-color: $bible_text_button_background-color--hover;
-     border-color: $bible_text_button-border-color;
-     color: $bible_text_button-color--hover;
- }
+    @include susy-breakpoint($breakpoint-sm) {
+      font-size: $bible_ref_font-size * 1.5;
+      margin-top: $bible_ref_margin * 3.5;
+    }
+  }
 
-@include susy-breakpoint($breakpoint-sm) {
-    font-size: $bible_text_button_font-size + 0.5rem;
-    max-width: 160px;
-    margin-top: 40px;
-}
-}
+  img {
+    width: 50%;
 
-@include susy-breakpoint ($breakpoint-sm) {
-    font-size: $bible_text_font-size * 1.4;
-    line-height:$bible_text_line-height * 1.5;
+    @include susy-breakpoint ($breakpoint-ti) {
+      width:auto;
+    }
+  }
+
+  @include susy-breakpoint ($breakpoint-sm) {
+      padding-top: 20px;
+    }
+
+  @include susy-breakpoint ($breakpoint-md) {
     padding-top: 30px;
-    padding-bottom: 30px;
-}
-@include susy-breakpoint ($breakpoint-md) {
-    padding-top: 40px;
-    padding-bottom: 60px;
-}
+    padding-bottom: 40px;
+  }
 }

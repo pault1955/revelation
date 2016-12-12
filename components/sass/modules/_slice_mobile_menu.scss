@@ -14,17 +14,14 @@
 .slice_mobile_menu {
 
   position: relative;
+  z-index: 200;
 
   #mobile_nav {
     z-index: 200;
     position: absolute;
+    top: 0;
     width: 100%;
 
-    @media (min-width: $breakpoint-sm) {
-      & {
-        top: 10px;
-      }
-    }
     @media (min-width: $breakpoint-md) {
       & {
         display: none;
@@ -62,7 +59,7 @@
       padding: 24px 0.625em 0.638em 0.825em;
       line-height: 1.125em;
       cursor: pointer;
-      margin-bottom: 15px;
+      margin-bottom: 0;
 
       .slicknav_menutxt {
         display: none;
@@ -114,12 +111,6 @@
         }
       }
 
-      @media (min-width: $breakpoint_ti) {
-
-        & {
-          margin-bottom: 18px;
-        }
-      }
     }
 
     .slicknav_nav {
@@ -234,9 +225,16 @@
     }
 
     .slicknav_open {
+
+      background: $slicknav_background--open;
+      
       > a {
         background: $slicknav-background--open;
         color: $slicknav-color--hover;
+
+        > a {
+          color: $slicknav-color--hover !important;
+        }
       }
 
       > ul {
