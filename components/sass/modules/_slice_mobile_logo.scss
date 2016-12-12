@@ -1,0 +1,25 @@
+// ======================================
+// slice  mobile logo
+// ======================================
+
+// slice  mobile logo layout
+// ======================================
+.slice_mobile_logo {
+
+}
+
+// slice  mobile logo styles
+// ======================================
+
+.slice_mobile_logo {
+
+  position: relative;
+
+  .mobile-logo-dark, .mobile-logo-light {
+    display: none;
+  }
+
+  .mobile-logo-display {
+    display: block;
+  }
+}

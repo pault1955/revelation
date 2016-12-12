@@ -125,28 +125,28 @@ $search_box_input-color--hover: #2c4048;
 
 $slicknav_button-menu-color: #2c4048;
 $slicknav_button-text-shadow: none;
-$slicknav_button-background-color: transparent ;
-$slicknav_button-background-color--open: transparent;
-$slicknav_icon-menu-color: #2c4048;
-$slicknav_icon-menu-background-color: #5acfc6;
+$slicknav_button-background-color: #fff ;
+$slicknav_button-background-color--open: #fff;
+$slicknav_icon-menu-color: #e4e4e4;
+$slicknav_icon-menu-background-color: #e4e4e4;
 
-$slicknav-color: #2b4049;
+$slicknav-color: #b5b5b5;
 $slicknav-text-shadow: none;
-$slicknav-header-background-color: transparent;
-$slicknav-top-level-background-color: #f5f5f5;
-$slicknav-background-color: #f5f5f5;
+$slicknav-header-background-color: #fff;
+$slicknav-top-level-background-color: #fff;
+$slicknav-background-color: #fff;
 $slicknav-background-color--hover: #fff;
-$slicknav-color--hover: #129dc0;
-$slicknav-color--open: $slicknav-color;
-$slicknav-background--open: #f5f5f5;
+$slicknav-color--hover: #000;
+$slicknav-color--open: $slicknav-color--hover;
+$slicknav-background--open: #fff;
 $slicknav-background--open--hover: #fff;
-$slicknav-toplink-color--open: $slicknav-color;
+$slicknav-toplink-color--open: $slicknav-color--hover;
 $slicknav-font-size: 1.5rem;
 $slicknav-submenu-font-size: $default_font-size -0.2rem;
-$slicknav_sub_menu-background-color: #f5f5f5;
+$slicknav_sub_menu-background-color: #fff;
 $slicknav-link-border-color: transparent;
-$slicknav-background-parent--collapsed: #f5f5f5;
-$slicknav-background-parent--open: #f5f5f5;
+$slicknav-background-parent--collapsed: #fff;
+$slicknav-background-parent--open: #fff;
 
 // ======================================
 //  slice banner slideshow

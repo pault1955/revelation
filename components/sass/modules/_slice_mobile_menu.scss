@@ -1,0 +1,292 @@
+// ======================================
+// slice  mobile menu
+// ======================================
+
+// slice  mobile menu layout
+// ======================================
+.slice_mobile_menu {
+
+}
+
+// slice  mobile menu styles
+// ======================================
+
+.slice_mobile_menu {
+
+  position: relative;
+
+  #mobile_nav {
+    z-index: 200;
+    position: absolute;
+    width: 100%;
+
+    @media (min-width: $breakpoint-sm) {
+      & {
+        top: 10px;
+      }
+    }
+    @media (min-width: $breakpoint-md) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  // slicknav styles
+  // ======================================
+
+  .slicknav_menu {
+    font-size: 1.6rem;
+    margin-bottom: 0 !important;
+
+    &:before, &:after {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      clear: both
+    }
+
+    /* IE6/7 support */
+    *zoom: 1;
+
+    .slicknav_btn {
+      text-decoration: none;
+      background-color: $slicknav-header-background-color;
+      width: 100%;
+      position: relative;
+      display: block;
+      vertical-align: middle;
+      float: right;
+      padding: 24px 0.625em 0.638em 0.825em;
+      line-height: 1.125em;
+      cursor: pointer;
+      margin-bottom: 15px;
+
+      .slicknav_menutxt {
+        display: none;
+        line-height: 1.188em;
+        float: right;
+        color: $slicknav_button-menu-color;
+      }
+
+      .slicknav_icon {
+        float: right;
+        margin: 0.33em 0.438em 0 0.438em;
+        color: $slicknav_icon-menu-color;
+
+        .slicknav_icon-bar {
+          display: block;
+          width: 1.125em;
+          height: 0.125em;
+          background-color: $slicknav_icon-menu-background-color;
+
+          + .slicknav_icon-bar {
+            margin-top: 0.188em
+          }
+        }
+
+        .slicknav_no-text {
+          margin: 0
+        }
+      }
+
+      &.slicknav_open {
+        .slicknav_icon {
+          &:before {
+            content: 'X';
+            color: $slicknav-color;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 12px;
+            text-align: center;
+            text-indent: 0px;
+            width: 12px;
+            height: 12px;
+            display: block;
+            margin: 0 3px;
+            margin-top: 4px;
+          }
+          .slicknav_icon-bar {
+            display: none;
+          }
+        }
+      }
+
+      @media (min-width: $breakpoint_ti) {
+
+        & {
+          margin-bottom: 18px;
+        }
+      }
+    }
+
+    .slicknav_nav {
+      clear: both;
+      list-style: none;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: $slicknav-background-color;
+
+      a {
+        color: $slicknav-color;
+        display: block;
+        padding: 12px 20px;
+
+        &:hover {
+          background: $slicknav-background-color--hover;
+          color: $slicknav-color--hover;
+        }
+
+      }
+
+      ul, li {
+        display: block;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+        list-style: none;
+        overflow: hidden;
+        margin-top: 0;
+        li {
+          border-top: none;
+          border-bottom: none;
+        }
+
+        ul li a {
+          padding-left: 25px;
+        }
+      }
+      .slicknav_arrow {
+        float: right;
+        width: 11px;
+        height: 7px;
+        padding-top: 17px;
+        display: none;
+
+        .close {
+          width: 11px;
+          height: 7px;
+          background: url(../images/dd_down.png) center no-repeat;
+          margin-top: 6px;
+          display: none;
+        }
+        .open {
+          width: 11px;
+          height: 7px;
+          background: url(../images/dd_up.png) center no-repeat;
+          margin-top: 6px;
+          display: none;
+        }
+        a {
+          display: block;
+          padding: 12px 20px;
+          margin-left: 0;
+        }
+
+      }
+
+      .slicknav_item {
+        display: block;
+        cursor: pointer;
+        padding: 12px 20px;
+
+      
+
+        a {
+          display: inline;
+          padding: 0;
+          margin: 0;
+          color: $slicknav-color;
+          
+          &:hover {
+            color: $slicknav-color--hover;
+          }
+        }
+      }
+
+      ul {
+        li {
+
+          &:hover {
+            > a {
+
+            }
+          }
+
+          a {
+            padding: 12px 20px;
+          }
+        }
+      }
+
+      .login_item {
+        & :hover {
+          background-color: #0068a6;
+          color: #ffffff;
+        }
+      }
+
+    }
+
+    .slicknav_open {
+      > a {
+        background: $slicknav-background--open;
+        color: $slicknav-color--hover;
+      }
+
+      > ul {
+        background: $slicknav-background--open;
+      }
+
+      &.menu_item_level_1 {
+        > a {
+          margin-left: 0;
+        }
+        > ul {
+          > li {
+            > a {
+              padding-left: 30px !important;
+            }
+          }
+        }
+      }
+
+      &.menu_item_level_2 {
+        > ul {
+          > li {
+            > a {
+              padding-left: 40px !important;
+            }
+          }
+        }
+      }
+
+      .slicknav_item {
+        background: transparent url(../images/slicknav-open.png) 93% center no-repeat;
+
+        &:hover {
+          background: $slicknav-background-color--hover url(../images/slicknav-open.png) 93% center no-repeat;
+          opacity: .8;
+        }
+      }
+
+    }
+
+    .slicknav_collapsed {
+      .slicknav_item {
+        background: transparent url(../images/slicknav-closed.png) 93% center no-repeat;
+
+        &:hover {
+          background: $slicknav-background-color--hover url(../images/slicknav-closed.png) 93% center no-repeat;
+          opacity: 0.8;
+        }
+      }
+    }
+
+  }
+}
