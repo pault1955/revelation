@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'journey';
-  src:  url('../fonts/journey.eot?yb1miw');
-  src:  url('../fonts/journey.eot?yb1miw#iefix') format('embedded-opentype'),
+  src: url('../fonts/journey.eot?yb1miw');
+  src: url('../fonts/journey.eot?yb1miw#iefix') format('embedded-opentype'),
   url('../fonts/journey.ttf?yb1miw') format('truetype'),
   url('../fonts/journey.woff?yb1miw') format('woff'),
   url('../fonts/journey.svg?yb1miw#journey') format('svg');
@@ -27,63 +27,118 @@
 .journey-icon-arrow-right:before {
   content: "\e900";
 }
+
 .journey-icon-arrow-left:before {
   content: "\e901";
 }
+
 .journey-icon-login:before {
   content: "\e902";
 }
+
 .journey-icon-search:before {
   content: "\e903";
 }
+
 .journey-icon-register:before {
   content: "\e904";
 }
+
 .journey-icon-location:before {
   content: "\e905";
 }
+
 .journey-icon-service-times:before {
   content: "\e906";
 }
+
 .journey-icon-media:before {
   content: "\e907";
 }
+
 .journey-icon-news:before {
   content: "\e908";
 }
+
 .journey-icon-googleplus:before {
   content: "\e909";
 }
+
 .journey-icon-vimeo:before {
   content: "\e90a";
 }
+
 .journey-icon-instagram:before {
   content: "\e90b";
 }
+
 .journey-icon-linkedin:before {
   content: "\e90c";
 }
+
 .journey-icon-twitter:before {
   content: "\e90d";
 }
+
 .journey-icon-youtube:before {
   content: "\e90e";
 }
+
 .journey-icon-facebook:before {
   content: "\e90f";
 }
+
 .journey-icon-events:before {
   content: "\e910";
 }
+
 .journey-icon-searchbox:before {
   content: "\e911";
 }
+
 .journey-icon-search-mobile:before {
   content: "\e912";
 }
+
 .journey-icon-dd-up:before {
   content: "\e913";
 }
+
 .journey-icon-dd-down:before {
   content: "\e914";
 }
+
+@font-face {
+  font-family: 'revelation';
+  src: url('../fonts/IcoMoon490Icons.ttf');
+  src: url('../fonts/IcoMoon490Icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="revelation-"], [class*=" revelation-"] {
+  font-family: 'revelation' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.revelation-icon-facebook:before {
+  content: "\ea90";
+}
+
+.revelation-icon-twitter:before {
+  content: "\ea96";
+}
+
+.revelation-icon-vimeo:before {
+  content: "\eaa0";
+}
+
+.revelation-icon-youtube:before {
+  content: "\ea9d";
+}
+

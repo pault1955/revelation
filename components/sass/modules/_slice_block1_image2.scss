@@ -15,7 +15,7 @@
   background-image: $block1_image2_slice_background-image;
   background-size: cover;
   background-position: 50% 50%;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: $block1_image2-color;
   text-align: center;
   padding: 40px 15px;
@@ -85,7 +85,7 @@
       }
 
       @include susy-breakpoint($breakpoint-sm) {
-        font-size: $block1_image2_button_font-size + 0.5rem;
+        font-size: $block1_image2_button_font-size + 0.3rem;
         max-width: 190px;
         margin-top: 40px;
       }

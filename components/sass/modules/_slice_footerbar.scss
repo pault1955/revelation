@@ -11,77 +11,84 @@
 .slice_footerbar {
 
   background-color: $footerbar-background-color;
-  border-top: 1px solid $footerbar_border-color;
 
-  .footerbar {
-    font-size: $footerbar_font-size;
-    text-align: center;
-    padding: 25px 0 40px;
-    line-height: 30px;
+  .container {
 
-    a {
-      display: inline-block;
-      text-decoration: none;
-      color: $footerbar_font-color;
-      &:hover {
-        opacity: 0.8;
-      }
-
-      &#footer_mobile, &#footer_copyright, &#footer_tc, &#footer_privacy, #footer_help {
-        line-height: 16px
-      }
-
-      &#footer_mobile::after, &#footer_copyright::after, &#footer_tc::after, &#footer_privacy::after {
-        content: "|";
-        padding-left: 4px;
-        margin-right: 4px;
-        color: $footerbar_font-color;
-      }
-
-      &.footer {
-        float: left;
-        width: 100%;
-        border: none;
-        text-indent: -9999px;
-        background-image: $footerbar_background-image;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-color: transparent;
-        height: 30px;
-        margin-bottom: 10px;
-        margin-top: -6px;
-
-        &.footer:hover {
-          background-image: $footerbar_background-image--hover;
-        }
-      }
-    }
-    span#footer_charity {
-      float: right;
-      width: 100%;
-      color: $footerbar_font-color;
-    }
-
-    @include susy-breakpoint($breakpoint-sm) {
-
-      padding: 25px 0;
+    .footerbar {
+      font-size: $footerbar_font-size;
+      text-align: center;
+      padding: 10px 0 40px;
+      line-height: 30px;
 
       a {
-        &.footer {
-          width: 173px;
-          margin-bottom: 25px;
+        display: inline-block;
+        text-decoration: none;
+        color: $footerbar_font-color;
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &#footer_mobile, &#footer_copyright, &#footer_tc, &#footer_privacy, #footer_help {
+          line-height: 16px
         }
 
         &#footer_mobile::after, &#footer_copyright::after, &#footer_tc::after, &#footer_privacy::after {
           content: "|";
-          padding-left: 10px;
-          margin-right: 10px;
+          padding-left: 4px;
+          margin-right: 4px;
+          color: $footerbar_font-color;
+        }
+
+        &.footer {
+          float: left;
+          width: 100%;
+          border: none;
+          text-indent: -9999px;
+          background-image: $footerbar_background-image;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-color: transparent;
+          height: 40px;
+          margin-bottom: 10px;
+          margin-top: -6px;
+
+          &.footer:hover {
+            opacity: .8;
+          }
         }
       }
-
       span#footer_charity {
-        width: 25%;
+        float: right;
+        width: 100%;
+        color: $footerbar_font-color;
+      }
+
+      @include susy-breakpoint($breakpoint-sm) {
+
+        padding: 25px 0;
+
+        a {
+          &.footer {
+            width: 180px;
+            margin-bottom: 25px;
+          }
+
+          &#footer_mobile::after, &#footer_copyright::after, &#footer_tc::after, &#footer_privacy::after {
+            content: "|";
+            padding-left: 10px;
+            margin-right: 10px;
+          }
+        }
+
+        span#footer_charity {
+          width: 25%;
+        }
       }
     }
+
+    @include susy-breakpoint($breakpoint-sm) {
+      border-top: 1px solid #dadada;
+    }
+
   }
 }

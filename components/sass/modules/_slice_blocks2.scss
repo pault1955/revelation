@@ -31,7 +31,7 @@
   background-image: $block2_background-image;
   background-size: cover;
   background-position: 50% 50%;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: $block2_color;
   text-align: center;
   padding: 40px 15px;
@@ -39,34 +39,72 @@
   .block2-1, .block2-2 {
     padding: 15px;
     color: $block2_color;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
+    font-size: $block2_font-size;
+    line-height: $block2_font-size * 1.3;
     text-align: center;
 
+    .ArticleBody {
 
-    span {
-      color: $block2_title-color;
-      font-weight: 700;
-      display: block;
+      margin-left: 52px;
+      padding: 10px 20px;
+
+      .text-content {
+
+        span {
+          color: $block2_title-color;
+          font-size: $block2_font-size * 2;
+          line-height: $block2_font-size * 2;
+          margin-bottom: $block2_font-size;
+          font-weight: 700;
+          display: block;
+
+        }
+
+        @include susy-breakpoint ($breakpoint-md) {
+         min-height: 140px;
+        }
+
+      }
+
+      a {
+        display: none;
+        border: 2px solid $block2_button-border-color;
+        border-radius: 0;
+        color: $block2_button-color;
+        padding: 10px 15px;
+        font-size: $block2_button_font-size;
+        max-width: 150px;
+        margin: 15px auto 0;
+
+        &:hover {
+          background-color: $block2_button_background-color--hover;
+          border-color: $block2_button-border-color--hover;
+          color: $block2_button-color--hover;
+        }
+
+        @include susy-breakpoint ($breakpoint-md) {
+          display: block;
+        }
+
+      }
+
+      @include susy-breakpoint ($breakpoint-sm) {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding-left: 85px;
+      }
+      @include susy-breakpoint ($breakpoint-md) {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 0;
+        margin-left: 0;
+      }
     }
 
-    @include susy-breakpoint ($breakpoint-sm) {
-      text-align: left;
-      font-size: 1.6rem;
-      line-height: 2rem;
-      padding-left: 85px;
-    }
-    @include susy-breakpoint ($breakpoint-md) {
-      text-align: left;
-      font-size: 1.8rem;
-      line-height: 2.2rem;
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
   }
-
   .block2-1 {
-    border-bottom: 1px solid $block2_border-color;
     position: relative;
 
     &:after {
@@ -76,31 +114,30 @@
       font-weight: normal;
       text-decoration: inherit;
       position: absolute;
-      font-size: 30px;
+      font-size: $block2_icon_font-size;
       color: $block2_icon_color;
-      top: 23px;
-      left: 40px;
+      top: 40px;
+      left: 0;
       z-index: 1;
     }
-    
-    @include susy-breakpoint( $breakpoint-sm) {
+
+    @include susy-breakpoint($breakpoint-sm) {
       border-bottom: none;
       background-image: url(../images/border-line.png);
       background-position: right;
       background-repeat: no-repeat;
 
-
     }
 
-    @include susy-breakpoint( $breakpoint-md) {
+    @include susy-breakpoint($breakpoint-md) {
 
       &:after {
-        font-size: 40px;
-        top: 35px;
-        left: 30px;
+        font-size: $block2_icon_font-size * 2.1;
+        top: -70px;
+        left: 0;
+        right: 0;
       }
     }
-
 
   }
 
@@ -114,22 +151,34 @@
       font-weight: normal;
       text-decoration: inherit;
       position: absolute;
-      font-size: 30px;
+      font-size: $block2_icon_font-size;
       color: $block2_icon_color;
-      top: 23px;
-      left: 40px;
+      top: 40px;
+      left: 0;
       z-index: 1;
     }
 
-
-    @include susy-breakpoint( $breakpoint-md) {
+    @include susy-breakpoint($breakpoint-md) {
 
       &:after {
-        font-size: 40px;
-        top: 35px;
-        left: 30px;
+        font-size: $block2_icon_font-size * 2.1;
+        top: -70px;
+        left: 0;
+        right: 0;
       }
     }
   }
 
+  @include susy-breakpoint($breakpoint-sm) {
+    & {
+      padding: 60px 15px;
+    }
+  }
+
+  @include susy-breakpoint($breakpoint-md) {
+    & {
+      padding: 215px 15px 100px;
+    }
+  }
 }
+

@@ -1,0 +1,50 @@
+// ======================================
+// slice  fixed icons
+// ======================================
+
+// slice  fixed icons layout
+// ======================================
+.slice_fixed_icons {
+
+}
+
+// slice  fixed icons style
+// ======================================
+
+.slice_fixed_icons {
+
+  position: fixed;
+  top: 330px;
+  left: 25px;
+  z-index: 600;
+  display: none;
+
+    a {
+      display: block;
+      margin-right: 10px;
+      margin-top: 7px;
+      margin-bottom: 25px;
+      transition: all 500ms ease;
+
+      i::before {
+        font-size: $fixed_icon_font-size;
+        color: $fixed_icon_color;
+        background-color: $fixed_icon_background-color;
+        padding:8px;
+      }
+
+
+      &:hover {
+        opacity: 1;
+        i::before {
+          color: $fixed_icon_color--hover;
+          background-color: $fixed_icon_background-color--hover;
+        }
+      }
+    }
+
+  @include susy-breakpoint($breakpoint_ti) {
+    display: block;
+  }
+
+}

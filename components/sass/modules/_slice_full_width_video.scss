@@ -99,7 +99,7 @@
           }
 
           @include susy-breakpoint($breakpoint-sm) {
-            font-size: $full_width_video_button_font-size + 0.5rem;
+            font-size: $full_width_video_button_font-size + 0.2rem;
             width: 220px;
             margin-top: 40px;
             display: inline-block;

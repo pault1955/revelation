@@ -50,5 +50,21 @@ $(document).ready(function () {
         $('.mobile-logo-light').toggleClass( "mobile-logo-display" );
     });
 
+    // sticky header
+
+    function stickyExample() {
+        var $stickyElement = $('.slice_header')
+        var sticky
+
+        if ($stickyElement.length) {
+            sticky = new Waypoint.Sticky({
+                element: $stickyElement[0],
+                wrapper: '<div class="sticky-wrapper waypoint" />'
+            })
+        }
+    }
+
+    stickyExample();
+
 
 });

@@ -28,12 +28,11 @@
 .slice_header {
 
   display: none;
-
-  
+  background-color: #fff;
+  z-index: 500;
 
   // slicknav styles
   // ======================================
-  
 
   .mobile-search {
     position: absolute;
@@ -56,95 +55,6 @@
       }
     }
   }
-
-  .search-overlay {
-    transition: opacity 500ms;
-    opacity: 0;
-    visibility: hidden;
-    position: fixed;
-    left: 0;
-    top: 60px;
-    right: 0;
-    z-index: 999;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: $search_box-background-color;
-
-    &:target {
-      visibility: visible;
-      opacity: 1;
-    }
-
-    .search-form {
-      margin: 0 50px 0 0;
-
-      input.button {
-        display: none;
-      }
-
-      .search-close {
-        position: absolute;
-        top: 30px;
-        right: 10px;
-        transition: all 200ms;
-        font-size: 25px;
-        font-weight: 400;
-        text-decoration: none;
-        color: #fff;
-
-        &:hover {
-          color: #0068a6;
-        }
-      }
-
-      .search_div {
-
-        input.text {
-          height: 50px;
-          margin-bottom: 0px;
-          padding-left: 20px;
-          border-style: solid;
-          border-width: 1px;
-          border-color: $search_box_input-border-color;
-          border-radius: 4px;
-          background-color: $search_box_input-background-color;
-          background-image: url('../images/searchbox-icon.png');
-          background-position: 22px 50%;
-          background-size: auto 20px;
-          background-repeat: no-repeat;
-          transition: background-color 500ms ease, border 500ms ease;
-          font-family: $default_font-family;
-          font-size: 15px;
-          text-align: center;
-          width: 100%;
-          color: $search_box_input-color;
-          outline: none;
-          margin-left: 10px;
-
-          &:hover {
-            border-color: $search_box_input-border-color--hover;
-            background-color: $search_box_input-background-color--hover;
-            background-image: url('../images/searchbox-icon.png');
-            color: $search_box_input-color--hover;
-          }
-        }
-      }
-
-    }
-
-    @include susy-breakpoint($breakpoint_ti) {
-      & {
-        top: 70px;
-      }
-    }
-
-    @include susy-breakpoint($breakpoint_md) {
-      & {
-        top: 114px;
-      }
-    }
-  }
-  
 
   .logo-container {
     position: absolute;
@@ -193,7 +103,7 @@
       .logo-icon {
         a {
           img {
-           // width: 55px;
+            // width: 55px;
           }
         }
       }
@@ -202,7 +112,7 @@
     @media (min-width: $breakpoint-md) {
 
       & {
-        margin-top: 15px;
+        margin-top: 25px;
         margin-left: 40px;
       }
       .logo-icon {
@@ -216,7 +126,7 @@
           margin-top: 33px;
 
           img {
-           //  width: 70px;
+            //  width: 70px;
           }
         }
       }
@@ -363,12 +273,23 @@
   }
 
   @include susy-breakpoint($breakpoint_md) {
-    & {
-      display: block;
-      position: relative;
-    }
+    display: block;
+    position: relative;
   }
 }
+
+
+
+// slice  header stick to top of viewport
+// ======================================
+
+.stuck {
+  position: fixed;
+  top: -5px;
+  left: 0;
+  width: 100%;
+}
+
 
 
 
