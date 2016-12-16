@@ -21,6 +21,11 @@
 // slice   content page style
 // ======================================
 
+.banner-section-wrapper {
+  width: 100vw;
+  height: 42.6666vw;
+}
+
 .slice_content_page {
 
   background-color: $content_page_background-color;
@@ -123,7 +128,7 @@
 
           .boxout_header_middle a {
             display: block;
-            padding: 10px 15px;
+            padding: 15px;
             color: $sidebar_group_nav_header_color;
             font-size: $sidebar_group_nav_header_font-size;
             text-decoration: none;
@@ -132,6 +137,7 @@
             width: 100%;
             background-color: $sidebar_group_nav_header_background-color;
             text-transform: uppercase;
+            border-bottom: 1px solid #fff;
 
             &:hover {
               opacity: 0.8;
@@ -155,6 +161,7 @@
             float: left;
             width: 100%;
             background-color: $sidebar_group_nav_background-color;
+            border-bottom: 1px solid #fff;
 
             &:hover {
               background-color: $sidebar_group_nav_selected_background_color;
@@ -204,7 +211,7 @@
         padding: 16px 20px 16px 75px;
         display: block;
         border: none;
-        margin-top: 4px;
+        margin-top: 7px;
         position: relative;
 
 
@@ -215,7 +222,7 @@
           }
 
           &:after {
-            content: "\e908";
+            content: "\e910";
             font-family: journey;
             position: absolute;
             font-size: $sidebar_buttons_button1_icon_font-size;
@@ -231,7 +238,7 @@
           }
 
           &:after {
-            content: "\e910";
+            content: "\e907";
             font-family: journey;
             position: absolute;
             font-size: $sidebar_buttons_button2_icon_font-size;
@@ -246,7 +253,7 @@
           }
 
           &:after {
-            content: "\e907";
+            content: "\e908";
             font-family: journey;
             position: absolute;
             font-size: $sidebar_buttons_button3_icon_font-size;
@@ -279,6 +286,7 @@
             }
           }
           &.button3 {
+            margin-top: 17px;
 
             &:after {
               font-size: $sidebar_buttons_button3_icon_font-size - 0.5;

@@ -32,20 +32,21 @@ $heavy    : 800;
 // site defaults
 $default_font-family : Lato, Arial, sans-serif;
 $default_font-family-2 : Montserrat, Arial, sans-serif;
-$default_font-color  : #2b4049;
-$default_font-size   : 1.5rem;
-$default_line-height : $default_font-size + 0.2rem;
-$default_link_color: #129dc0;
-$default_link-color--hover : #4acfc7;
+$default_font-color  : #3c3c3c;
+$default_font-size   : 1.6rem;
+$default_line-height : $default_font-size + 0.4rem;
+$default_link_color: #7f7e7e;
+$default_link-color--hover : #129dc0;
 $default_background-color: #fff;
-$default_button-background-color: #129dc0;
-$default_button-background-color--hover: #129dc0;
-$default_button-border-color: #129dc0;
-$default_button-border-color--hover: #129dc0;
+$default_button-background-color: #202020;
+$default_button-background-color--hover: #fff;
+$default_button-border-color: #202020;
+$default_button-border-color--hover: #202020;
 $default_button-color: #fff;
-$default_button-color--hover: #fff;
-$default_form_border-color: #dadee4;
+$default_button-color--hover: #202020;
+$default_form_border-color: #403f3f;
 $default_placeholder-color: #4acfc7;
+
 
 // ======================================
 //  slice fixed icons
@@ -201,6 +202,7 @@ $block1_button-font-size: 1.3rem;
 $block1_button-color: #129dc0;
 $block1_button-color--hover: #fff;
 $block1_button-border-color: #129dc0;
+$block1_button_background-color: transparent;
 $block1_button_background-color--hover: #129dc0;
 $block1_font-size: 1.5rem;
 $block1_line-height: $block1_font-size + 0.5rem;
@@ -295,20 +297,20 @@ $footertop1_icon_vimeo_border-color: #575757;
 // ======================================
 
 $content_page_background-color: #fff;
-$content_page_background-color-2: #ebebeb;
+$content_page_background-color-2: #fff;
 $content_page_content_background-color: #fff;
 
 // ======================================
 //  sidebar group nav
 // ======================================
-$sidebar_group_nav_background-color: #fff;
-$sidebar_group_nav_header_background-color: #2b4049;
-$sidebar_group_nav_header_font-size: 1.6rem;
-$sidebar_group_nav_header_color: #fff;
-$sidebar_group_nav_font-size: 1.5rem;
-$sidebar_group_nav_color: #2b4049;
-$sidebar_group_nav_selected_color: #129dc0;
-$sidebar_group_nav_selected_background_color: #f5f5f5;
+$sidebar_group_nav_background-color: #f8f8f8;
+$sidebar_group_nav_header_background-color: #f8f8f8;
+$sidebar_group_nav_header_font-size: 2.4rem;
+$sidebar_group_nav_header_color: #4d4d4d;
+$sidebar_group_nav_font-size: 1.7rem;
+$sidebar_group_nav_color: #2d313b;
+$sidebar_group_nav_selected_color: #fff;
+$sidebar_group_nav_selected_background_color: #3c3c3c;
 
 
 // ======================================
@@ -316,23 +318,23 @@ $sidebar_group_nav_selected_background_color: #f5f5f5;
 // ======================================
 $sidebar_buttons_slice-background-image:  #fff url(../images/stripes.png);
 $sidebar_buttons_font-size: 1.7rem;
-$sidebar_buttons_font-weight: $bold;
+$sidebar_buttons_font-weight: $normal;
 $sidebar_buttons_color: #fff;
-$sidebar_buttons_button1_background-color: #4acfc7;
-$sidebar_buttons_button1_background-color--hover: #24bfb6;
-$sidebar_buttons_button1_background-image: url(../images/icon-news.png);
+$sidebar_buttons_button1_background-color: #9a9a9a;
+$sidebar_buttons_button1_background-color--hover: #3c3c3c;
+$sidebar_buttons_button1_background-image: url(../images/icon-events.png);
 $sidebar_buttons_button1_icon_font-size: 2.5rem;
-$sidebar_buttons_button1_icon_color: #a5e7e3;
-$sidebar_buttons_button2_background-color: #e84c3d;
-$sidebar_buttons_button2_background-color--hover: #d84638;
-$sidebar_buttons_button2_background-image: url(../images/icon-events.png);
+$sidebar_buttons_button1_icon_color: #fff;
+$sidebar_buttons_button2_background-color: #9a9a9a;
+$sidebar_buttons_button2_background-color--hover: #3c3c3c;
+$sidebar_buttons_button2_background-image: url(../images/icon-media.png);
 $sidebar_buttons_button2_icon_font-size: 2.5rem;
-$sidebar_buttons_button2_icon_color: #f4a69e;
-$sidebar_buttons_button3_background-color: #129dc0;
-$sidebar_buttons_button3_background-color--hover: #1590af;
-$sidebar_buttons_button3_background-image: url(../images/icon-headphones.png);
+$sidebar_buttons_button2_icon_color: #fff;
+$sidebar_buttons_button3_background-color: #9a9a9a;
+$sidebar_buttons_button3_background-color--hover: #3c3c3c;
+$sidebar_buttons_button3_background-image: url(../images/icon-visitor.png);
 $sidebar_buttons_button3_icon_font-size: 2.5rem;
-$sidebar_buttons_button3_icon_color: #c3dcf6;
+$sidebar_buttons_button3_icon_color: #fff;
 
 
 // ======================================
@@ -351,12 +353,12 @@ $video_button-background-color--hover: #129dc0;
 //  system
 // ======================================
 
-$system_sitebutton_border-color: #129dc0;
-$system_sitebutton_border-color--hover: #129dc0;
-$system_sitebutton_color: #129dc0;
-$system_sitebutton_color--hover: #fff;
-$system_sitebutton_background-color: #129dc0;
-$system_sitebutton_background-color--hover: #129dc0;
+$system_sitebutton_border-color: #202020;
+$system_sitebutton_border-color--hover: #202020;
+$system_sitebutton_color: #fff;
+$system_sitebutton_color--hover: #202020;
+$system_sitebutton_background-color: #202020;
+$system_sitebutton_background-color--hover: #fff;
 
 
 

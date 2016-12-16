@@ -31,4 +31,15 @@
       display: none;
     }
   }
+
+  &.content-page-logo {
+
+    .mobile-logo-light {
+      display: none;
+    }
+    .mobile-logo-dark {
+      display: block;
+    }
+
+  }
 }

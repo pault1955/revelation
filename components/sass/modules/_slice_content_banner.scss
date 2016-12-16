@@ -1,0 +1,36 @@
+// ======================================
+// slice  content page banner
+// ======================================
+
+// slice   content page banner layout
+// ======================================
+
+.slice_content_page_banner {
+
+}
+
+// slice   content page style
+// ======================================
+
+.slice_content_page_banner {
+  img {
+    width: 100%;
+  }
+
+  margin-top: -63px;
+
+
+
+  @include susy-breakpoint($breakpoint-md) {
+    margin-top: 118px;
+    background-image: url(../images/content-banner.jpg);
+    background-size: cover;
+    background-position: 50% 0;
+    background-attachment: fixed;
+    height: 100%;
+
+    img {
+      display: none;
+    }
+  }
+}

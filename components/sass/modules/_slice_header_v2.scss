@@ -29,7 +29,7 @@
 
   display: none;
   background-color: #fff;
-  z-index: 500;
+  z-index: 8;
 
   // slicknav styles
   // ======================================
@@ -275,6 +275,13 @@
   @include susy-breakpoint($breakpoint_md) {
     display: block;
     position: relative;
+  }
+
+  &.content-page-header {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
   }
 }
 

@@ -49,51 +49,49 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $default_font-family;
+  font-family: $default_font-family-2;
   margin: 0.1em 0;
+  color: $default_font-color;
 }
 
 h1 {
-  font-family: $default_font-family-2;
-  font-size: 2.2rem;
-  line-height: 2.5rem;
+  font-size: 3.4rem;
+  line-height: 3.6rem;
   font-weight: $bold;
 }
 
 h2 {
-  font-family: $default_font-family-2;
-  font-size: 2.1rem;
-  line-height: 2.4rem;
+  font-size: 3rem;
+  line-height: 3.2rem;
   font-weight: $bold;
 }
 
 h3 {
-  font-size: 2.0rem;
-  line-height: 2.2rem;
-  color: #129dc0;
-  font-weight: $bold;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
 }
 
 h4 {
-  font-family: $default_font-family-2;
-  font-size: 1.9rem;
-  line-height: 2rem;
-  font-weight: $bold;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
 }
 
 h5 {
-  font-size: 1.8rem;
-  line-height: 2rem;
-
+  font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 h6 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 2rem;
 }
 
 blockquote {
-  color: $default_link_color;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 5px solid #3c3c3c;
 }
 
 a {
@@ -123,18 +121,18 @@ input[type=button], input[type=submit]       {
   margin-top: 10px;
   margin-right: 5px;
   padding: 9px 15px;
-  border-radius: 4px;
-  font-size: 1.4rem;
+  border-radius: 0;
+  font-size: 1.8rem;
   text-align: center;
   text-decoration: none;
   border: 2px solid $system_sitebutton_border-color;
-  background-color: transparent;
+  background-color: $system_sitebutton_background-color;
   color: $system_sitebutton_color;
 
 }
 
 .sitebutton:hover, .button:hover, .aspNetDisabled:hover {
-  color: #fff;
+  color: $system_sitebutton_color--hover;
   border: 2px solid $system_sitebutton_border-color--hover;
   background-color: $system_sitebutton_background-color--hover;
   cursor: pointer;
@@ -245,42 +243,43 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 @media (min-width: $breakpoint-sm) {
 
   body {
-    font-size: $default_font-size + 0.2rem;
-    line-height: $default_font-size + 0.4rem;
+    font-size: $default_font-size + 0.2;
+    line-height: $default_font-size + 0.6rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $default_font-color;
   }
 
   h1 {
     font-size: 4.4rem;
-    line-height: 5rem;
+    line-height: 4.6rem;
     font-weight: $bold;
   }
 
   h2 {
-    font-size: 4.0rem;
-    line-height: 4.8rem;
+    font-size: 4rem;
+    line-height: 4.2rem;
     font-weight: $bold;
   }
 
   h3 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     line-height: 3rem;
-    color: #129dc0;
   }
 
   h4 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     line-height: 2.6rem;
-    font-weight: $bold;
   }
 
   h5 {
     font-size: 2rem;
-    line-height: 2.8rem;
-
+    line-height: 2.2rem;
   }
 
   h6 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 2rem;
   }
 

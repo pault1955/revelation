@@ -75,6 +75,7 @@
         font-size: $block2_button_font-size;
         max-width: 150px;
         margin: 15px auto 0;
+        background-color: $block2_button_background-color;
 
         &:hover {
           background-color: $block2_button_background-color--hover;
