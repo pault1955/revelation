@@ -26,6 +26,27 @@
   text-align: center;
   padding: 7px 15px 15px;
 
+  .bible-text-divider {
+    border-top: 2px solid $bible_text_divider_color;
+    width: 50%;
+    height: 2px;
+    margin: 10px auto;
+    text-indent: -9999em;
+
+    @include susy-breakpoint($breakpoint-ti) {
+      width: 30%;
+      margin-bottom: 15px;
+    }
+    @include susy-breakpoint($breakpoint-sm) {
+      width: 25%;
+      margin-top: 5px;
+    }
+    @include susy-breakpoint($breakpoint-md) {
+      width: 22%;
+    }
+
+  }
+
   .bible-text {
     color: $bible_text-color;
     font-size: $bible_text_font-size;
