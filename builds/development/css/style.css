@@ -2281,3 +2281,202 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     top: 114px;
   }
 }
+
+/* line 9, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+.slice_image_blocks_3 .gallery_ul .gallery_li {
+  width: 100%;
+  float: left;
+}
+@media (min-width: 768px) {
+  /* line 9, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+  .slice_image_blocks_3 .gallery_ul .gallery_li {
+    width: 33.33333%;
+    float: left;
+  }
+}
+
+/* line 25, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+.slice_image_blocks_3 {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+/* line 32, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+.slice_image_blocks_3 .image_blocks .gallery_ul {
+  padding-left: 0;
+  list-style-type: none;
+  text-align: left;
+}
+/* line 37, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+.slice_image_blocks_3 .image_blocks .gallery_ul .gallery_li {
+  position: relative;
+}
+/* line 41, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+.slice_image_blocks_3 .image_blocks .gallery_ul .gallery_li:hover {
+  background-color: #f00;
+}
+/* line 45, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+.slice_image_blocks_3 .image_blocks .gallery_ul .gallery_li a {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+/* line 51, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+.slice_image_blocks_3 .image_blocks .gallery_ul .gallery_li a img {
+  transition: all 500ms ease;
+  display: block;
+  -webkit-backface-visibility: hidden;
+  width: 101%;
+  overflow: hidden;
+}
+/* line 58, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+.slice_image_blocks_3 .image_blocks .gallery_ul .gallery_li a img:hover {
+  opacity: 0.7;
+}
+/* line 64, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+.slice_image_blocks_3 .image_blocks .gallery_ul .gallery_li a .image_block_title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 0;
+  margin-bottom: 8px;
+}
+@media (min-width: 467px) {
+  /* line 64, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+  .slice_image_blocks_3 .image_blocks .gallery_ul .gallery_li a .image_block_title {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 768px) {
+  /* line 64, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+  .slice_image_blocks_3 .image_blocks .gallery_ul .gallery_li a .image_block_title {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 992px) {
+  /* line 64, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+  .slice_image_blocks_3 .image_blocks .gallery_ul .gallery_li a .image_block_title {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 768px) {
+  /* line 25, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+  .slice_image_blocks_3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 25, ../../../components/sass/modules/_slice_image_blocks_3.scss */
+  .slice_image_blocks_3 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+/* line 9, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+.slice_image_blocks_4 .gallery_ul .gallery_li {
+  width: 100%;
+  float: left;
+}
+@media (min-width: 467px) {
+  /* line 9, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+  .slice_image_blocks_4 .gallery_ul .gallery_li {
+    width: 50%;
+    float: left;
+  }
+}
+@media (min-width: 768px) {
+  /* line 9, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+  .slice_image_blocks_4 .gallery_ul .gallery_li {
+    width: 25%;
+    float: left;
+  }
+}
+
+/* line 29, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+.slice_image_blocks_4 {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+/* line 36, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+.slice_image_blocks_4 .image_blocks .gallery_ul {
+  padding-left: 0;
+  list-style-type: none;
+  text-align: left;
+}
+/* line 41, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+.slice_image_blocks_4 .image_blocks .gallery_ul .gallery_li {
+  position: relative;
+}
+/* line 45, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+.slice_image_blocks_4 .image_blocks .gallery_ul .gallery_li:hover {
+  background-color: #00f;
+}
+/* line 49, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+.slice_image_blocks_4 .image_blocks .gallery_ul .gallery_li a {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+/* line 55, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+.slice_image_blocks_4 .image_blocks .gallery_ul .gallery_li a img {
+  transition: all 500ms ease;
+  display: block;
+  -webkit-backface-visibility: hidden;
+  width: 100.1%;
+  overflow: hidden;
+}
+/* line 62, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+.slice_image_blocks_4 .image_blocks .gallery_ul .gallery_li a img:hover {
+  opacity: 0.7;
+}
+/* line 68, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+.slice_image_blocks_4 .image_blocks .gallery_ul .gallery_li a .image_block_title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 0;
+  margin-bottom: 8px;
+}
+@media (min-width: 467px) {
+  /* line 68, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+  .slice_image_blocks_4 .image_blocks .gallery_ul .gallery_li a .image_block_title {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 768px) {
+  /* line 68, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+  .slice_image_blocks_4 .image_blocks .gallery_ul .gallery_li a .image_block_title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  /* line 68, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+  .slice_image_blocks_4 .image_blocks .gallery_ul .gallery_li a .image_block_title {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 768px) {
+  /* line 29, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+  .slice_image_blocks_4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 29, ../../../components/sass/modules/_slice_image_blocks_4.scss */
+  .slice_image_blocks_4 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

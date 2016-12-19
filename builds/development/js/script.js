@@ -66,5 +66,20 @@ $(document).ready(function () {
 
     stickyExample();
 
+    // image blocks
+
+    $( ".slice_image_blocks_3 .image_blocks .gallery_li img" ).each(function( index ) {
+        var cardGridAlt = $(this).attr('alt');
+        var cardGridData = $.parseHTML( cardGridAlt );
+        var cardGridTitle = '<div class="image_block_title">' + ($(cardGridData).text()) + '</div>';
+        $(cardGridTitle).insertAfter( this );
+    });
+
+    $( ".slice_image_blocks_4 .image_blocks .gallery_li img" ).each(function( index ) {
+        var cardGridAlt4 = $(this).attr('alt');
+        var cardGridData4 = $.parseHTML( cardGridAlt4 );
+        var cardGridTitle4 = '<div class="image_block_title">' + ($(cardGridData4).text()) + '</div>';
+        $(cardGridTitle4).insertAfter( this );
+    });
 
 });
