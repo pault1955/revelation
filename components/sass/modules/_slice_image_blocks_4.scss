@@ -9,7 +9,6 @@
   .gallery_ul .gallery_li {
     @include span(12 inside no-gutters);
 
-
     @include susy-breakpoint($breakpoint-ti) {
       @include span(6 of 12 inside no-gutters);
     }
@@ -19,15 +18,12 @@
     }
   }
 
-
-
 }
 
 // 4 image blocks  style
 // ======================================
 
 .slice_image_blocks_4 {
-
 
   padding-bottom: 30px;
   padding-top: 30px;
@@ -42,27 +38,37 @@
 
       position: relative;
 
-      &:hover {
-        background-color:$image_blocks_4_background-color;
-      }
-
-      a  {
+      a {
 
         display: inline-block;
         width: 100%;
         vertical-align: middle;
+        position: relative;
+
+        &::before {
+          content: ' ';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: transparent;
+          transition: background .35s ease-out;
+          z-index: 7;
+        }
+
+        &:hover::before {
+          background-color: $image_blocks_4_background-color;
+          opacity: 0.5;
+          cursor: pointer;
+        }
 
         img {
           transition: all 500ms ease;
           display: block;
           -webkit-backface-visibility: hidden; // fix for moving images on hover
-          width: 100.1%;
+          width: 101%;
           overflow: hidden;
-
-          &:hover {
-            opacity: 0.7;
-          }
-
         }
 
         .image_block_title {
@@ -72,28 +78,27 @@
           right: 0;
           text-align: center;
           color: $image_blocks_4-color;
-          font-size:$image_blocks_4_font-size;
+          font-size: $image_blocks_4_font-size;
           line-height: 0;
           margin-bottom: $image_blocks_4_margin-bottom;
+          z-index: 9;
 
           @include susy-breakpoint($breakpoint-ti) {
-            font-size:$image_blocks_4_font-size;
+            font-size: $image_blocks_4_font-size;
           }
 
           @include susy-breakpoint($breakpoint-sm) {
-            font-size:$image_blocks_4_font-size - 0.5;
+            font-size: $image_blocks_4_font-size - 0.5;
           }
 
           @include susy-breakpoint($breakpoint-md) {
-            font-size:$image_blocks_4_font-size + 1;
+            font-size: $image_blocks_4_font-size + 1;
           }
         }
       }
 
     }
   }
-
-
 
   @include susy-breakpoint($breakpoint-sm) {
     padding-top: 50px;
@@ -104,6 +109,5 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
 
 }

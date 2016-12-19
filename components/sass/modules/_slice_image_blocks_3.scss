@@ -9,13 +9,10 @@
   .gallery_ul .gallery_li {
     @include span(12 inside no-gutters);
 
-
     @include susy-breakpoint($breakpoint-sm) {
       @include span(4 of 12 inside no-gutters);
     }
   }
-
-
 
 }
 
@@ -24,41 +21,50 @@
 
 .slice_image_blocks_3 {
 
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
 
-    padding-bottom: 30px;
-    padding-top: 30px;
+  .image_blocks .gallery_ul {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
     text-align: center;
 
-    .image_blocks .gallery_ul {
-      padding-left: 0;
-      list-style-type: none;
-      text-align: left;
+    .gallery_li {
 
-      .gallery_li {
+      position: relative;
 
-        position: relative;
-
-        &:hover {
-          background-color:$image_blocks_3_background-color;
-        }
-
-      a  {
+      a {
 
         display: inline-block;
         width: 100%;
         vertical-align: middle;
+        position: relative;
+
+        &::before {
+          content: ' ';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: transparent;
+          transition: background .35s ease-out;
+          z-index: 7;
+        }
+
+        &:hover::before {
+          background-color: $image_blocks_3_background-color;
+          opacity: 0.5;
+          cursor: pointer;
+        }
 
         img {
-          transition: all 500ms ease;
           display: block;
           -webkit-backface-visibility: hidden; // fix for moving images on hover
           width: 101%;
           overflow: hidden;
-
-          &:hover {
-            opacity: 0.7;
-          }
-
         }
 
         .image_block_title {
@@ -68,38 +74,36 @@
           right: 0;
           text-align: center;
           color: $image_blocks_3_color;
-          font-size:$image_blocks_3_font-size;
+          font-size: $image_blocks_3_font-size;
           line-height: 0;
           margin-bottom: $image_blocks_3_margin-bottom;
+          z-index: 9;
 
           @include susy-breakpoint($breakpoint-ti) {
-            font-size:$image_blocks_3_font-size + 1;
+            font-size: $image_blocks_3_font-size + 1;
           }
 
           @include susy-breakpoint($breakpoint-sm) {
-            font-size:$image_blocks_3_font-size;
+            font-size: $image_blocks_3_font-size;
           }
 
           @include susy-breakpoint($breakpoint-md) {
-            font-size:$image_blocks_3_font-size + 1;
+            font-size: $image_blocks_3_font-size + 1;
           }
         }
       }
 
-      }
     }
+  }
 
+  @include susy-breakpoint($breakpoint-sm) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-
-    @include susy-breakpoint($breakpoint-sm) {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    @include susy-breakpoint($breakpoint-md) {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
+  @include susy-breakpoint($breakpoint-md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
 }
